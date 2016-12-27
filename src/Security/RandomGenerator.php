@@ -3,6 +3,8 @@
 namespace SilverStripe\Security;
 
 use Exception;
+use SilverStripe\Core\Config\Config;
+use SilverStripe\Core\Injector\Injector;
 
 /**
  * Generates entropy values based on strongest available methods
@@ -11,55 +13,44 @@ use Exception;
  *
  * @author Ingo Schommer
  */
-class RandomGenerator {
-
+class RandomGenerator
+{
 	/**
 	 * Note: Returned values are not guaranteed to be crypto-safe,
 	 * depending on the used retrieval method.
 	 *
 	 * @return string Returns a random series of bytes
 	 */
-	public function generateEntropy() {
-		$isWin = preg_match('/WIN/', PHP_OS);
-
-		// TODO Fails with "Could not gather sufficient random data" on IIS, temporarily disabled on windows
-		if(!$isWin) {
-			if(function_exists('mcrypt_create_iv')) {
-				$e = mcrypt_create_iv(64, MCRYPT_DEV_URANDOM);
-				if($e !== false) return $e;
+	public function generateEntropy()
+	{
+		foreach ($this->getProviders() as $providerClass) {
+			/** @var RandomGenerator\EntropyProvider $provider */
+			$provider = Injector::inst()->get($providerClass);
+			if ($result = $provider->generate()) {
+				return $result;
 			}
 		}
 
-		// Fall back to SSL methods - may slow down execution by a few ms
-		if (function_exists('openssl_random_pseudo_bytes')) {
-			$e = openssl_random_pseudo_bytes(64, $strong);
-			// Only return if strong algorithm was used
-			if($strong) return $e;
+		throw new Exception('No entropy providers are correctly configured for this OS.');
+	}
+
+	/**
+	 * Gets a list of configured entropy providers in the preferred sort order
+	 *
+	 * @return array
+	 */
+	public function getProviders()
+	{
+		$configuration = Config::inst()->get(__CLASS__, 'entropy_providers');
+		if (!$configuration) {
+			return [];
 		}
 
-		// Read from the unix random number generator
-		if(!$isWin && !ini_get('open_basedir') && is_readable('/dev/urandom') && ($h = fopen('/dev/urandom', 'rb'))) {
-			$e = fread($h, 64);
-			fclose($h);
-			return $e;
-		}
+		usort($configuration, function ($a, $b) {
+			return $a['sort_order'] > $b['sort_order'];
+		});
 
-		// Warning: Both methods below are considered weak
-
-		// try to read from the windows RNG
-		if($isWin && class_exists('COM')) {
-			try {
-				$comObj = new \COM('CAPICOM.Utilities.1');
-
-				if(is_callable(array($comObj,'GetRandom'))) {
-					return  base64_decode($comObj->GetRandom(64, 0));
-				}
-			} catch (Exception $ex) {
-			}
-		}
-
-		// Fallback to good old mt_rand()
-		return uniqid(mt_rand(), true);
+		return array_column($configuration, 'class');
 	}
 
 	/**
@@ -73,8 +64,8 @@ class RandomGenerator {
 	 *
 	 * @return String Returned length will depend on the used $algorithm
 	 */
-	public function randomToken($algorithm = 'whirlpool') {
+	public function randomToken($algorithm = 'whirlpool')
+	{
 		return hash($algorithm, $this->generateEntropy());
 	}
-
 }

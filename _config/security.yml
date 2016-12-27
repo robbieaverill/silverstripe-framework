@@ -1,0 +1,30 @@
+---
+Name: frameworksecurityconfig
+---
+SilverStripe\Security\RandomGenerator:
+  entropy_providers:
+    - class: McryptProvider
+      sort_order: 20
+    - class: OpenSslProvider
+      sort_order: 10
+    - class: UnixGeneratorProvider
+      sort_order: 30
+    - class: CapicomProvider
+      sort_order: 40
+    - class: RandomProvider
+      sort_order: 50
+
+---
+Name: entropyinjector
+---
+SilverStripe\Core\Injector\Injector:
+  McryptProvider:
+    class: SilverStripe\Security\RandomGenerator\McryptProvider
+  OpenSslProvider:
+    class: SilverStripe\Security\RandomGenerator\OpenSslProvider
+  UnixGeneratorProvider:
+    class: SilverStripe\Security\RandomGenerator\UnixGeneratorProvider
+  CapicomProvider:
+    class: SilverStripe\Security\RandomGenerator\CapicomProvider
+  RandomProvider:
+    class: SilverStripe\Security\RandomGenerator\RandomProvider
