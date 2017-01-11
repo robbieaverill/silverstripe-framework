@@ -4,6 +4,7 @@ namespace SilverStripe\Dev;
 
 use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Core\Object;
+use SilverStripe\Dev\Cli\OutputInterface;
 
 /**
  * Interface for a generic build task. Does not support dependencies. This will simply
@@ -24,6 +25,13 @@ abstract class BuildTask extends Object
     private static $segment = null;
 
     /**
+     * @var array
+     */
+    private static $dependencies = [
+        'outputInterface' => '%$CliOutputInterface',
+    ];
+
+    /**
      * @var bool $enabled If set to FALSE, keep it from showing in the list
      * and from being executable through URL or CLI.
      */
@@ -40,6 +48,11 @@ abstract class BuildTask extends Object
      * and the changes it makes. Accepts HTML formatting.
      */
     protected $description = 'No description available';
+
+    /**
+     * @var OutputInterface
+     */
+    protected $outputInterface;
 
     /**
      * Implement this method in the task subclass to
@@ -72,5 +85,27 @@ abstract class BuildTask extends Object
     public function getDescription()
     {
         return $this->description;
+    }
+
+    /**
+     * Return a CLI OutputInterface for outputting messages and errors
+     *
+     * @return OutputInterface
+     */
+    public function getOutputInterface()
+    {
+        return $this->outputInterface;
+    }
+
+    /**
+     * Set the CLI output interface
+     *
+     * @param  OutputInterface $outputInterface
+     * @return $this
+     */
+    public function setOutputInterface(OutputInterface $outputInterface)
+    {
+        $this->outputInterface = $outputInterface;
+        return $this;
     }
 }

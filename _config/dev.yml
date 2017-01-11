@@ -11,3 +11,7 @@ SilverStripe\Dev\DevelopmentAdmin:
       controller: SilverStripe\Dev\TaskRunner
       links:
         tasks: 'See a list of build tasks to run'
+
+SilverStripe\Core\Injector\Injector:
+  CliOutputInterface:
+    class: SilverStripe\Dev\Cli\Output
