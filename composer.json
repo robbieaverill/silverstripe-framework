@@ -62,6 +62,9 @@
       "SilverStripe\\View\\": "src/View/",
       "SilverStripe\\View\\Tests\\": "tests/php/View/"
     },
+    "psr-0": {
+      "Zend_": "thirdparty/Zend/"
+    },
     "files": ["src/Core/Constants.php"],
     "classmap": ["tests/behat/features/bootstrap"]
   },
