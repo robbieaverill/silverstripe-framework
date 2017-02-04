@@ -152,7 +152,7 @@ az:
     FULLADMINRIGHTS: 'Tam administrativ hüquqlar'
     FULLADMINRIGHTS_HELP: 'Başqa təyin edilmiş bütün icazələr rədd olunur.'
   PermissionCheckboxSetField:
-    FromRoleOnGroup: '"%s" rolundan "%s" qrupunda törəyib'
+    FromRoleOnGroup: '"{roletitle}" rolundan "{grouptitle}" qrupunda törəyib'
   Permissions:
     PERMISSIONS_CATEGORY: İcazələr
   PhoneNumberField:

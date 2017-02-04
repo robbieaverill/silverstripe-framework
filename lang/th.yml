@@ -125,7 +125,7 @@ th:
     FilterBy: กรองข้อมูลจาก
     Find: ค้นหา
     LinkExisting: ลิงก์ที่มีอยู่
-    NewRecord: 'ใหม่ %s'
+    NewRecord: 'ใหม่ {type}'
     NoItemsFound: ไม่พบรายการที่ต้องการ
     PRINTEDAT: ถูกสั่งพิมพ์ที่
     PRINTEDBY: พิมพ์โดย
@@ -137,7 +137,7 @@ th:
     CancelBtn: ยกเลิก
     Create: สร้าง
     Delete: ลบ
-    Deleted: 'ลบ %s %s แล้ว'
+    Deleted: 'ลบ {type} {name} แล้ว'
     Save: บันทึก
   Group:
     AddRole: เพิ่มบทบาทให้กับกลุ่มนี้
@@ -157,8 +157,8 @@ th:
     many_many_Members: สมาชิก
   GroupImportForm:
     ResultCreated: 'สร้างกลุ่มแล้ว {count} กลุ่ม'
-    ResultDeleted: 'ลบกลุ่มแล้ว %d กลุ่ม'
-    ResultUpdated: 'อัพเดทแล้ว %d กลุ่ม'
+    ResultDeleted: 'ลบกลุ่มแล้ว {count} กลุ่ม'
+    ResultUpdated: 'อัพเดทแล้ว {count} กลุ่ม'
   HtmlEditorField:
     ADDURL: 'เพิ่ม URL'
     ADJUSTDETAILSDIMENSIONS: 'รายละเอียด &amp; ขนาดสัดส่วน'
@@ -245,7 +245,7 @@ th:
     DATEFORMATBAD: รูปแบบวันที่ไม่ถูกต้อง
     Preview: ดูตัวอย่าง
   MemberImportForm:
-    ResultDeleted: 'ลบสมาชิกแล้ว %d สมาชิก'
+    ResultDeleted: 'ลบสมาชิกแล้ว {count} สมาชิก'
     ResultNone: ยังไม่มีการเปลี่ยนแปลง
   MemberPassword:
     PLURALNAME: รหัสผ่านสมาชิก

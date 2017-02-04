@@ -176,7 +176,7 @@ sr:
     VALIDATOR: 'Проверивач исправности'
     VALIDCURRENCY: 'Унесите исправну валуту'
   FormField:
-    Example: 'нпр. %s'
+    Example: 'нпр. {format}'
     NONE: без
   GridAction:
     DELETE_DESCRIPTION: Избриши
@@ -189,7 +189,7 @@ sr:
     Find: Пронађи
     LEVELUP: 'Ниво изнад'
     LinkExisting: 'Постојање линка'
-    NewRecord: 'Нови %s'
+    NewRecord: 'Нови {type}'
     NoItemsFound: 'Ниједна ставка није пронађена'
     PRINTEDAT: Одштампано
     PRINTEDBY: Одштампао
@@ -205,7 +205,7 @@ sr:
     Create: Креирај
     Delete: Избриши
     DeletePermissionsFailure: 'Немате право брисања'
-    Deleted: 'Избрисано %s %s'
+    Deleted: 'Избрисано {type} {name}'
     Save: Сачувај
     Saved: 'Сачувано {name} {link}'
   GridFieldEditButton_ss:
@@ -219,7 +219,7 @@ sr:
     DefaultGroupTitleContentAuthors: 'Аутори садржаја'
     Description: Опис
     GroupReminder: 'Ако изаберете родитељску групу, ова група ће преузети све њене улоге'
-    HierarchyPermsError: 'Није могуће доделити родитељску групу "%s" са привилегованим дозволама (захтева Администраторски приступ)'
+    HierarchyPermsError: 'Није могуће доделити родитељску групу "{group}" са привилегованим дозволама (захтева Администраторски приступ)'
     Locked: 'Закључано?'
     NoRoles: 'Улоге нису пронађене'
     PLURALNAME: Групе
@@ -232,8 +232,8 @@ sr:
   GroupImportForm:
     Help1: '<p>Увези једну или више група у <em>CSV</em> формату (зарезима раздвојене вредности). <small><a href="#" class="toggle-advanced">Прикажи напредно коришћење</a></small></p>'
     ResultCreated: 'Креирано {count} група'
-    ResultDeleted: 'Избрисао %d група'
-    ResultUpdated: 'Ажурирано %d група'
+    ResultDeleted: 'Избрисао {count} група'
+    ResultUpdated: 'Ажурирано {count} група'
   Hierarchy:
     InfiniteLoopNotAllowed: 'Откривена је бесконачна петља у оквиру "{type}" хијерархије. Промените родитеља да би сте разрешили ситуацију'
   HtmlEditorField:
@@ -372,7 +372,7 @@ sr:
   MemberImportForm:
     Help1: '<p>Увези кориснике у <em>CSV</em> формату (зарезима раздвојене вредности). <small><a href="#" class="toggle-advanced">Прикажи напредно коришћење</a></small></p>'
     ResultCreated: 'Креирано {count} чланова'
-    ResultDeleted: 'Избрисано %d чланова'
+    ResultDeleted: 'Избрисано {count} чланова'
     ResultNone: 'Без промена'
     ResultUpdated: 'Ажурирано {count} чланова'
   MemberPassword:
@@ -393,9 +393,9 @@ sr:
     UPDATEDRECORDS: 'Ажурирано {count} записа'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'Колоне базе података'
-    IMPORTSPECLINK: 'Прикажи спецификацију за %s'
+    IMPORTSPECLINK: 'Прикажи спецификацију за {model}'
     IMPORTSPECRELATIONS: 'Релације'
-    IMPORTSPECTITLE: 'Спецификација за %s'
+    IMPORTSPECTITLE: 'Спецификација за {model}'
   ModelAdmin_Tools_ss:
     FILTER: Филтер
     IMPORT: Увези
@@ -413,9 +413,9 @@ sr:
     Page: Страница
     View: Преглед
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Појачајте лозинку додавањем неких од следећих знакова: %s'
+    LOWCHARSTRENGTH: 'Појачајте лозинку додавањем неких од следећих знакова: {chars}'
     PREVPASSWORD: 'Већ сте користили наведену лозинку у прошлости. Стога, изаберите другу лозинку'
-    TOOSHORT: 'Лозинка је прекратка. Лозинка мора садржати бар %s знакова'
+    TOOSHORT: 'Лозинка је прекратка. Лозинка мора садржати бар {minimum} знакова'
   Permission:
     AdminGroup: Администратор
     CMS_ACCESS_CATEGORY: 'Приступ CMS-у'
@@ -427,14 +427,14 @@ sr:
     AssignedTo: 'додељено "{title}"'
     FromGroup: 'наслеђено од групе "{title}"'
     FromRole: 'наслеђено од улоге "{title}"'
-    FromRoleOnGroup: 'наслеђено из улоге "%s" за групу "%s"'
+    FromRoleOnGroup: 'наслеђено из улоге "{roletitle}" за групу "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Може примењивати само администратор'
     PLURALNAME: Улоге
     SINGULARNAME: Улога
     Title: Наслов
   PermissionRoleCode:
-    PermsError: 'Није могуће доделити кôд  "%s" са привилегованим дозволама (захтева Администраторски приступ)'
+    PermsError: 'Није могуће доделити кôд  "{code}" са привилегованим дозволама (захтева Администраторски приступ)'
     SINGULARNAME: 'Кôд улоге за дозволе'
   Permissions:
     PERMISSIONS_CATEGORY: 'Улоге и права приступа'

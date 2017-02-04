@@ -28,6 +28,9 @@ class MemberImportForm extends Form
     public function __construct($controller, $name, $fields = null, $actions = null, $validator = null)
     {
         if (!$fields) {
+            $importer = new MemberCsvBulkLoader();
+            $importSpec = $importer->getImportSpec();
+
             $helpHtml = _t(
                 'MemberImportForm.Help1',
                 '<p>Import users in <em>CSV format</em> (comma-separated values).'
@@ -38,18 +41,17 @@ class MemberImportForm extends Form
                 '<div class="advanced">'
                 . '<h4>Advanced usage</h4>'
                 . '<ul>'
-                . '<li>Allowed columns: <em>%s</em></li>'
+                . '<li>Allowed columns: <em>{allowed}</em></li>'
                 . '<li>Existing users are matched by their unique <em>Code</em> property, and updated with any new values from '
                 . 'the imported file.</li>'
                 . '<li>Groups can be assigned by the <em>Groups</em> column. Groups are identified by their <em>Code</em> property, '
                 . 'multiple groups can be separated by comma. Existing group memberships are not cleared.</li>'
                 . '</ul>'
-                . '</div>'
+                . '</div>',
+                [
+                    'allowed' => implode(', ', array_keys($importSpec['fields']))
+                ]
             );
-
-            $importer = new MemberCsvBulkLoader();
-            $importSpec = $importer->getImportSpec();
-            $helpHtml = sprintf($helpHtml, implode(', ', array_keys($importSpec['fields'])));
 
             $fields = new FieldList(
                 new LiteralField('Help', $helpHtml),
@@ -115,7 +117,7 @@ class MemberImportForm extends Form
         if ($result->DeletedCount()) {
             $msgArr[] = _t(
                 'MemberImportForm.ResultDeleted',
-                'Deleted %d members',
+                'Deleted {count} members',
                 array('count' => $result->DeletedCount())
             );
         }

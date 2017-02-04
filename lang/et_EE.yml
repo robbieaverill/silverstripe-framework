@@ -181,7 +181,7 @@ et_EE:
     FilterBy: Filtreerimisalus
     Find: Otsi
     LinkExisting: 'Lingi olemasolev'
-    NewRecord: 'Uus %s'
+    NewRecord: 'Uus {type}'
     NoItemsFound: 'Üksusi ei leitud'
     PRINTEDAT: 'Printimiskoht:'
     PRINTEDBY: Printis
@@ -195,7 +195,7 @@ et_EE:
     Create: Loo
     Delete: Kustuta
     DeletePermissionsFailure: 'Kustutamisõigused puuduvad'
-    Deleted: '%s %s on kustutatud'
+    Deleted: '{type} {name} on kustutatud'
     Save: Salvesta
     Saved: 'Salvestatud {name} {link}'
   GridFieldEditButton_ss:
@@ -219,8 +219,8 @@ et_EE:
   GroupImportForm:
     Help1: '<p>Impordi üks või rohkem gruppe <em>CSV</em>-vormingus (komaeraldusega väärtused). <small><a href="#" class="toggle-advanced">Kuva täpsem kasutus</a></small></p>'
     ResultCreated: '{count} gruppi on loodud'
-    ResultDeleted: '%d gruppi on kustutatud'
-    ResultUpdated: '%d gruppi on uuendatud'
+    ResultDeleted: '{count} gruppi on kustutatud'
+    ResultUpdated: '{count} gruppi on uuendatud'
   HtmlEditorField:
     ADDURL: 'Lisa URL'
     ADJUSTDETAILSDIMENSIONS: 'Üksikasjad ja mõõtmed'
@@ -350,7 +350,7 @@ et_EE:
   MemberImportForm:
     Help1: '<p>Impordi kasutajad <em>CSV-vormingus</em> (komaeraldusega väärtused). <small><a href="#" class="toggle-advanced">Kuva täpsem kasutus</a></small></p>'
     ResultCreated: '{count} liiget on loodud'
-    ResultDeleted: '%d liiget on kustutatud'
+    ResultDeleted: '{count} liiget on kustutatud'
     ResultNone: 'Muudatusi pole'
     ResultUpdated: '{count} liiget on uuendatud'
   MemberPassword:
@@ -371,9 +371,9 @@ et_EE:
     UPDATEDRECORDS: '{count} kirjet on uuendatud.'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'Andmebaasi tulbad'
-    IMPORTSPECLINK: 'Kuva üksuse %s spetsifikatsioonid'
+    IMPORTSPECLINK: 'Kuva üksuse {model} spetsifikatsioonid'
     IMPORTSPECRELATIONS: Seosed
-    IMPORTSPECTITLE: 'Üksuse %s spetsifikatsioonid'
+    IMPORTSPECTITLE: 'Üksuse {model} spetsifikatsioonid'
   ModelAdmin_Tools_ss:
     FILTER: Filtreeri
     IMPORT: Impordi
@@ -400,7 +400,7 @@ et_EE:
     AssignedTo: 'määratud grupile "{title}"'
     FromGroup: 'päritud grupilt "{title}"'
     FromRole: 'päritud rollilt "{title}"'
-    FromRoleOnGroup: 'päritud rollist "%s" grupis "%s"'
+    FromRoleOnGroup: 'päritud rollist "{roletitle}" grupis "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Ainult administraator saab rakendada'
     PLURALNAME: Rollid

@@ -147,7 +147,7 @@ eo:
     MAXIMUM: 'Pasvorto devas esti ne pli ol {min} signojn longa.'
     SHOWONCLICKTITLE: 'Ŝangi Pasvorton'
   ContentController:
-    DRAFT_SITE_ACCESS_RESTRICTION: 'Vi devas ensaluti per via CMS-pasvorto por vidi la projektan aŭ enarkivigitan enhavon.  <a href="%s">Alklaku ĉi tie por reiri al la publika retejo.</a>'
+    DRAFT_SITE_ACCESS_RESTRICTION: 'Vi devas ensaluti per via CMS-pasvorto por vidi la projektan aŭ enarkivigitan enhavon.  <a href="{link}">Alklaku ĉi tie por reiri al la publika retejo.</a>'
     NOTLOGGEDIN: 'Ne ensalutis'
   CreditCardField:
     FIRST: unuan
@@ -250,7 +250,7 @@ eo:
     VALIDATOR: Validigilo
     VALIDCURRENCY: 'Bonvole enigu validan kurzon'
   FormField:
-    Example: 'ekz. %s'
+    Example: 'ekz. {format}'
     NONE: neniu
   GridAction:
     DELETE_DESCRIPTION: Forigi
@@ -263,7 +263,7 @@ eo:
     Find: Serĉi
     LEVELUP: Samniveligi
     LinkExisting: 'Ligi ekzistantajn'
-    NewRecord: 'Novaj %s'
+    NewRecord: 'Novaj {type}'
     NoItemsFound: 'Neniu elemento troviĝis'
     PRINTEDAT: 'Presita ĉe'
     PRINTEDBY: 'Presita de'
@@ -279,7 +279,7 @@ eo:
     Create: Krei
     Delete: Forigi
     DeletePermissionsFailure: 'Mankas permeso forigi'
-    Deleted: 'Forigita %s %s'
+    Deleted: 'Forigita {type} {name}'
     Save: Konservi
     Saved: 'Konservita {name} {link}'
   GridFieldEditButton_ss:
@@ -293,7 +293,7 @@ eo:
     DefaultGroupTitleContentAuthors: Enhavaŭtoroj
     Description: Priskribo
     GroupReminder: 'Se vi elektas patran grupon, ĉi tiu grupo prenos ĉiujn ĝiajn rolojn'
-    HierarchyPermsError: 'Ne povas agordi patran grupon "%s" kun privilegiaj permesoj (bezonas ADMIN-aliron)'
+    HierarchyPermsError: 'Ne povas agordi patran grupon "{group}" kun privilegiaj permesoj (bezonas ADMIN-aliron)'
     Locked: 'Ŝlosita?'
     NoRoles: 'Ne trovis rolon'
     PLURALNAME: Grupoj
@@ -305,10 +305,10 @@ eo:
     many_many_Members: Membroj
   GroupImportForm:
     Help1: '<p>Importi unu aŭ pliaj grupojn en formato <em>CSV</em> (perkome disigitaj valoroj values). <small><a href="#" class="toggle-advanced">Vidigi spertulan uzadon</a></small></p>'
-    Help2: '<div class="advanced"><h4>Speciala uzado </h4><ul><li>Eblaj kolumnoj: <em>%s</em></li><li>Ekzistantaj grupoj kongruiĝas laŭ la valoro de ilia unika <em>Kodo</em>, kaj ĝisdatiĝas per eventualaj valoroj el la importita dosiero</li><li>Eblas krei grupajn hierarĥiojn per la kolumno <em>ParentCode</em>.</li><li>Eblas agordi permeskodojn per la kolumno <em>PermissionCode</em>. Ekzistantaj permeskodoj ne vakiĝas.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Speciala uzado </h4><ul><li>Eblaj kolumnoj: <em>{allowed}</em></li><li>Ekzistantaj grupoj kongruiĝas laŭ la valoro de ilia unika <em>Kodo</em>, kaj ĝisdatiĝas per eventualaj valoroj el la importita dosiero</li><li>Eblas krei grupajn hierarĥiojn per la kolumno <em>ParentCode</em>.</li><li>Eblas agordi permeskodojn per la kolumno <em>PermissionCode</em>. Ekzistantaj permeskodoj ne vakiĝas.</li></ul></div>'
     ResultCreated: 'Kreiĝis {count} grupoj'
-    ResultDeleted: 'Forigis %d grupojn'
-    ResultUpdated: 'Aktualigis %d grupojn'
+    ResultDeleted: 'Forigis {count} grupojn'
+    ResultUpdated: 'Aktualigis {count} grupojn'
   HTMLEditorField:
     ANCHORSCANNOTACCESSPAGE: 'Vi ne rajtas aliri la enhavon de la cela paĝo.'
     ANCHORSPAGENOTFOUND: 'Ne trovis la celan paĝon.'
@@ -510,9 +510,9 @@ eo:
     Toggle: 'Vidigi aranĝa helpo'
   MemberImportForm:
     Help1: '<p>Importi membrojn en <em>CSV-formato</em> (diskomaj valoroj ). <small><a href="#" class="toggle-advanced">Vidigi spertulan uzadon</a></small></p>'
-    Help2: '<div class="advanced"><h4>Speciala uzado </h4><ul><li>Eblaj kolumnoj: <em>%s</em></li><li>Ekzistantaj uzantoj kongruiĝas laŭ la valoro de sia unika atributo <em>Code</em>, kaj ĝisdatiĝas per eventualaj novaj valoroj el la importita dosiero. </li><li>Eblas agordi grupojn per la kolumno <em>Groups</em>. Grupoj estas identigeblaj per sia atributo <em>Code</em>, plurobla grupo estu apartigitaj per komo. Ekzistantaj grupaj membrecoj ne vakiĝas.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Speciala uzado </h4><ul><li>Eblaj kolumnoj: <em>{allowed}</em></li><li>Ekzistantaj uzantoj kongruiĝas laŭ la valoro de sia unika atributo <em>Code</em>, kaj ĝisdatiĝas per eventualaj novaj valoroj el la importita dosiero. </li><li>Eblas agordi grupojn per la kolumno <em>Groups</em>. Grupoj estas identigeblaj per sia atributo <em>Code</em>, plurobla grupo estu apartigitaj per komo. Ekzistantaj grupaj membrecoj ne vakiĝas.</li></ul></div>'
     ResultCreated: 'Krei {count} membrojn'
-    ResultDeleted: 'Forigis %d membrojn'
+    ResultDeleted: 'Forigis {count} membrojn'
     ResultNone: 'Neniu ŝanĝo'
     ResultUpdated: 'Aktualigis {count} membrojn'
   MemberPassword:
@@ -533,9 +533,9 @@ eo:
     UPDATEDRECORDS: 'Aktualigis {count} rikordojn.'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'Datenbazaj kolumnoj'
-    IMPORTSPECLINK: 'Vidigi agordaron por %s'
+    IMPORTSPECLINK: 'Vidigi agordaron por {model}'
     IMPORTSPECRELATIONS: Rilatoj
-    IMPORTSPECTITLE: 'Agordaro por %s'
+    IMPORTSPECTITLE: 'Agordaro por {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtri
     IMPORT: Importi
@@ -555,9 +555,9 @@ eo:
     Page: Paĝo
     View: Vido
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Bonvole plifortigu la pasvortan aldonante la jenajn signojn: %s'
+    LOWCHARSTRENGTH: 'Bonvole plifortigu la pasvortan aldonante la jenajn signojn: {chars}'
     PREVPASSWORD: 'Vi jam uzis tiun pasvorton pasintece, do bonvole elektu novan pasvorton'
-    TOOSHORT: 'Pasvorto estas tro mallonga; ĝi devas esti almenaŭ %s signojn longa'
+    TOOSHORT: 'Pasvorto estas tro mallonga; ĝi devas esti almenaŭ {minimum} signojn longa'
   Permission:
     AdminGroup: Administranto
     CMS_ACCESS_CATEGORY: CMS-aliro
@@ -569,7 +569,7 @@ eo:
     AssignedTo: 'agordita al "{title}"'
     FromGroup: 'heredita el grupo "{title}"'
     FromRole: 'heredita el rolo "{title}"'
-    FromRoleOnGroup: 'heredita el rolo "%s" en grupo "%s"'
+    FromRoleOnGroup: 'heredita el rolo "{roletitle}" en grupo "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Nur administranto povas apliki'
     PLURALNAME: Roloj
@@ -577,7 +577,7 @@ eo:
     Title: Titolo
   PermissionRoleCode:
     PLURALNAME: 'Permesrolaj kodoj'
-    PermsError: 'Ne povas agordi kodon "%s" kun privilegiaj permesoj (bezonas ADMIN-aliron)'
+    PermsError: 'Ne povas agordi kodon "{code}" kun privilegiaj permesoj (bezonas ADMIN-aliron)'
     SINGULARNAME: 'Permesrola kodo'
   Permissions:
     PERMISSIONS_CATEGORY: 'Roloj kaj aliraj permesoj'
@@ -733,12 +733,12 @@ eo:
     has_many_Versions: Versioj
   VersionedGridFieldItemRequest:
     ARCHIVE: Arkivo
-    Archived: 'Enarkivigis %s %s'
+    Archived: 'Enarkivigis {type} {title}'
     BUTTONARCHIVEDESC: 'Malpublikigi kaj sendi al arkivo'
     BUTTONPUBLISH: Publikigi
     BUTTONUNPUBLISH: Malpublikigi
     BUTTONUNPUBLISHDESC: 'Forigi ĉi tiun paĝon de la publikigita retejo'
     Published: 'Publikigita {name} {link}'
-    Unpublished: 'Malpublikigita %s %s'
+    Unpublished: 'Malpublikigita {type} {title}'
   i18n:
     PLURAL: '{number} {form}'

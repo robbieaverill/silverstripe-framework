@@ -27,6 +27,9 @@ class GroupImportForm extends Form
     public function __construct($controller, $name, $fields = null, $actions = null, $validator = null)
     {
         if (!$fields) {
+            $importer = new GroupCsvBulkLoader();
+            $importSpec = $importer->getImportSpec();
+
             $helpHtml = _t(
                 'GroupImportForm.Help1',
                 '<p>Import one or more groups in <em>CSV</em> format (comma-separated values).'
@@ -37,19 +40,18 @@ class GroupImportForm extends Form
                 '<div class="advanced">'
                 . '<h4>Advanced usage</h4>'
                 . '<ul>'
-                . '<li>Allowed columns: <em>%s</em></li>'
+                . '<li>Allowed columns: <em>{allowed}</em></li>'
                 . '<li>Existing groups are matched by their unique <em>Code</em> value, and updated with any new values from the '
                 . 'imported file</li>'
                 . '<li>Group hierarchies can be created by using a <em>ParentCode</em> column.</li>'
                 . '<li>Permission codes can be assigned by the <em>PermissionCode</em> column. Existing permission codes are not '
                 . 'cleared.</li>'
                 . '</ul>'
-                . '</div>'
+                . '</div>',
+                [
+                    'allowed' => implode(', ', array_keys($importSpec['fields']))
+                ]
             );
-
-            $importer = new GroupCsvBulkLoader();
-            $importSpec = $importer->getImportSpec();
-            $helpHtml = sprintf($helpHtml, implode(', ', array_keys($importSpec['fields'])));
 
             $fields = new FieldList(
                 new LiteralField('Help', $helpHtml),
@@ -99,14 +101,14 @@ class GroupImportForm extends Form
         if ($result->UpdatedCount()) {
             $msgArr[] = _t(
                 'GroupImportForm.ResultUpdated',
-                'Updated %d groups',
+                'Updated {count} groups',
                 array('count' => $result->UpdatedCount())
             );
         }
         if ($result->DeletedCount()) {
             $msgArr[] = _t(
                 'GroupImportForm.ResultDeleted',
-                'Deleted %d groups',
+                'Deleted {count} groups',
                 array('count' => $result->DeletedCount())
             );
         }

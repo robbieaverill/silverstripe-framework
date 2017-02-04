@@ -119,7 +119,7 @@ sv:
     MAXIMUM: 'Lösenord får som längst vara {max} tecken långa.'
     SHOWONCLICKTITLE: 'Ändra lösenord'
   ContentController:
-    DRAFT_SITE_ACCESS_RESTRICTION: 'Du måste logga med ditt CMS-lösenord för att kunna se utkast och arkiverat material. <a href="%s">Klicka här för att gå tillbaks till den publicerade sajten.</a>'
+    DRAFT_SITE_ACCESS_RESTRICTION: 'Du måste logga med ditt CMS-lösenord för att kunna se utkast och arkiverat material. <a href="{link}">Klicka här för att gå tillbaks till den publicerade sajten.</a>'
     NOTLOGGEDIN: 'Inte inloggad'
   CreditCardField:
     FIRST: första
@@ -217,7 +217,7 @@ sv:
     VALIDATOR: Validator
     VALIDCURRENCY: 'Var vänlig ange en korrekt valuta'
   FormField:
-    Example: 't.ex. %s'
+    Example: 't.ex. {format}'
     NONE: ingen
   GridAction:
     DELETE_DESCRIPTION: Radera
@@ -230,7 +230,7 @@ sv:
     Find: Hitta
     LEVELUP: 'Upp en nivå'
     LinkExisting: 'Länk finns'
-    NewRecord: 'Ny %s'
+    NewRecord: 'Ny {type}'
     NoItemsFound: 'Inget hittades'
     PRINTEDAT: Utskrivet
     PRINTEDBY: 'Utskrivet av'
@@ -246,7 +246,7 @@ sv:
     Create: Skapa
     Delete: Radera
     DeletePermissionsFailure: 'Rättighet för att radera saknas'
-    Deleted: 'Raderade %s %s'
+    Deleted: 'Raderade {type} {name}'
     Save: Spara
     Saved: 'Sparade {name} {link}'
   GridFieldEditButton_ss:
@@ -260,7 +260,7 @@ sv:
     DefaultGroupTitleContentAuthors: Författare
     Description: Beskrivning
     GroupReminder: 'Om du väljer en förälder till gruppen så kommer gruppen ärva alla förälderns roller'
-    HierarchyPermsError: 'Den överordnade gruppen "%s" kan inte ges priviligerad tillgång (adminrättigheter krävs)'
+    HierarchyPermsError: 'Den överordnade gruppen "{group}" kan inte ges priviligerad tillgång (adminrättigheter krävs)'
     Locked: 'Låst?'
     NoRoles: 'Inga roller fun'
     PLURALNAME: Grupper
@@ -272,10 +272,10 @@ sv:
     many_many_Members: Medlemmar
   GroupImportForm:
     Help1: '<p>Importera en eller flera grupper i <em>CSV</em>- format (komma-separerade värden). <small><a href="#" class ="toggle-advanced">Visa avancerade val</a></small></p>'
-    Help2: '<div class="advanced"><h4>Avancerat</h4><ul><li>Tillåtna kolumner: <em>%s</em></li><li>Existerade användare matchas av deras unika <em>kod</em>-attribut och uppdateras med alla nya värden från den importerade filen</li><li>Gruppnivåer kan skapas genom att använda <em>huvudkod</em> kolumnen.</il><il>Behörighetskoder kan tilldelas av <em>BehörighetsKod</em> kolomnen. Befintliga behörighetskoder raderas inte.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Avancerat</h4><ul><li>Tillåtna kolumner: <em>{allowed}</em></li><li>Existerade användare matchas av deras unika <em>kod</em>-attribut och uppdateras med alla nya värden från den importerade filen</li><li>Gruppnivåer kan skapas genom att använda <em>huvudkod</em> kolumnen.</il><il>Behörighetskoder kan tilldelas av <em>BehörighetsKod</em> kolomnen. Befintliga behörighetskoder raderas inte.</li></ul></div>'
     ResultCreated: 'Skapade {count} grupper'
-    ResultDeleted: 'Raderade %d grupper'
-    ResultUpdated: 'Uppdaterade %d grupper'
+    ResultDeleted: 'Raderade {count} grupper'
+    ResultUpdated: 'Uppdaterade {count} grupper'
   Hierarchy:
     InfiniteLoopNotAllowed: 'Oändlig loop hittades i hierarkin "{type}". Var vänlig ändra föräldern för att lösa detta'
   HtmlEditorField:
@@ -421,9 +421,9 @@ sv:
     Toggle: 'Visa fomateringshjälp'
   MemberImportForm:
     Help1: '<p>Importera användare i <em>CSV-format</em> (kommaseparerade värden). <small><a href="#" class="toggle-advanced">Visa avancerat</a></small></p>'
-    Help2: '<div class="advanced"><h4>Avancerat</h4><ul><li>Tillåtna kolumner: <em>%s</em></li><li>Existerade användare matchas av deras unika <em>kod</em>-attribut och uppdateras med alla nya värden från den importerade filen</li><li>Grupper kan anges i <em>Grupp</em>-kolumnen. Grupper identiferas av deras <em>Kod</em>-attribut. Anges flera grupper separeras dessa med kommatecken. Existerande användarrättigheter till grupperna tas inte bort.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Avancerat</h4><ul><li>Tillåtna kolumner: <em>{allowed}</em></li><li>Existerade användare matchas av deras unika <em>kod</em>-attribut och uppdateras med alla nya värden från den importerade filen</li><li>Grupper kan anges i <em>Grupp</em>-kolumnen. Grupper identiferas av deras <em>Kod</em>-attribut. Anges flera grupper separeras dessa med kommatecken. Existerande användarrättigheter till grupperna tas inte bort.</li></ul></div>'
     ResultCreated: 'Skapade {count} medlemmar'
-    ResultDeleted: 'Raderade %d medlemmar'
+    ResultDeleted: 'Raderade {count} medlemmar'
     ResultNone: 'Inga ändringar'
     ResultUpdated: 'Uppdaterade {count} medlemmar'
   MemberPassword:
@@ -444,9 +444,9 @@ sv:
     UPDATEDRECORDS: 'Uppdaterade {count} poster.'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: Databaskolumner
-    IMPORTSPECLINK: 'Visa specifikation för %s'
+    IMPORTSPECLINK: 'Visa specifikation för {model}'
     IMPORTSPECRELATIONS: Relationer
-    IMPORTSPECTITLE: 'Specifikation för %s'
+    IMPORTSPECTITLE: 'Specifikation för {model}'
   ModelAdmin_Tools_ss:
     FILTER: 'Filtrera på'
     IMPORT: Importera
@@ -464,9 +464,9 @@ sv:
     Page: Sida
     View: Visa
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Var god och stärk ditt lösenord genom att lägga till något av följande tecken: %s'
+    LOWCHARSTRENGTH: 'Var god och stärk ditt lösenord genom att lägga till något av följande tecken: {chars}'
     PREVPASSWORD: 'Du har redan använt samma lösenord tidigare, var god och välj ett nytt lösenord'
-    TOOSHORT: 'Lösenordet är för kort, det måste innehålla %s eller fler tecken.'
+    TOOSHORT: 'Lösenordet är för kort, det måste innehålla {minimum} eller fler tecken.'
   Permission:
     AdminGroup: Administratör
     CMS_ACCESS_CATEGORY: CMS-åtkomst
@@ -478,7 +478,7 @@ sv:
     AssignedTo: 'tilldelad till "{title}"'
     FromGroup: 'ärvde från grupp "{title}"'
     FromRole: 'ärvde från roll "{title}"'
-    FromRoleOnGroup: 'ärvt från roll "%s" i grupp "%s"'
+    FromRoleOnGroup: 'ärvt från roll "{roletitle}" i grupp "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Endast administratörer kan tillämpa denna roll'
     PLURALNAME: Roller
@@ -486,7 +486,7 @@ sv:
     Title: Rollnamn
   PermissionRoleCode:
     PLURALNAME: 'Kod för rollrättigheter'
-    PermsError: 'Koden "%s" kan inte ges privilegierad tillgång (adminrättigheter krävs)'
+    PermsError: 'Koden "{code}" kan inte ges privilegierad tillgång (adminrättigheter krävs)'
     SINGULARNAME: 'Kodför rollrättigheter'
   Permissions:
     PERMISSIONS_CATEGORY: 'Roller och åtkomsträttigheter'

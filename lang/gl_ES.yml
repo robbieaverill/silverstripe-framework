@@ -98,7 +98,7 @@ gl_ES:
     Filter: Filtro
     Find: Atopar
     LinkExisting: 'Ligazón existente'
-    NewRecord: 'Novo %s'
+    NewRecord: 'Novo {type}'
     NoItemsFound: 'Ningún elemento atopado'
     PRINTEDAT: 'Impreso ás'
     PRINTEDBY: 'Impreso por'
@@ -119,8 +119,8 @@ gl_ES:
     has_many_Permissions: Permisos
   GroupImportForm:
     Help1: '<p>Importar un ou máis grupos no formato <em>CSV</em>  (valores separados por comas). <small><a href="#" class="toggle-advanced">Amosar uso avanzado</a></small></p>'
-    ResultDeleted: 'Eliminados %d grupos'
-    ResultUpdated: 'Actualizados %d grupos'
+    ResultDeleted: 'Eliminados {count} grupos'
+    ResultUpdated: 'Actualizados {count} grupos'
   HtmlEditorField:
     ANCHORVALUE: Áncora
     BUTTONINSERT: Inserir
@@ -214,7 +214,7 @@ gl_ES:
     TWODIGITYEAR: 'Dous díxitos ano'
   MemberImportForm:
     Help1: '<p>Importar usuarios en <em>formato CSV</em> (valores separados por comas). <small><a href="#" class="toggle-advanced">Amosar uso avanzado</a></small></p>'
-    ResultDeleted: 'Eliminados %d membros'
+    ResultDeleted: 'Eliminados {count} membros'
     ResultNone: 'Sen cambios'
   MemberTableField:
     APPLY_FILTER: 'Aplicar Filtro'
@@ -235,7 +235,7 @@ gl_ES:
     FULLADMINRIGHTS: 'Todos os dereitos administrativos'
     FULLADMINRIGHTS_HELP: 'Implica e anula todos os outros permisos asinados.'
   PermissionCheckboxSetField:
-    FromRoleOnGroup: 'herdado do role "%s" sobre o grupo "%s"'
+    FromRoleOnGroup: 'herdado do role "{roletitle}" sobre o grupo "{grouptitle}"'
   Permissions:
     PERMISSIONS_CATEGORY: 'Roles e permisos de acceso'
   PhoneNumberField:

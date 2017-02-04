@@ -143,7 +143,7 @@ fa_IR:
     MAXIMUM: 'گذرواژه باید حداکثر {max} کاراکتر باشد.'
     SHOWONCLICKTITLE: 'تغییر گذرواژه'
   ContentController:
-    DRAFT_SITE_ACCESS_RESTRICTION: 'برای نمایش پیش‌نویس یا محتوای آرشیو شده باید با گذرواژه سی‌ام‌اس خود وارد شوید. <a href="%s">اینجا را کلیک کنید</a> تا به سایت منتشر‌شده بازگردید.'
+    DRAFT_SITE_ACCESS_RESTRICTION: 'برای نمایش پیش‌نویس یا محتوای آرشیو شده باید با گذرواژه سی‌ام‌اس خود وارد شوید. <a href="{link}">اینجا را کلیک کنید</a> تا به سایت منتشر‌شده بازگردید.'
     NOTLOGGEDIN: 'وارد نشده'
   CreditCardField:
     FIRST: نخست
@@ -243,7 +243,7 @@ fa_IR:
     VALIDATOR: اعتبارسنج
     VALIDCURRENCY: 'لطفاً یک واحد پول معتبر وارد نمایید'
   FormField:
-    Example: 'به‌طور مثال %s'
+    Example: 'به‌طور مثال {format}'
     NONE: 'هیچ‌کدام'
   GridAction:
     DELETE_DESCRIPTION: حذف
@@ -256,7 +256,7 @@ fa_IR:
     Find: بگرد
     LEVELUP: 'سطح بالایی'
     LinkExisting: 'لینک موجود'
-    NewRecord: '%s جدید'
+    NewRecord: '{type} جدید'
     NoItemsFound: 'هیچ آیتمی یافت نشد'
     PRINTEDAT: 'پرینت‌شده در'
     PRINTEDBY: 'پرینت‌شده توسط'
@@ -272,7 +272,7 @@ fa_IR:
     Create: ایجاد
     Delete: حذف
     DeletePermissionsFailure: 'دسترسی‌های حذف وجود ندارد'
-    Deleted: 'حذف شده %s %s'
+    Deleted: 'حذف شده {type} {name}'
     Save: ذخیره
     Saved: 'ذخیره‌شده {name} {link}'
   GridFieldEditButton_ss:
@@ -286,7 +286,7 @@ fa_IR:
     DefaultGroupTitleContentAuthors: 'نویسندگان مطالب'
     Description: توضحیات
     GroupReminder: 'اگر یک گروه مادر را برگزینید،‌ این گروه تمامی وظایف آن را می‌پذیرد'
-    HierarchyPermsError: 'با دسترسی‌های داده‌شده نمی‌توان گروه مادر "%s" را تخصیص داد (نیازمند دسترسی مدید ارشد)'
+    HierarchyPermsError: 'با دسترسی‌های داده‌شده نمی‌توان گروه مادر "{group}" را تخصیص داد (نیازمند دسترسی مدید ارشد)'
     Locked: قفل‌شده؟
     NoRoles: 'هیچ وظیفه‌ای پیدا نشد'
     PLURALNAME: گروه‌ها
@@ -299,8 +299,8 @@ fa_IR:
   GroupImportForm:
     Help1: '<p>یک یا چند گروه را در قالب <em>CSV</em> وارد کنید (مقادیر جدا شده با ویرگول). <small><a href="#" class="toggle-advanced">نمایش کاربری پیشرفته</a></small></p>'
     ResultCreated: '{count} گروه ایجاد شده'
-    ResultDeleted: 'گروه‌های %d حذف شد'
-    ResultUpdated: 'گروه‌های %d به‌روز شد'
+    ResultDeleted: 'گروه‌های {count} حذف شد'
+    ResultUpdated: 'گروه‌های {count} به‌روز شد'
   HTMLEditorField:
     ANCHORSCANNOTACCESSPAGE: 'شما مجاز به دسترسی به محتوای صفحه هدف نیستید.'
     ANCHORSPAGENOTFOUND: 'صفحه‌ی هدف پیدا نشد.'
@@ -465,7 +465,7 @@ fa_IR:
     Toggle: 'نمایش راهنمای قالب‌بندی'
   MemberImportForm:
     ResultCreated: 'ایجاد {count} عضو'
-    ResultDeleted: 'کاربر %d حذف شد'
+    ResultDeleted: 'کاربر {count} حذف شد'
     ResultNone: 'تغییری ایجاد نشد'
     ResultUpdated: 'به‌روز‌رسانی {count} عضو'
   MemberPassword:
@@ -486,8 +486,8 @@ fa_IR:
     UPDATEDRECORDS: 'به‌روز‌رسانی {count} رکورد'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'ستون‌های پایگاه داده'
-    IMPORTSPECLINK: 'نمایش مشخصات برای %s'
-    IMPORTSPECTITLE: 'مشخصات برای %s'
+    IMPORTSPECLINK: 'نمایش مشخصات برای {model}'
+    IMPORTSPECTITLE: 'مشخصات برای {model}'
   ModelAdmin_Tools_ss:
     FILTER: پالایش
     IMPORT: 'وارد کردن'
@@ -503,7 +503,7 @@ fa_IR:
     Page: صفحه
     View: 'نمایش'
   PasswordValidator:
-    TOOSHORT: 'گذرواژه بسیار کوتاه است، باید %s کاراکتر یا بیشتر باشد'
+    TOOSHORT: 'گذرواژه بسیار کوتاه است، باید {minimum} کاراکتر یا بیشتر باشد'
   Permission:
     AdminGroup: 'مدیر کل'
     CMS_ACCESS_CATEGORY: 'دسترسی CMS'

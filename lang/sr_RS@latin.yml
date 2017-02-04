@@ -176,7 +176,7 @@ sr_RS@latin:
     VALIDATOR: 'Proverivač ispravnosti'
     VALIDCURRENCY: 'Unesite ispravnu valutu'
   FormField:
-    Example: 'npr. %s'
+    Example: 'npr. {format}'
     NONE: bez
   GridAction:
     DELETE_DESCRIPTION: Izbriši
@@ -189,7 +189,7 @@ sr_RS@latin:
     Find: Pronađi
     LEVELUP: 'Nivo iznad'
     LinkExisting: 'Postojanje linka'
-    NewRecord: 'Novi %s'
+    NewRecord: 'Novi {type}'
     NoItemsFound: 'Nijedna stavka nije pronađena'
     PRINTEDAT: Odštampano
     PRINTEDBY: Odštampao
@@ -205,7 +205,7 @@ sr_RS@latin:
     Create: Kreiraj
     Delete: Izbriši
     DeletePermissionsFailure: 'Nemate pravo brisanja'
-    Deleted: 'Izbrisano %s %s'
+    Deleted: 'Izbrisano {type} {name}'
     Save: Sačuvaj
     Saved: 'Sačuvano {name} {link}'
   GridFieldEditButton_ss:
@@ -219,7 +219,7 @@ sr_RS@latin:
     DefaultGroupTitleContentAuthors: 'Autori sadržaja'
     Description: Opis
     GroupReminder: 'Ako izaberete roditeljsku grupu, ova grupa će preuzeti sve njene uloge'
-    HierarchyPermsError: 'Nije moguće dodeliti roditeljsku grupu "%s" sa privilegovanim dozvolama (zahteva Administratorski pristup)'
+    HierarchyPermsError: 'Nije moguće dodeliti roditeljsku grupu "{group}" sa privilegovanim dozvolama (zahteva Administratorski pristup)'
     Locked: 'Zaključano?'
     NoRoles: 'Uloge nisu pronađene'
     PLURALNAME: Grupe
@@ -232,8 +232,8 @@ sr_RS@latin:
   GroupImportForm:
     Help1: '<p>Uvezi jednu ili više grupa u <em>CSV</em> formatu (zarezima razdvojene vrednosti). <small><a href="#" class="toggle-advanced">Prikaži napredno korišćenje</a></small></p>'
     ResultCreated: 'Kreirano {count} grupa'
-    ResultDeleted: 'Izbrisao %d grupa'
-    ResultUpdated: 'Ažurirano %d grupa'
+    ResultDeleted: 'Izbrisao {count} grupa'
+    ResultUpdated: 'Ažurirano {count} grupa'
   Hierarchy:
     InfiniteLoopNotAllowed: 'Otkrivena je beskonačna petlja u okviru "{type}" hijerarhije. Promenite roditelja da bi ste razrešili situaciju'
   HtmlEditorField:
@@ -372,7 +372,7 @@ sr_RS@latin:
   MemberImportForm:
     Help1: '<p>Uvezi korisnike u <em>CSV</em> formatu (zarezima razdvojene vrednosti). <small><a href="#" class="toggle-advanced">Prikaži napredno korišćenje</a></small></p>'
     ResultCreated: 'Kreirano {count} članova'
-    ResultDeleted: 'Izbrisano %d članova'
+    ResultDeleted: 'Izbrisano {count} članova'
     ResultNone: 'Bez promena'
     ResultUpdated: 'Ažurirano {count} članova'
   MemberPassword:
@@ -393,9 +393,9 @@ sr_RS@latin:
     UPDATEDRECORDS: 'Ažurirano {count} zapisa'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'Kolone baze podataka'
-    IMPORTSPECLINK: 'Prikaži specifikaciju za %s'
+    IMPORTSPECLINK: 'Prikaži specifikaciju za {model}'
     IMPORTSPECRELATIONS: Relacije
-    IMPORTSPECTITLE: 'Specifikacija za %s'
+    IMPORTSPECTITLE: 'Specifikacija za {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filter
     IMPORT: Uvezi
@@ -413,9 +413,9 @@ sr_RS@latin:
     Page: Stranica
     View: Pregled
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Pojačajte lozinku dodavanjem nekih od sledećih znakova: %s'
+    LOWCHARSTRENGTH: 'Pojačajte lozinku dodavanjem nekih od sledećih znakova: {chars}'
     PREVPASSWORD: 'Već ste koristili navedenu lozinku u prošlosti. Stoga, izaberite drugu lozinku'
-    TOOSHORT: 'Lozinka je prekratka. Lozinka mora sadržati bar %s znakova'
+    TOOSHORT: 'Lozinka je prekratka. Lozinka mora sadržati bar {minimum} znakova'
   Permission:
     AdminGroup: Administrator
     CMS_ACCESS_CATEGORY: 'Pristup CMS-u'
@@ -427,14 +427,14 @@ sr_RS@latin:
     AssignedTo: 'dodeljeno "{title}"'
     FromGroup: 'nasleđeno od grupe "{title}"'
     FromRole: 'nasleđeno od uloge "{title}"'
-    FromRoleOnGroup: 'nasleđeno iz uloge "%s" za grupu "%s"'
+    FromRoleOnGroup: 'nasleđeno iz uloge "{roletitle}" za grupu "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Može primenjivati samo administrator'
     PLURALNAME: Uloge
     SINGULARNAME: Uloga
     Title: Naslov
   PermissionRoleCode:
-    PermsError: 'Nije moguće dodeliti kôd  "%s" sa privilegovanim dozvolama (zahteva Administratorski pristup)'
+    PermsError: 'Nije moguće dodeliti kôd  "{code}" sa privilegovanim dozvolama (zahteva Administratorski pristup)'
     SINGULARNAME: 'Kôd uloge za dozvole'
   Permissions:
     PERMISSIONS_CATEGORY: 'Uloge i prava pristupa'

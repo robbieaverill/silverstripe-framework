@@ -120,7 +120,7 @@ es_MX:
     Find: Buscar
     LEVELUP: 'Subir de nivel'
     LinkExisting: 'Enlazar existente'
-    NewRecord: 'Nuevo %s'
+    NewRecord: 'Nuevo {type}'
     NoItemsFound: 'No hay ítems encontrados'
     PRINTEDAT: 'Impreso en'
     PRINTEDBY: 'Imprimir por'
@@ -144,8 +144,8 @@ es_MX:
     many_many_Members: Miembros
   GroupImportForm:
     Help1: '<p>Importar usuarios en <em>formato CSV</em> (valores separados por comas). <small><a href="#" class="toggle-advanced">Mostrar uso avanzado</a></small></p>\n'
-    ResultDeleted: '%d grupos eliminados'
-    ResultUpdated: '%d grupos actualizados'
+    ResultDeleted: '{count} grupos eliminados'
+    ResultUpdated: '{count} grupos actualizados'
   HtmlEditorField:
     ANCHORVALUE: Anclar
     BUTTONINSERT: Insertar
@@ -243,7 +243,7 @@ es_MX:
     TWODIGITYEAR: 'Año en 2 dígitos'
   MemberImportForm:
     Help1: '<p>Importar usurious en <em>format CSV</em> (valores separados por comas). <small><a href="#" class="toggle-advanced">Mostrar uso avanzado</a></small></p>\n'
-    ResultDeleted: '%d miembros eliminados'
+    ResultDeleted: '{count} miembros eliminados'
     ResultNone: 'Sin cambios'
   MemberTableField:
     APPLY_FILTER: Filtro
@@ -270,7 +270,7 @@ es_MX:
     FULLADMINRIGHTS: 'Privilegios administrativos completos'
     FULLADMINRIGHTS_HELP: 'Implica y anula todos los demás permisos asignados.'
   PermissionCheckboxSetField:
-    FromRoleOnGroup: 'heredado del rol "%s" en el grupo "%s"'
+    FromRoleOnGroup: 'heredado del rol "{roletitle}" en el grupo "{grouptitle}"'
   Permissions:
     PERMISSIONS_CATEGORY: 'Roles y permisos de acceso'
   PhoneNumberField:

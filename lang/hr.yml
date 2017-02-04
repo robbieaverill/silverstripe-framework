@@ -191,7 +191,7 @@ hr:
     Create: Kreiraj
     Delete: Obriši
     DeletePermissionsFailure: 'Nema dozvole brisanja'
-    Deleted: 'Obrisano %s %s'
+    Deleted: 'Obrisano {type} {name}'
     Save: Spremi
     Saved: 'Spremljeno {name} {link}'
   GridFieldEditButton_ss:

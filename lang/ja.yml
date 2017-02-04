@@ -174,7 +174,7 @@ ja:
     VALIDATOR: 検証
     VALIDCURRENCY: '有効な通貨を入力してください'
   FormField:
-    Example: '例 %s'
+    Example: '例 {format}'
     NONE: 何もありません
   GridAction:
     DELETE_DESCRIPTION: 削除
@@ -187,7 +187,7 @@ ja:
     Find: 探す
     LEVELUP: レベルアップ
     LinkExisting: 既存のリンク
-    NewRecord: 新しい%s
+    NewRecord: 新しい{type}
     NoItemsFound: '項目が見つかりませんでした'
     PRINTEDAT: で印刷
     PRINTEDBY: によって印刷
@@ -203,7 +203,7 @@ ja:
     Create: 作成
     Delete: 削除
     DeletePermissionsFailure: 削除権限がありません
-    Deleted: '削除済み %s %s'
+    Deleted: '削除済み {type} {name}'
     Save: 保存
     Saved: '保存 {name} {link}'
   GridFieldEditButton_ss:
@@ -229,8 +229,8 @@ ja:
   GroupImportForm:
     Help1: '<p><em>CSV</em>フォーマット(カンマ区切り)から一つ以上のグループを取り込みます。<small><a href="#" class="toggle-advanced">高度な利用法について表示</a></small></p>'
     ResultCreated: '{count} グループを作成しました'
-    ResultDeleted: '%dグループを削除しました'
-    ResultUpdated: '%dグループを更新しました'
+    ResultDeleted: '{count}グループを削除しました'
+    ResultUpdated: '{count}グループを更新しました'
   Hierarchy:
     InfiniteLoopNotAllowed: '無限ループが"{型}"階層内で見つかりました。　これを解決するために親を変更してください。'
   HtmlEditorField:
@@ -369,7 +369,7 @@ ja:
   MemberImportForm:
     Help1: '<p><em>CSVフォーマット</em>(コンマ区切り)でユーザーを取り込みます。 <small><a href="#" class="toggle-advanced">高度な利用方法を表示</a></small></p>'
     ResultCreated: '{count}メンバーを作成しました'
-    ResultDeleted: '%d人のメンバーを削除しました'
+    ResultDeleted: '{count}人のメンバーを削除しました'
     ResultNone: 変更なし
     ResultUpdated: '{count}メンバーを更新しました'
   MemberPassword:
@@ -390,9 +390,9 @@ ja:
     UPDATEDRECORDS: '{count}レコードを更新しました。'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'データベースカラム'
-    IMPORTSPECLINK: '%s の仕様を表示する'
+    IMPORTSPECLINK: '{model} の仕様を表示する'
     IMPORTSPECRELATIONS: 関連
-    IMPORTSPECTITLE: '%s の仕様'
+    IMPORTSPECTITLE: '{model} の仕様'
   ModelAdmin_Tools_ss:
     FILTER: フィルタ
     IMPORT: 取り込み
@@ -410,7 +410,7 @@ ja:
     Page: ページ
     View: 閲覧
   PasswordValidator:
-    LOWCHARSTRENGTH: '次の文字のいくつかを追加してパスワードを強化してください: %s'
+    LOWCHARSTRENGTH: '次の文字のいくつかを追加してパスワードを強化してください: {chars}'
     PREVPASSWORD: 'このパスワードは過去に使用されています、新しいパスワードを選択してください'
     TOOSHORT: パスワードが短すぎます、%文字以上でなければなりません
   Permission:
@@ -424,7 +424,7 @@ ja:
     AssignedTo: '"{title}" に割り当てられた'
     FromGroup: 'グループ"{title}"から継承'
     FromRole: '役割"{title}"から継承'
-    FromRoleOnGroup: 'グループ "%s" のロール "%s"から継承'
+    FromRoleOnGroup: 'グループ "{roletitle}" のロール "{grouptitle}"から継承'
   PermissionRole:
     OnlyAdminCanApply: '管理者のみ適用可能'
     PLURALNAME: 役割

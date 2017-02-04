@@ -126,7 +126,7 @@ de:
     MAXIMUM: 'Passwörter dürfen maximal {max} Zeichen lang sein.'
     SHOWONCLICKTITLE: 'Passwort ändern'
   ContentController:
-    DRAFT_SITE_ACCESS_RESTRICTION: 'Sie müssen sich mit dem CMS-Passwort anmelden, um unveröffentlichte oder archivierte Seiten sehen zu können. <a href="%s">Zur veröffentlichten Seite.</a>'
+    DRAFT_SITE_ACCESS_RESTRICTION: 'Sie müssen sich mit dem CMS-Passwort anmelden, um unveröffentlichte oder archivierte Seiten sehen zu können. <a href="{link}">Zur veröffentlichten Seite.</a>'
     NOTLOGGEDIN: 'Nicht eingeloggt'
   CreditCardField:
     FIRST: erste
@@ -229,7 +229,7 @@ de:
     VALIDATOR: Prüfer
     VALIDCURRENCY: 'Bitte geben Sie einen korrekten Betrag ein'
   FormField:
-    Example: 'z.B. %s'
+    Example: 'z.B. {format}'
     NONE: keine
   GridAction:
     DELETE_DESCRIPTION: Löschen
@@ -242,7 +242,7 @@ de:
     Find: Suchen
     LEVELUP: 'Eine Ebene hoch'
     LinkExisting: 'Bestehenden Datensatz verknüpfen'
-    NewRecord: 'Neue(r) %s'
+    NewRecord: 'Neue(r) {type}'
     NoItemsFound: 'Keine Elemente gefunden'
     PRINTEDAT: 'Gedruckt am'
     PRINTEDBY: 'Gedruckt von'
@@ -258,7 +258,7 @@ de:
     Create: Erstellen
     Delete: Löschen
     DeletePermissionsFailure: 'Keine Berechtigungen zum löschen'
-    Deleted: 'Gelöscht %s %s'
+    Deleted: 'Gelöscht {type} {name}'
     Save: Speichern
     Saved: '{name} {link} gespeichert'
   GridFieldEditButton_ss:
@@ -272,7 +272,7 @@ de:
     DefaultGroupTitleContentAuthors: Inhaltsautoren
     Description: Beschreibung
     GroupReminder: 'Diese Gruppe übernimmt automatisch die Rollen der Elterngruppe'
-    HierarchyPermsError: 'Kann Berechtigungen der Eltern-Gruppe "%s" nicht hinzufügen (erfordert Administratorrechte)'
+    HierarchyPermsError: 'Kann Berechtigungen der Eltern-Gruppe "{group}" nicht hinzufügen (erfordert Administratorrechte)'
     Locked: 'Gesperrt?'
     NoRoles: 'Keine Rollen gefunden'
     PLURALNAME: Gruppen
@@ -284,10 +284,10 @@ de:
     many_many_Members: Mitglieder
   GroupImportForm:
     Help1: '<p>Eine oder mehrere Gruppen im <em>CSV</em>-Format (kommaseparierte Werte) importieren. <small><a href="#" class="toggle-advanced">Erweiterte Nutzung</a></small></p>'
-    Help2: '<div class="advanced"><h4>Erweiterte Benutzung</h4><ul><li>Gültige Spalten: <em>%s</em></li><li>Bereits existierende Gruppen werden anhand ihres eindeutigen <em>Code</em> identifiziert und um neue Einträge aus der Importdatei erweitert.</li><li>Gruppenhierarchien können mittels der Spalte <em>ParentCode</em> erstellt werden.</li><li>Berechtigungen können in der Spalte <em>PermissionCode</em> hinzugefügt werden. Schon zugewiesene Berechtigungen werden nicht entfernt.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Erweiterte Benutzung</h4><ul><li>Gültige Spalten: <em>{allowed}</em></li><li>Bereits existierende Gruppen werden anhand ihres eindeutigen <em>Code</em> identifiziert und um neue Einträge aus der Importdatei erweitert.</li><li>Gruppenhierarchien können mittels der Spalte <em>ParentCode</em> erstellt werden.</li><li>Berechtigungen können in der Spalte <em>PermissionCode</em> hinzugefügt werden. Schon zugewiesene Berechtigungen werden nicht entfernt.</li></ul></div>'
     ResultCreated: '{count} Gruppe(n) wurden erstellt'
-    ResultDeleted: '%d Gruppe(n) gelöscht'
-    ResultUpdated: '%d Gruppe(n) aktualisiert'
+    ResultDeleted: '{count} Gruppe(n) gelöscht'
+    ResultUpdated: '{count} Gruppe(n) aktualisiert'
   HTMLEditorField:
     ANCHORSCANNOTACCESSPAGE: 'Sie haben keine Berechtigungen, den Inhalt dieser Seite zu sehen.'
     ANCHORSPAGENOTFOUND: 'Zielseite nicht gefunden'
@@ -481,9 +481,9 @@ de:
     Toggle: 'Hilfe zur Formatierung anzeigen'
   MemberImportForm:
     Help1: '<p>Mitglieder im <em>CSV</em>-Format (kommaseparierte Werte) importieren. <small><a href="#" class="toggle-advanced">Erweiterte Nutzung</a></small></p>'
-    Help2: '<div class="advanced"><h4>Erweiterte Benutzung</h4><ul><li>Gültige Spalten: <em>%s</em></li><li>Bereits existierende Benutzer werden anhand ihres eindeutigen <em>Code</em> identifiziert und um neue Einträge aus der Importdatei erweitert.</li><li>Gruppen können in der Spalte <em>Gruppen</em> hinzugefügt werden. Gruppen werden anhand ihres <em>Code</em> erkannt. Mehrere Gruppen werden Komma-separiert eingetragen. Schon zugewiesene Gruppen werden nicht entfernt.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Erweiterte Benutzung</h4><ul><li>Gültige Spalten: <em>{allowed}</em></li><li>Bereits existierende Benutzer werden anhand ihres eindeutigen <em>Code</em> identifiziert und um neue Einträge aus der Importdatei erweitert.</li><li>Gruppen können in der Spalte <em>Gruppen</em> hinzugefügt werden. Gruppen werden anhand ihres <em>Code</em> erkannt. Mehrere Gruppen werden Komma-separiert eingetragen. Schon zugewiesene Gruppen werden nicht entfernt.</li></ul></div>'
     ResultCreated: '{count} Mitglied(er) wurde(n) erstellt'
-    ResultDeleted: '%d Mitglied(er) gelöscht'
+    ResultDeleted: '{count} Mitglied(er) gelöscht'
     ResultNone: 'Keine Änderungen'
     ResultUpdated: '{count} Mitglied(er) wurde(n) aktualisiert'
   MemberPassword:
@@ -504,9 +504,9 @@ de:
     UPDATEDRECORDS: '{count} Einträge wurden aktualisiert'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: Datenbankspalten
-    IMPORTSPECLINK: 'Beschreibung von %s anzeigen'
+    IMPORTSPECLINK: 'Beschreibung von {model} anzeigen'
     IMPORTSPECRELATIONS: Relationen
-    IMPORTSPECTITLE: 'Beschreibung von %s'
+    IMPORTSPECTITLE: 'Beschreibung von {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filter
     IMPORT: Importieren
@@ -524,9 +524,9 @@ de:
     Page: Seite
     View: Anzeigen
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Bitte erhöhen Sie die Sicherheit des Passworts, indem Sie auch einige der folgenden Zeichen verwenden: %s'
+    LOWCHARSTRENGTH: 'Bitte erhöhen Sie die Sicherheit des Passworts, indem Sie auch einige der folgenden Zeichen verwenden: {chars}'
     PREVPASSWORD: 'Sie haben dieses Passwort schon einmal verwendet. Bitte wählen Sie ein neues Passwort'
-    TOOSHORT: 'Das Passwort ist zu kurz, es muss mindestens %s Zeichen lang sein'
+    TOOSHORT: 'Das Passwort ist zu kurz, es muss mindestens {minimum} Zeichen lang sein'
   Permission:
     AdminGroup: Administrator
     CMS_ACCESS_CATEGORY: 'CMS Zugriff'
@@ -538,7 +538,7 @@ de:
     AssignedTo: 'Zugewiesen an "{title}"'
     FromGroup: 'abgeleited von Gruppe "{title}"'
     FromRole: 'abgeleited von Rolle "{title}"'
-    FromRoleOnGroup: 'geerbt von Rolle "%s" für die Gruppe "%s"'
+    FromRoleOnGroup: 'geerbt von Rolle "{roletitle}" für die Gruppe "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Nur Adminstratoren können beitreten'
     PLURALNAME: Rollen
@@ -546,7 +546,7 @@ de:
     Title: Titel
   PermissionRoleCode:
     PLURALNAME: Berechtigungsrollencodes
-    PermsError: 'Kann Berechtigungen dem Code "%s" nicht hinzufügen (erfordert Administratorrechte)'
+    PermsError: 'Kann Berechtigungen dem Code "{code}" nicht hinzufügen (erfordert Administratorrechte)'
     SINGULARNAME: Berechtigungsrollencode
   Permissions:
     PERMISSIONS_CATEGORY: 'Rollen und Zugriffsberechtigungen'
@@ -687,7 +687,7 @@ de:
     has_many_Versions: Versionen
   VersionedGridFieldItemRequest:
     ARCHIVE: Archiv
-    Archived: '%s %s archiviert'
+    Archived: '{type} {title} archiviert'
     BUTTONARCHIVEDESC: 'Veröffentlichung zurücknehmen und in das Archiv verschieben'
     BUTTONPUBLISH: Veröffentlichen
     BUTTONUNPUBLISH: 'Veröffentlichung zurücknehmen'

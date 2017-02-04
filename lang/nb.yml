@@ -176,7 +176,7 @@ nb:
     VALIDATOR: Validator
     VALIDCURRENCY: 'Vennligst skriv inn gyldig valuta'
   FormField:
-    Example: 'F.eks. %s'
+    Example: 'F.eks. {format}'
     NONE: ingen
   GridAction:
     DELETE_DESCRIPTION: Slett
@@ -189,7 +189,7 @@ nb:
     Find: Finn
     LEVELUP: 'Opp ett nivå'
     LinkExisting: 'Knytt til eksisterende'
-    NewRecord: 'Ny %s'
+    NewRecord: 'Ny {type}'
     NoItemsFound: 'Ingen elementer ble funnet'
     PRINTEDAT: 'Skrevet ut ved'
     PRINTEDBY: 'Skrevet ut av'
@@ -205,7 +205,7 @@ nb:
     Create: Opprett
     Delete: Slett
     DeletePermissionsFailure: 'Ikke tillatt å slette'
-    Deleted: 'Slettet %s %s'
+    Deleted: 'Slettet {type} {name}'
     Save: Lagre
     Saved: 'Lagret {name} {link}'
   GridFieldEditButton_ss:
@@ -219,7 +219,7 @@ nb:
     DefaultGroupTitleContentAuthors: Innholdsforfattere
     Description: Beskrivelse
     GroupReminder: 'Hvis du velger en overordnet gruppe, vil denne gruppen arve alle rollene'
-    HierarchyPermsError: 'Kan ikke angi overordnet gruppe "%s" med administratorrettigheter (krever ADMIN-tilgang)'
+    HierarchyPermsError: 'Kan ikke angi overordnet gruppe "{group}" med administratorrettigheter (krever ADMIN-tilgang)'
     Locked: 'Låst?'
     NoRoles: 'Ingen roller funnet'
     PLURALNAME: Grupper
@@ -232,8 +232,8 @@ nb:
   GroupImportForm:
     Help1: '<p>Importer en eller flere grupper i <em>CSV</em>-format (kommaseparerte verdier). <small><a href="#" class="toggle-advanced">Vis avanserte alternativer</a></small></p>'
     ResultCreated: 'Opprettet {count} grupper'
-    ResultDeleted: 'Slettet %d grupper'
-    ResultUpdated: 'Oppdaterte %d grupper'
+    ResultDeleted: 'Slettet {count} grupper'
+    ResultUpdated: 'Oppdaterte {count} grupper'
   Hierarchy:
     InfiniteLoopNotAllowed: 'Uendelig løkke ble funnet i hierarkiet til "{type}". Vennligst skift ut overordnet type for å løse dette.'
   HtmlEditorField:
@@ -372,7 +372,7 @@ nb:
   MemberImportForm:
     Help1: '<p>Importer brukere i <em>CSV-format</em> (verdier adskilt med komma). <small><a href="#" class="toggle-advanced">Vis avanserte alternativer</a></small></p>'
     ResultCreated: 'Opprettet {count} medlemmer'
-    ResultDeleted: 'Slettet %d medlemmer'
+    ResultDeleted: 'Slettet {count} medlemmer'
     ResultNone: 'Ingen endringer'
     ResultUpdated: 'Oppdaterte {count} medlemmer'
   MemberPassword:
@@ -393,9 +393,9 @@ nb:
     UPDATEDRECORDS: 'Oppdaterte {count} oppføringer.'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: Databasekolonner
-    IMPORTSPECLINK: 'Vis spesifikasjon for %s'
+    IMPORTSPECLINK: 'Vis spesifikasjon for {model}'
     IMPORTSPECRELATIONS: Relasjoner
-    IMPORTSPECTITLE: 'Spesifikasjon for %s'
+    IMPORTSPECTITLE: 'Spesifikasjon for {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtrer
     IMPORT: Importer
@@ -413,9 +413,9 @@ nb:
     Page: Side
     View: Viser
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Vennligst øk passordstyrken ved å legge til noen av følgende tegn: %s'
+    LOWCHARSTRENGTH: 'Vennligst øk passordstyrken ved å legge til noen av følgende tegn: {chars}'
     PREVPASSWORD: 'Du har brukt passordet tidligere, vennligst velg et nytt passord'
-    TOOSHORT: 'Passordet er for kort, det må være %s eller flere tegn langt'
+    TOOSHORT: 'Passordet er for kort, det må være {minimum} eller flere tegn langt'
   Permission:
     AdminGroup: Administratorer
     CMS_ACCESS_CATEGORY: 'Tilgang til publiseringssystem'
@@ -427,14 +427,14 @@ nb:
     AssignedTo: 'tilordnet "{title}"'
     FromGroup: 'Arvet fra gruppe "{title}"'
     FromRole: 'arvet fra rolle "{title}"'
-    FromRoleOnGroup: 'arvet fra rollen "%s" i gruppen "%s"'
+    FromRoleOnGroup: 'arvet fra rollen "{roletitle}" i gruppen "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Bare administratorer kan søke'
     PLURALNAME: Roller
     SINGULARNAME: Rolle
     Title: Tittel
   PermissionRoleCode:
-    PermsError: 'Kan ikke angi kode "%s" med administratorrettigheter (krever ADMIN-tilgang)'
+    PermsError: 'Kan ikke angi kode "{code}" med administratorrettigheter (krever ADMIN-tilgang)'
     SINGULARNAME: Tillatelseskode
   Permissions:
     PERMISSIONS_CATEGORY: 'Rolle- og tilgangstillatelser'

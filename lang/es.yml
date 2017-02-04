@@ -112,7 +112,7 @@ es:
     MAXIMUM: 'Las contraseñas deben tener como máximo {max} caracteres de longitud.'
     SHOWONCLICKTITLE: 'Cambiar contraseña'
   ContentController:
-    DRAFT_SITE_ACCESS_RESTRICTION: 'Debes iniciar sesión con tu contraseña del CMS para ver el borrador o el contenido archivado. <a href="%s">click aquí para regresar al sitio publicado.</a>'
+    DRAFT_SITE_ACCESS_RESTRICTION: 'Debes iniciar sesión con tu contraseña del CMS para ver el borrador o el contenido archivado. <a href="{link}">click aquí para regresar al sitio publicado.</a>'
     NOTLOGGEDIN: 'No estás conectado'
   CreditCardField:
     FIRST: primero
@@ -209,7 +209,7 @@ es:
     VALIDATOR: Validador
     VALIDCURRENCY: 'Por favor, introduzca una moneda válida.'
   FormField:
-    Example: 'Ejemplo %s'
+    Example: 'Ejemplo {format}'
     NONE: ninguna
   GridAction:
     DELETE_DESCRIPTION: Borrar
@@ -222,7 +222,7 @@ es:
     Find: Buscar
     LEVELUP: 'Subir nivel'
     LinkExisting: 'Enlace Existente'
-    NewRecord: 'Nuevo %s'
+    NewRecord: 'Nuevo {type}'
     NoItemsFound: 'No se encontraron registros'
     PRINTEDAT: 'Impreso en'
     PRINTEDBY: 'Impreso por'
@@ -238,7 +238,7 @@ es:
     Create: Crear
     Delete: Borrar
     DeletePermissionsFailure: 'Sin permiso para borrar'
-    Deleted: 'Borrado %s %s'
+    Deleted: 'Borrado {type} {name}'
     Save: Guardar
     Saved: 'Guardado {name} {link}'
   GridFieldEditButton_ss:
@@ -252,7 +252,7 @@ es:
     DefaultGroupTitleContentAuthors: Editores
     Description: Descripción
     GroupReminder: 'Si Ud elige un grupo padre, este grupo tomará todos sus roles'
-    HierarchyPermsError: 'No se puede asignar permisos privilegiados al grupo "% s"  (requiere acceso de administrador)'
+    HierarchyPermsError: 'No se puede asignar permisos privilegiados al grupo "{group}"  (requiere acceso de administrador)'
     Locked: '¿Bloqueado?'
     NoRoles: 'Sin roles'
     PLURALNAME: Grupos
@@ -264,10 +264,10 @@ es:
     many_many_Members: Miembros
   GroupImportForm:
     Help1: '<p>Importar uno o más grupos en formato <em>CSV</em> (valores separados por coma). <small><a href="#" class="toggle-advanced">Mostrar uso avanzado</a></small></p>'
-    Help2: '<div class="advanced"><h4>Uso avanzado</h4><ul><li>Columnas permitidas: <em>%s</em></li><li>Grupos existentes son relacionados con su  <em>Código único</em> y actualizados con cualquier nuevo valor desde el archivo importado</li><li>Jerarquías de grupo pueden ser creadas utilizando la columna <em>ParentCode</em>.</li><li>Códigos de permiso pueden ser asignados por la columna <em>PermissionCode</em>. Códigos de permisos existentes no son eliminados.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Uso avanzado</h4><ul><li>Columnas permitidas: <em>{allowed}</em></li><li>Grupos existentes son relacionados con su  <em>Código único</em> y actualizados con cualquier nuevo valor desde el archivo importado</li><li>Jerarquías de grupo pueden ser creadas utilizando la columna <em>ParentCode</em>.</li><li>Códigos de permiso pueden ser asignados por la columna <em>PermissionCode</em>. Códigos de permisos existentes no son eliminados.</li></ul></div>'
     ResultCreated: 'Creados {count} grupos'
-    ResultDeleted: 'Se eliminaron %d grupos'
-    ResultUpdated: 'Actualizados grupos %d'
+    ResultDeleted: 'Se eliminaron {count} grupos'
+    ResultUpdated: 'Actualizados grupos {count}'
   Hierarchy:
     InfiniteLoopNotAllowed: 'Bucle infinito encontrado dentro de la jerarquía "{type}". Por favor, cambie el padre para resolver el problema'
   HtmlEditorField:
@@ -416,9 +416,9 @@ es:
     Toggle: Cambiar
   MemberImportForm:
     Help1: '<p>Importar usuarios en <em>formato CSV</em> (valores separados por coma). <small><a href="#" class="toggle-advanced">Mostrar uso avanzado</a></small></p>'
-    Help2: '<div class="advanced"><h4>Uso avanzado</h4><ul><li>Columnas permitidas: <em>%s</em></li><li>Usuarios existentes son relacionados con su  <em>Código único</em>, y actualizados con cualquier nuevo valor desde el archivo importado.</li><li>Grupos pueden ser asignados por la columna <em>Groups</em>. Grupos son identificados por su propiedad <em>Code</em>, multiples grupos pueden ser separados por una coma.  La pertenencia a grupos existentes no se borra.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Uso avanzado</h4><ul><li>Columnas permitidas: <em>{allowed}</em></li><li>Usuarios existentes son relacionados con su  <em>Código único</em>, y actualizados con cualquier nuevo valor desde el archivo importado.</li><li>Grupos pueden ser asignados por la columna <em>Groups</em>. Grupos son identificados por su propiedad <em>Code</em>, multiples grupos pueden ser separados por una coma.  La pertenencia a grupos existentes no se borra.</li></ul></div>'
     ResultCreated: 'Creados {count} miembros'
-    ResultDeleted: 'Se eliminaron %d miembros'
+    ResultDeleted: 'Se eliminaron {count} miembros'
     ResultNone: 'No hay cambios'
     ResultUpdated: 'Actualizados {count} miembros'
   MemberPassword:
@@ -439,9 +439,9 @@ es:
     UPDATEDRECORDS: 'Actualizados {count} registros.'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'Columnas de la base de datos'
-    IMPORTSPECLINK: 'Mostrar especificación para %s'
+    IMPORTSPECLINK: 'Mostrar especificación para {model}'
     IMPORTSPECRELATIONS: Relaciones
-    IMPORTSPECTITLE: 'Especificación para %s'
+    IMPORTSPECTITLE: 'Especificación para {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtrar
     IMPORT: Importar
@@ -459,7 +459,7 @@ es:
     Page: Página
     View: Vista
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Necesitas aumentar la complejidad de tu contraseña agregando los siguientes caracteres: %s'
+    LOWCHARSTRENGTH: 'Necesitas aumentar la complejidad de tu contraseña agregando los siguientes caracteres: {chars}'
     PREVPASSWORD: 'Ya habías utilizado esa contraseña en el pasado, por favor usa uno nuevo'
     TOOSHORT: 'Tu contraseña es muy corta'
   Permission:
@@ -473,7 +473,7 @@ es:
     AssignedTo: 'asignado a "{title}"'
     FromGroup: 'heredado desde el grupo "{title}"'
     FromRole: 'heredado desde la regla "{title}"'
-    FromRoleOnGroup: 'heredado desde la regla "%s" del grupo "%s"'
+    FromRoleOnGroup: 'heredado desde la regla "{roletitle}" del grupo "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Sólo el administrador puede aplicar'
     PLURALNAME: Reglas
@@ -481,7 +481,7 @@ es:
     Title: Título
   PermissionRoleCode:
     PLURALNAME: 'Códigos de permiso'
-    PermsError: 'No se puede asignar permisos privilegiados al código "% s"  (requiere acceso de administrador)'
+    PermsError: 'No se puede asignar permisos privilegiados al código "{code}"  (requiere acceso de administrador)'
     SINGULARNAME: 'Códigos de las regla de permisos'
   Permissions:
     PERMISSIONS_CATEGORY: 'Reglas y permisos de acceso'

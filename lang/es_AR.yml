@@ -99,8 +99,8 @@ es_AR:
     many_many_Members: Miembros
   GroupImportForm:
     Help1: '<p>Importar uno o más grupos en <em>formato CSV</em> (valores separados por comas). <small><a href="#" class="toggle-advanced">Mostrar uso avanzado</a></small></p>'
-    ResultDeleted: 'Se eliminaron %d grupos'
-    ResultUpdated: 'Se actualizaron %d grupos'
+    ResultDeleted: 'Se eliminaron {count} grupos'
+    ResultUpdated: 'Se actualizaron {count} grupos'
   HtmlEditorField:
     ANCHORVALUE: Anclar
     BUTTONINSERTLINK: 'Insertar enlace'
@@ -170,7 +170,7 @@ es_AR:
     TITLE: 'Email  &amp; Contraseña'
   MemberImportForm:
     Help1: '<p>Importar miembros en <em>formato CSV</em> (valores separados por comas). <small><a href="#" class="toggle-advanced">Mostrar uso avanzado</a></small></p>'
-    ResultDeleted: 'Se eliminaron %d miembros'
+    ResultDeleted: 'Se eliminaron {count} miembros'
     ResultNone: 'Sin cambios'
   ModelAdmin:
     DELETE: Eliminar
@@ -187,7 +187,7 @@ es_AR:
     CMS_ACCESS_CATEGORY: 'Acceso al CMS'
     FULLADMINRIGHTS: 'Privilegios administrativos completos'
   PermissionCheckboxSetField:
-    FromRoleOnGroup: 'heredado desde el rol "%s" en el grupo "%s"'
+    FromRoleOnGroup: 'heredado desde el rol "{roletitle}" en el grupo "{grouptitle}"'
   Permissions:
     PERMISSIONS_CATEGORY: 'Roles y permisos de acceso'
   PhoneNumberField:

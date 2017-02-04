@@ -157,9 +157,12 @@ class PermissionCheckboxSetField extends FormField
                                     }
                                     $inheritedCodes[$code->Code][] = _t(
                                         'PermissionCheckboxSetField.FromRoleOnGroup',
-                                        'inherited from role "%s" on group "%s"',
+                                        'inherited from role "{roletitle}" on group "{grouptitle}"',
                                         'A permission inherited from a role on a certain group',
-                                        array('roletitle' => $role->dbObject('Title')->forTemplate(), 'grouptitle' => $parent->dbObject('Title')->forTemplate())
+                                        array(
+                                            'roletitle' => $role->dbObject('Title')->forTemplate(),
+                                            'grouptitle' => $parent->dbObject('Title')->forTemplate()
+                                        )
                                     );
                                 }
                             }

@@ -147,7 +147,7 @@ fi:
     MAXIMUM: 'Salasana voi olla enintään {max} merkkiä pitkä.'
     SHOWONCLICKTITLE: 'Vaihda salasana'
   ContentController:
-    DRAFT_SITE_ACCESS_RESTRICTION: 'Nähdäksesi vedoksen tai arkistoidun sisällön, sinun tulee kirjautua sisällönhallintajärjestelmän salasanallasi . <a href="%s">Klikkaa tästä palataksesi julkaistulle sivustolle.</a>'
+    DRAFT_SITE_ACCESS_RESTRICTION: 'Nähdäksesi vedoksen tai arkistoidun sisällön, sinun tulee kirjautua sisällönhallintajärjestelmän salasanallasi . <a href="{link}">Klikkaa tästä palataksesi julkaistulle sivustolle.</a>'
     NOTLOGGEDIN: 'Ei kirjautuneena'
   CreditCardField:
     FIRST: ensimmäinen
@@ -251,7 +251,7 @@ fi:
     VALIDATOR: Tarkistin
     VALIDCURRENCY: 'Ole hyvä ja valitse voimassa oleva valuutta'
   FormField:
-    Example: 'esim. %s'
+    Example: 'esim. {format}'
     NONE: 'Ei yhtään'
   GridAction:
     DELETE_DESCRIPTION: Poista
@@ -264,7 +264,7 @@ fi:
     Find: Etsi
     LEVELUP: 'Taso ylös'
     LinkExisting: 'Linkitä olemassaoleva'
-    NewRecord: 'Uusi %s'
+    NewRecord: 'Uusi {type}'
     NoItemsFound: 'Ei kohteita'
     PRINTEDAT: Tulostettu
     PRINTEDBY: Tulostaja
@@ -280,7 +280,7 @@ fi:
     Create: Luo
     Delete: Poista
     DeletePermissionsFailure: 'Ei oikeuksia poistamiseen'
-    Deleted: 'Poistettiin %s %s'
+    Deleted: 'Poistettiin {type} {name}'
     Save: Tallenna
     Saved: 'Tallennettu: {name} {link}'
   GridFieldEditButton_ss:
@@ -294,7 +294,7 @@ fi:
     DefaultGroupTitleContentAuthors: Sisällöntuottajat
     Description: Kuvaus
     GroupReminder: 'Valitessasi isäntäryhmän roolit periytyvät tähän ryhmään'
-    HierarchyPermsError: 'Isäntäryhmään ei voitu asettaa "%s" annettuja oikeuksia (vaaditaan JÄRJESTELMÄNVALVOJAN oikeudet)'
+    HierarchyPermsError: 'Isäntäryhmään ei voitu asettaa "{group}" annettuja oikeuksia (vaaditaan JÄRJESTELMÄNVALVOJAN oikeudet)'
     Locked: 'Lukittu?'
     NoRoles: 'Rooleja ei löytynyt'
     PLURALNAME: Ryhmät
@@ -306,10 +306,10 @@ fi:
     many_many_Members: Jäsenet
   GroupImportForm:
     Help1: '<p>Tuo yksi tai useampi ryhmä <em>CSV</em>-muotoisena (arvot pilkulla erotettuina). <small><a href="#" class="toggle-advanced">Näytä edistyksellinen käyttö</a></small></p>'
-    Help2: '<div class="advanced"><h4>Edistynyt käyttö</h4><ul><li>Sallitut palstat: <em>%s</em></li><li>Olemassa olevat käyttäjät kohdistetaan uniikilla <em>Code</em>-arvolla, ja päivitetään uudet arvot tuodusta tiedostosta.</li><li>Ryhmät voidaan kohdistaa <em>Ryhmät</em>-palstaan. Ryhmät tunnistetaan <em>Code</em>-arvosta, useat ryhmät voidaan erottaa pilkulla. Olemassa olevat ryhmäjäsenyydet säilytetään.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Edistynyt käyttö</h4><ul><li>Sallitut palstat: <em>{allowed}</em></li><li>Olemassa olevat käyttäjät kohdistetaan uniikilla <em>Code</em>-arvolla, ja päivitetään uudet arvot tuodusta tiedostosta.</li><li>Ryhmät voidaan kohdistaa <em>Ryhmät</em>-palstaan. Ryhmät tunnistetaan <em>Code</em>-arvosta, useat ryhmät voidaan erottaa pilkulla. Olemassa olevat ryhmäjäsenyydet säilytetään.</li></ul></div>'
     ResultCreated: 'Luotiin {count} ryhmä(ä)'
-    ResultDeleted: 'Poistettu %d ryhmää'
-    ResultUpdated: 'Päivitetty %d ryhmää'
+    ResultDeleted: 'Poistettu {count} ryhmää'
+    ResultUpdated: 'Päivitetty {count} ryhmää'
   HTMLEditorField:
     ANCHORSCANNOTACCESSPAGE: 'Sinulla ei ole oikeuksia tarkastella tämän sivun sisältöä.'
     ANCHORSPAGENOTFOUND: 'Kohdesivua ei löytynyt.'
@@ -517,9 +517,9 @@ fi:
     Toggle: 'Näytä muotoiluohjeet'
   MemberImportForm:
     Help1: '<p>Tuo käyttäjät <em>CSV-muodossa</em> (arvot pilkulla erotettuina). <small><a href="#" class="toggle-advanced">Näytä edistyksellinen käyttö</a></small></p>'
-    Help2: '<div class="advanced"><h4>Edistynyt käyttö</h4><ul><li>Sallitut palstat: <em>%s</em></li><li>Olemassa olevat käyttäjät kohdistetaan uniikilla <em>Code</em>-arvolla, ja päivitetään uudet arvot tuodusta tiedostosta.</li><li>Ryhmät voidaan kohdistaa <em>Ryhmät</em>-palstaan. Ryhmät tunnistetaan <em>Code</em>-arvosta, useat ryhmät voidaan erottaa pilkulla. Olemassa olevat ryhmäjäsenyydet säilytetään.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Edistynyt käyttö</h4><ul><li>Sallitut palstat: <em>{allowed}</em></li><li>Olemassa olevat käyttäjät kohdistetaan uniikilla <em>Code</em>-arvolla, ja päivitetään uudet arvot tuodusta tiedostosta.</li><li>Ryhmät voidaan kohdistaa <em>Ryhmät</em>-palstaan. Ryhmät tunnistetaan <em>Code</em>-arvosta, useat ryhmät voidaan erottaa pilkulla. Olemassa olevat ryhmäjäsenyydet säilytetään.</li></ul></div>'
     ResultCreated: 'Luotiin {count} käyttäjä(ä)'
-    ResultDeleted: 'Poistettu %d jäsentä'
+    ResultDeleted: 'Poistettu {count} jäsentä'
     ResultNone: 'Ei muutoksia'
     ResultUpdated: 'Päivitettiin {count} käyttäjä(ä)'
   MemberPassword:
@@ -540,9 +540,9 @@ fi:
     UPDATEDRECORDS: 'Päivitettiin {count} tietuetta'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'Tietokannan sarakkeet'
-    IMPORTSPECLINK: 'Näytä erittely kohteelle %s'
+    IMPORTSPECLINK: 'Näytä erittely kohteelle {model}'
     IMPORTSPECRELATIONS: Yhteydet
-    IMPORTSPECTITLE: 'Erittely kohteelle %s'
+    IMPORTSPECTITLE: 'Erittely kohteelle {model}'
   ModelAdmin_Tools_ss:
     FILTER: Suodin
     IMPORT: Tuo
@@ -562,9 +562,9 @@ fi:
     Page: Sivu
     View: Näytä
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Ole hyvä ja tee monimutkaisempi salasana lisäämällä joitakin seuraavista merkeistä: %s'
+    LOWCHARSTRENGTH: 'Ole hyvä ja tee monimutkaisempi salasana lisäämällä joitakin seuraavista merkeistä: {chars}'
     PREVPASSWORD: 'Olet jo käyttänyt tätä salasanaa aikaisemmin, ole hyvä ja valitse uusi'
-    TOOSHORT: 'Salasanan on oltava vähintään %s merkkiä'
+    TOOSHORT: 'Salasanan on oltava vähintään {minimum} merkkiä'
   Permission:
     AdminGroup: Järjestelmänvalvoja
     CMS_ACCESS_CATEGORY: CMS-pääsy
@@ -576,7 +576,7 @@ fi:
     AssignedTo: 'valittiin "{title}"'
     FromGroup: 'periytyivät ryhmästä "{title}"'
     FromRole: 'periytyivät roolista "{title}"'
-    FromRoleOnGroup: 'periytynyt roolista "%s" ryhmässä "%s"'
+    FromRoleOnGroup: 'periytynyt roolista "{roletitle}" ryhmässä "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Vain järjestelmänvalvojalla on oikeudet asettaa'
     PLURALNAME: Roolit
@@ -584,7 +584,7 @@ fi:
     Title: 'Roolin nimi'
   PermissionRoleCode:
     PLURALNAME: 'Käyttöoikeuden roolin koodit'
-    PermsError: 'Ei voida asettaa koodia "%s" annetuilla oikeuksilla (vaaditaan JÄRJESTELMÄNVALVOJAN oikeudet)'
+    PermsError: 'Ei voida asettaa koodia "{code}" annetuilla oikeuksilla (vaaditaan JÄRJESTELMÄNVALVOJAN oikeudet)'
     SINGULARNAME: 'Käyttöoikeuden roolin koodi'
   Permissions:
     PERMISSIONS_CATEGORY: 'Roolit ja käyttöoikeudet'
@@ -740,12 +740,12 @@ fi:
     has_many_Versions: Versiot
   VersionedGridFieldItemRequest:
     ARCHIVE: Arkistoi
-    Archived: 'Arkistoitiin %s %s'
+    Archived: 'Arkistoitiin {type} {title}'
     BUTTONARCHIVEDESC: 'Poista näkyviltä ja lähetä arkistoon'
     BUTTONPUBLISH: Julkaise
     BUTTONUNPUBLISH: 'Poista näkyvistä'
     BUTTONUNPUBLISHDESC: 'Poista tämä tietue julkaistulta sivustolta'
     Published: 'Julkaistiin {name} {link}'
-    Unpublished: 'Poistettiin näkyvistä %s %s'
+    Unpublished: 'Poistettiin näkyvistä {type} {title}'
   i18n:
     PLURAL: '{number} {form}'

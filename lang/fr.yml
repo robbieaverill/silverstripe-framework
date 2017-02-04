@@ -179,7 +179,7 @@ fr:
     VALIDATOR: Validateur
     VALIDCURRENCY: 'Saisissez une monnaie valide'
   FormField:
-    Example: 'par exemple %s'
+    Example: 'par exemple {format}'
     NONE: aucun
   GridAction:
     DELETE_DESCRIPTION: Supprime
@@ -192,7 +192,7 @@ fr:
     Find: Trouver
     LEVELUP: 'Monter d’un niveau'
     LinkExisting: 'Lien existant'
-    NewRecord: 'Nouveau %s'
+    NewRecord: 'Nouveau {type}'
     NoItemsFound: 'Aucun élément n’a été trouvé.'
     PRINTEDAT: 'Imprimé le'
     PRINTEDBY: 'Imprimé par'
@@ -208,7 +208,7 @@ fr:
     Create: Créer
     Delete: Supprimer
     DeletePermissionsFailure: 'Vous n’avez pas les autorisations pour supprimer'
-    Deleted: '%s %s supprimés'
+    Deleted: '{type} {name} supprimés'
     Save: Enregistrer
     Saved: '{name} {link} sauvegardé'
   GridFieldEditButton_ss:
@@ -234,8 +234,8 @@ fr:
   GroupImportForm:
     Help1: '<p>Importer un ou plusieurs groupe(s) au format <em>CSV</em> (comma-separated values). <small><a href="#" class="toggle-advanced">Montrer l''usage avancé</a></small></p>'
     ResultCreated: '{count} groupes créés'
-    ResultDeleted: '%d groupes supprimés'
-    ResultUpdated: '%d groupes mises à jour'
+    ResultDeleted: '{count} groupes supprimés'
+    ResultUpdated: '{count} groupes mises à jour'
   Hierarchy:
     InfiniteLoopNotAllowed: "Une boucle infinie s’est produite dans la hiérarchie «\_{type}\_». Modifiez le parent pour le résoudre."
   HtmlEditorField:
@@ -375,7 +375,7 @@ fr:
   MemberImportForm:
     Help1: '<p>Importer les membres au format<em>CSV format</em> (comma-separated values). <small><a href="#" class="toggle-advanced">Afficher l''usage avancé.</a></small></p>'
     ResultCreated: '{count} membres créés'
-    ResultDeleted: '%d membres supprimés'
+    ResultDeleted: '{count} membres supprimés'
     ResultNone: 'Aucun changements'
     ResultUpdated: '{count} membres mis à jour'
   MemberPassword:
@@ -396,9 +396,9 @@ fr:
     UPDATEDRECORDS: '{count} enregistrements mis à jour.'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'Colonnes de la base de données'
-    IMPORTSPECLINK: 'Afficher la spécification de %s'
+    IMPORTSPECLINK: 'Afficher la spécification de {model}'
     IMPORTSPECRELATIONS: Relations
-    IMPORTSPECTITLE: 'Spécification de %s'
+    IMPORTSPECTITLE: 'Spécification de {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtrer
     IMPORT: Importer
@@ -416,9 +416,9 @@ fr:
     Page: Page
     View: Afficher
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Veuillez augmenter la force de votre mot de passe en ajoutant certains caractères suivants : %s'
+    LOWCHARSTRENGTH: 'Veuillez augmenter la force de votre mot de passe en ajoutant certains caractères suivants : {chars}'
     PREVPASSWORD: 'Vous avez déjà utilisé ce mot de passe par le passé, veuillez en choisir un autre'
-    TOOSHORT: 'Le mot de passe est trop court, il doit contenir au moins %s caractères'
+    TOOSHORT: 'Le mot de passe est trop court, il doit contenir au moins {minimum} caractères'
   Permission:
     AdminGroup: Administrateur
     CMS_ACCESS_CATEGORY: 'Accès au CMS'
@@ -430,7 +430,7 @@ fr:
     AssignedTo: 'assignée au groupe « {title} »'
     FromGroup: "hérité du groupe «\_{title}\_»"
     FromRole: "héritée du rôle «\_{title}\_»"
-    FromRoleOnGroup: "hérité du rôle «\_%s\_» du groupe «\_%s\_»"
+    FromRoleOnGroup: "hérité du rôle «\_{roletitle}\_» du groupe «\_{grouptitle}\_»"
   PermissionRole:
     OnlyAdminCanApply: 'Limité aux administrateurs'
     PLURALNAME: Rôles

@@ -121,9 +121,10 @@ class MemberLoginForm extends LoginForm
                             _t('Member.KEEPMESIGNEDIN', "Keep me signed in")
                         )->setAttribute(
                             'title',
-                            sprintf(
-                                _t('Member.REMEMBERME', "Remember me next time? (for %d days on this device)"),
-                                RememberLoginHash::config()->get('token_expiry_days')
+                            _t(
+                                'Member.REMEMBERME',
+                                "Remember me next time? (for {days} days on this device)",
+                                ['days' => RememberLoginHash::config()->get('token_expiry_days')]
                             )
                         )
                     );

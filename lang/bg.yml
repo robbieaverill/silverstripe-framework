@@ -179,7 +179,7 @@ bg:
     Find: Търси
     LEVELUP: 'Ниво нагоре'
     LinkExisting: 'Свържи към съществуващ'
-    NewRecord: 'Нов %s'
+    NewRecord: 'Нов {type}'
     NoItemsFound: 'Няма намерени елементи'
     PRINTEDAT: 'Отпечатано на'
     PRINTEDBY: 'Отпечатано от'
@@ -193,7 +193,7 @@ bg:
     Create: Създай
     Delete: Изтрий
     DeletePermissionsFailure: 'Изтриването не е разрешено'
-    Deleted: 'Изтрити %s %s'
+    Deleted: 'Изтрити {type} {name}'
     Save: Запис
   Group:
     AddRole: 'Добавяне на роля към групата'
@@ -208,8 +208,8 @@ bg:
   GroupImportForm:
     Help1: '<p>Внасяне на една или повече групи в <em>CSV формат</em> (comma-separated values). <small><a href="#" class="toggle-advanced">Покажи начин на употреба</a></small></p>'
     ResultCreated: 'Бяха създадени {count} група/и'
-    ResultDeleted: 'Бяха изтрити %d групи'
-    ResultUpdated: 'Бяха обновени %d групи'
+    ResultDeleted: 'Бяха изтрити {count} групи'
+    ResultUpdated: 'Бяха обновени {count} групи'
   HtmlEditorField:
     ADDURL: 'Добави URL'
     ADJUSTDETAILSDIMENSIONS: 'Детайли и размери'
@@ -325,7 +325,7 @@ bg:
   MemberImportForm:
     Help1: '<p>Внасяне на потебители в <em>CSV формат</em> (comma-separated values). <small><a href="#" class="toggle-advanced">Покажи начин на употреба</a></small></p>'
     ResultCreated: 'Бяха добавени {count} потребители'
-    ResultDeleted: 'Бяха изтрити %d членове'
+    ResultDeleted: 'Бяха изтрити {count} членове'
     ResultNone: 'Нямаше промени'
     ResultUpdated: 'Бяха актуализирани {count} потребители'
   MemberTableField:
@@ -358,7 +358,7 @@ bg:
     AssignedTo: 'приписана на "{title}"'
     FromGroup: 'унаследена от група "{title}"'
     FromRole: 'унаследена от роля "{title}"'
-    FromRoleOnGroup: 'унаследено от роля "%s" на група "%s"'
+    FromRoleOnGroup: 'унаследено от роля "{roletitle}" на група "{grouptitle}"'
   Permissions:
     PERMISSIONS_CATEGORY: 'Роли и разрешения за достъп'
   PhoneNumberField:

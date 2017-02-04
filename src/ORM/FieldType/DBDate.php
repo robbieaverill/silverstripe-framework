@@ -505,10 +505,14 @@ class DBDate extends DBField
         $field = DateField::create($this->name, $title);
 
         // Show formatting hints for better usability
-        $field->setDescription(sprintf(
-            _t('FormField.Example', 'e.g. %s', 'Example format'),
-            Convert::raw2xml(Zend_Date::now()->toString($field->getConfig('dateformat')))
-        ));
+        $field->setDescription(
+            _t(
+                'FormField.Example',
+                'e.g. {format}',
+                'Example format',
+                ['format' => Convert::raw2xml(Zend_Date::now()->toString($field->getConfig('dateformat')))]
+            )
+        );
         $field->setAttribute('placeholder', $field->getConfig('dateformat'));
 
         return $field;

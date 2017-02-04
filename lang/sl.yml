@@ -172,7 +172,7 @@ sl:
     VALIDATOR: Preverjanje
     VALIDCURRENCY: 'Prosim, vnesite pravo valuto.'
   FormField:
-    Example: 'npr. %s'
+    Example: 'npr. {format}'
     NONE: brez
   GridAction:
     DELETE_DESCRIPTION: Izbriši
@@ -184,7 +184,7 @@ sl:
     FilterBy: 'Filtriraj po'
     Find: Poišči
     LinkExisting: 'Poveži na'
-    NewRecord: 'Novih %s'
+    NewRecord: 'Novih {type}'
     NoItemsFound: 'Ni rezultatov'
     PRINTEDAT: 'Tiskano pri'
     PRINTEDBY: Natisnil
@@ -199,7 +199,7 @@ sl:
     Create: Ustvari
     Delete: Izbriši
     DeletePermissionsFailure: 'Ni dovoljenja za brisanje'
-    Deleted: 'Izbrisanih %s %s'
+    Deleted: 'Izbrisanih {type} {name}'
     Save: Shrani
     Saved: 'Shranjeno {name} {link}'
   GridFieldEditButton_ss:
@@ -225,8 +225,8 @@ sl:
   GroupImportForm:
     Help1: '<p>Uvozi eno ali več skupin v formatu <em>CSV</ em> (comma-separated values). <small> <a href="#" class="toggle-advanced">Prikaži možnosti za napredno urejanje</ a> </ small> </ p>'
     ResultCreated: 'Ustvarjenih je {count} skupin'
-    ResultDeleted: 'Število izbrisanih skupin %d'
-    ResultUpdated: 'Število ponastavljenih skupin %d'
+    ResultDeleted: 'Število izbrisanih skupin {count}'
+    ResultUpdated: 'Število ponastavljenih skupin {count}'
   HtmlEditorField:
     ADDURL: 'Dodaj URL'
     ANCHORVALUE: Sidro
@@ -357,7 +357,7 @@ sl:
   MemberImportForm:
     Help1: '<p>Uvoz uporabnikov v <em>formatu CSV</em> (comma-separated values). <small><a href="#" class="toggle-advanced">Prikaži možnosti za napredno urejanje.</a></small></p>'
     ResultCreated: 'Ustvarjenih {count} članov'
-    ResultDeleted: 'Število izbrisanih uporabnikov: %d'
+    ResultDeleted: 'Število izbrisanih uporabnikov: {count}'
     ResultNone: 'Ni sprememb'
     ResultUpdated: 'Posodobljenih {count} članov'
   MemberPassword:
@@ -378,8 +378,8 @@ sl:
     UPDATEDRECORDS: 'Posodobi {count} zapisov.'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'Stolpci podatkovne baze'
-    IMPORTSPECLINK: 'Pokaži specifikacije za %s'
-    IMPORTSPECTITLE: 'Specifikacije za %s'
+    IMPORTSPECLINK: 'Pokaži specifikacije za {model}'
+    IMPORTSPECTITLE: 'Specifikacije za {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtriraj
     IMPORT: Uvozi
@@ -405,7 +405,7 @@ sl:
     SINGULARNAME: Dovoljenje
   PermissionCheckboxSetField:
     FromGroup: 'Privzeto iz skupine "{title}"'
-    FromRoleOnGroup: 'podedovano iz vloge "%s" na skupino "%s"'
+    FromRoleOnGroup: 'podedovano iz vloge "{roletitle}" na skupino "{grouptitle}"'
   PermissionRole:
     PLURALNAME: Vloge
     SINGULARNAME: Vloga

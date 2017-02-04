@@ -86,7 +86,7 @@ pt:
     Filter: Filtrar
     Find: Procurar
     LinkExisting: 'Link existente'
-    NewRecord: 'Novo %s'
+    NewRecord: 'Novo {type}'
     NoItemsFound: 'Não foram encontrados elementos'
     PRINTEDAT: 'Impresso em'
     PRINTEDBY: 'Impresso por'
@@ -108,7 +108,7 @@ pt:
     has_many_Permissions: Permissões
     many_many_Members: Membros
   GroupImportForm:
-    ResultDeleted: 'Apagados %d grupos'
+    ResultDeleted: 'Apagados {count} grupos'
   HtmlEditorField:
     ANCHORVALUE: Âncora
     BUTTONINSERT: Inserir
@@ -177,7 +177,7 @@ pt:
   MemberAuthenticator:
     TITLE: 'Email e Password'
   MemberImportForm:
-    ResultDeleted: 'Apagados %d utilizadores'
+    ResultDeleted: 'Apagados {count} utilizadores'
     ResultNone: 'Sem alterações'
   MemberTableField:
     APPLY_FILTER: 'Aplicar filtros'
@@ -190,7 +190,7 @@ pt:
     AdminGroup: Administrador
     FULLADMINRIGHTS: 'Direitos de Administrador'
   PermissionCheckboxSetField:
-    FromRoleOnGroup: 'herdada da regra "%s" no grupo "%s"'
+    FromRoleOnGroup: 'herdada da regra "{roletitle}" no grupo "{grouptitle}"'
   PermissionRole:
     Title: Título
   Permissions:

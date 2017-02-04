@@ -112,7 +112,7 @@ lt:
     MAXIMUM: 'Slaptažodžiai privalo būti ne ilgesni nei {max} simbolių ilgio.'
     SHOWONCLICKTITLE: 'Pakeisti slaptažodį'
   ContentController:
-    DRAFT_SITE_ACCESS_RESTRICTION: 'Jūs turite prisijungti su savo TVS slaptažodžiu, kad galėtumėte peržiūrėti juodraščio arba archyvo turinį.<a href="%s">Spauskite čia, norėdami grįžti į svetainę</a>.'
+    DRAFT_SITE_ACCESS_RESTRICTION: 'Jūs turite prisijungti su savo TVS slaptažodžiu, kad galėtumėte peržiūrėti juodraščio arba archyvo turinį.<a href="{link}">Spauskite čia, norėdami grįžti į svetainę</a>.'
     NOTLOGGEDIN: Neprisijungęs
   CreditCardField:
     FIRST: pirmas
@@ -209,7 +209,7 @@ lt:
     VALIDATOR: Tikrintojas
     VALIDCURRENCY: 'Prašome suvesti teisingą valiutą'
   FormField:
-    Example: 'pvz. %s'
+    Example: 'pvz. {format}'
     NONE: nėra
   GridAction:
     DELETE_DESCRIPTION: Ištrinti
@@ -222,7 +222,7 @@ lt:
     Find: Rasti
     LEVELUP: Aukštyn
     LinkExisting: 'Pasirinkti esamą'
-    NewRecord: 'Naujas %s'
+    NewRecord: 'Naujas {type}'
     NoItemsFound: 'Įrašų nerasta'
     PRINTEDAT: Atspausdinta
     PRINTEDBY: Atspausdino
@@ -238,7 +238,7 @@ lt:
     Create: Sukurti
     Delete: Ištrinti
     DeletePermissionsFailure: 'Nėra leidimų trynimui'
-    Deleted: 'Ištrinta %s %s'
+    Deleted: 'Ištrinta {type} {name}'
     Save: Išsaugoti
     Saved: 'Išsaugota {name} {link}'
   GridFieldEditButton_ss:
@@ -252,7 +252,7 @@ lt:
     DefaultGroupTitleContentAuthors: 'Turinio autoriai'
     Description: Aprašymas
     GroupReminder: 'Jeigu pasirinksite tėvinę grupę, ši grupė perims visas jos roles'
-    HierarchyPermsError: 'Nepavyko priskirti tėvinės grupės "%s" su priskirtais leidimais (būtina ADMIN prieeiga)'
+    HierarchyPermsError: 'Nepavyko priskirti tėvinės grupės "{group}" su priskirtais leidimais (būtina ADMIN prieeiga)'
     Locked: 'Užrakinta?'
     NoRoles: 'Rolių nerasta'
     PLURALNAME: Grupės
@@ -264,10 +264,10 @@ lt:
     many_many_Members: Vartotojai
   GroupImportForm:
     Help1: '<p>Importuoti vieną ar kelias grupes <em>CSV</em> formatu (kableliu atskirtos reikšmės). <small><a href="#" class="toggle-advanced">Rodyti detalesnį aprašymą</a></small></p>'
-    Help2: '<div class="advanced"><h4>Detalesnis aprašymas</h4><ul><li>Galimi stulpeliai: <em>%s</em>.</li><li>Esamos grupės yra surandamos su jų unikalia <em>Code</em> reikšme ir atnaujinamos duomenimis iš importuojamos bylos.</li><li>Grupių hierarchija gali būti sukurta naudojant <em>ParentCode</em> stulpelį.</li><li>Leidimų kodai gali būti priskirti naudojant <em>PermissionCode</em> stulpelį. Esami leidimai nebus pakeisti.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Detalesnis aprašymas</h4><ul><li>Galimi stulpeliai: <em>{allowed}</em>.</li><li>Esamos grupės yra surandamos su jų unikalia <em>Code</em> reikšme ir atnaujinamos duomenimis iš importuojamos bylos.</li><li>Grupių hierarchija gali būti sukurta naudojant <em>ParentCode</em> stulpelį.</li><li>Leidimų kodai gali būti priskirti naudojant <em>PermissionCode</em> stulpelį. Esami leidimai nebus pakeisti.</li></ul></div>'
     ResultCreated: 'Sukurta {count} grupių'
-    ResultDeleted: 'Ištrinta %d grupių'
-    ResultUpdated: 'Atnaujinta %d grupių'
+    ResultDeleted: 'Ištrinta {count} grupių'
+    ResultUpdated: 'Atnaujinta {count} grupių'
   Hierarchy:
     InfiniteLoopNotAllowed: 'Rastas begalinis sąryšis "{type}" hierarchijoje. Prašome patikrinti tėvinius sąryšius'
   HtmlEditorField:
@@ -416,9 +416,9 @@ lt:
     Toggle: 'Rodyti formatavimo aprašymą'
   MemberImportForm:
     Help1: '<p>Importuoti vartotojus <em>CSV</em> formatu (kableliu atskirtos reikšmės). <small><a href="#" class="toggle-advanced">Rodyti detalesnį aprašymą</a></small></p>'
-    Help2: '<div class="advanced"><h4>Detalesnis aprašymas</h4><ul><li>Galimi stulpeliai: <em>%s</em>.</li><li>Esami vartotojai yra surandami su jų unikalia <em>Code</em> reikšme ir atnaujinami duomenimis iš importuojamos bylos.</li><li>Grupės gali būti priskirtos naudojant <em>Groups</em> column. stulpelį. Grupės yra atpažįstamos pagal <em>Code</em> stulpelį, kelios grupės nurodomos per kablelį. Jau priskirtos vartotojui grupės nebus pakeistos.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Detalesnis aprašymas</h4><ul><li>Galimi stulpeliai: <em>{allowed}</em>.</li><li>Esami vartotojai yra surandami su jų unikalia <em>Code</em> reikšme ir atnaujinami duomenimis iš importuojamos bylos.</li><li>Grupės gali būti priskirtos naudojant <em>Groups</em> column. stulpelį. Grupės yra atpažįstamos pagal <em>Code</em> stulpelį, kelios grupės nurodomos per kablelį. Jau priskirtos vartotojui grupės nebus pakeistos.</li></ul></div>'
     ResultCreated: 'Sukurta {count} vartotojų'
-    ResultDeleted: 'Ištrinta %d vartotojų'
+    ResultDeleted: 'Ištrinta {count} vartotojų'
     ResultNone: 'Nėra jokių pakeitimų'
     ResultUpdated: 'Atnaujinta {count} vartotojų'
   MemberPassword:
@@ -439,9 +439,9 @@ lt:
     UPDATEDRECORDS: 'Atnaujinta {count} įrašų'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'Duomenų bazės stulpeliai'
-    IMPORTSPECLINK: 'Rodyti %s aprašymą'
+    IMPORTSPECLINK: 'Rodyti {model} aprašymą'
     IMPORTSPECRELATIONS: 'Sąryšiai'
-    IMPORTSPECTITLE: '%s aprašymas'
+    IMPORTSPECTITLE: '{model} aprašymas'
   ModelAdmin_Tools_ss:
     FILTER: Filtras
     IMPORT: Importuoti
@@ -459,9 +459,9 @@ lt:
     Page: Puslapis
     View: Rodoma
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Padarykite slaptažodį sudėtingesnį, panaudodami bent kelis simbolius iš šio sąrašo: %s'
+    LOWCHARSTRENGTH: 'Padarykite slaptažodį sudėtingesnį, panaudodami bent kelis simbolius iš šio sąrašo: {chars}'
     PREVPASSWORD: 'Jūs jau naudojote šį slaptažodį anksčiau, prašome sukurti naują'
-    TOOSHORT: 'Slaptažodis yra per trumpas, jis turi būti sudarytas iš %s arba didesnio skaičiaus simbolių'
+    TOOSHORT: 'Slaptažodis yra per trumpas, jis turi būti sudarytas iš {minimum} arba didesnio skaičiaus simbolių'
   Permission:
     AdminGroup: Administratorius
     CMS_ACCESS_CATEGORY: 'TVS Prieiga'
@@ -473,7 +473,7 @@ lt:
     AssignedTo: 'priskirta "{title}"'
     FromGroup: 'paveldėta iš grupės "{title}"'
     FromRole: 'paveldėta iš rolės "{title}"'
-    FromRoleOnGroup: 'paveldėta iš rolės "%s" grupėje "%s"'
+    FromRoleOnGroup: 'paveldėta iš rolės "{roletitle}" grupėje "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Gali priskirti tik administratorius'
     PLURALNAME: Rolės
@@ -481,7 +481,7 @@ lt:
     Title: Pavadinimas
   PermissionRoleCode:
     PLURALNAME: 'Leidimų rolių kodai'
-    PermsError: 'Nepavyko priskirto kodo "%s" su priskirtais leidimais (būtina ADMIN prieiga)'
+    PermsError: 'Nepavyko priskirto kodo "{code}" su priskirtais leidimais (būtina ADMIN prieiga)'
     SINGULARNAME: 'Leidimų rolių kodai'
   Permissions:
     PERMISSIONS_CATEGORY: 'Rolės ir priėjimo leidimai'

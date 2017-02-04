@@ -200,7 +200,7 @@ id:
     VALIDATOR: Validasi
     VALIDCURRENCY: 'Mohon isikan mata uang yang benar'
   FormField:
-    Example: 'misalnya %s'
+    Example: 'misalnya {format}'
     NONE: 'tidak ada'
   GridAction:
     DELETE_DESCRIPTION: Hapus
@@ -213,7 +213,7 @@ id:
     Find: Cari
     LEVELUP: 'Ke atas'
     LinkExisting: 'Tautan yang Ada'
-    NewRecord: '%s baru'
+    NewRecord: '{type} baru'
     NoItemsFound: 'Tidak ada data'
     PRINTEDAT: 'Dicetak pada'
     PRINTEDBY: 'Dicetak oleh'
@@ -229,7 +229,7 @@ id:
     Create: Buat
     Delete: Hapus
     DeletePermissionsFailure: 'Tidak ada ijin menghapus'
-    Deleted: '%s %s dihapus'
+    Deleted: '{type} {name} dihapus'
     Save: Simpan
     Saved: 'Simpan {name} {link}'
   GridFieldEditButton_ss:
@@ -243,7 +243,7 @@ id:
     DefaultGroupTitleContentAuthors: 'Penulis Konten'
     Description: Deskripsi
     GroupReminder: 'Jika Anda memilih kelompok induk, kelompok ini akan mengambil perannya'
-    HierarchyPermsError: 'Tidak dapat menghubungkan kelompok induk "%s" dengan perijinan khusus (memerlukan akses PENGELOLA)'
+    HierarchyPermsError: 'Tidak dapat menghubungkan kelompok induk "{group}" dengan perijinan khusus (memerlukan akses PENGELOLA)'
     Locked: 'Terkunci?'
     NoRoles: 'Tidak ada peran'
     PLURALNAME: Kelompok
@@ -256,8 +256,8 @@ id:
   GroupImportForm:
     Help1: '<p>Impor satu atau lebih kelompok di format <em>CSV</em> (comma-separated values). <small><a href="#" class="toggle-advanced">Tampilkan penggunaan mahir</a></small></p>'
     ResultCreated: '{count} kelompok dibuat'
-    ResultDeleted: '%d kelompok dihapus'
-    ResultUpdated: '%d kelompok diperbarui'
+    ResultDeleted: '{count} kelompok dihapus'
+    ResultUpdated: '{count} kelompok diperbarui'
   Hierarchy:
     InfiniteLoopNotAllowed: 'Putaran berulang ditemukan pada hirarki "{type}". Mohon ganti induk untuk mengatasi masalah ini'
   HtmlEditorField:
@@ -400,7 +400,7 @@ id:
   MemberImportForm:
     Help1: '<p>Impor pengguna dalam <em>format CSV</em> (comma-separated values). <small><a href="#" class="toggle-advanced">Tampilkan penggunaan mahir</a></small></p>'
     ResultCreated: '{count} pengguna dibuat'
-    ResultDeleted: '%d pengguna dihapus'
+    ResultDeleted: '{count} pengguna dihapus'
     ResultNone: 'Tidak ada pengubahan'
     ResultUpdated: '{count} pengguna diperbarui'
   MemberPassword:
@@ -421,9 +421,9 @@ id:
     UPDATEDRECORDS: '{count} data diperbarui.'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'Kolom database'
-    IMPORTSPECLINK: 'Tampilkan Spesifikasi untuk %s'
+    IMPORTSPECLINK: 'Tampilkan Spesifikasi untuk {model}'
     IMPORTSPECRELATIONS: Keterkaitan
-    IMPORTSPECTITLE: 'Spesifikasi untuk %s'
+    IMPORTSPECTITLE: 'Spesifikasi untuk {model}'
   ModelAdmin_Tools_ss:
     FILTER: Saring
     IMPORT: Impor
@@ -441,9 +441,9 @@ id:
     Page: Laman
     View: Tampilkan
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Mohon tingkatkan kekuatan kata kunci dengan menambah beberapa karakter berikut ini: %s'
+    LOWCHARSTRENGTH: 'Mohon tingkatkan kekuatan kata kunci dengan menambah beberapa karakter berikut ini: {chars}'
     PREVPASSWORD: 'Anda sudah pernah menggunakan kata kunci tersebut, mohon pilih kata kunci yang baru'
-    TOOSHORT: 'Kata kunci terlalu singkat, setidaknya harus terdiri dari %s karakter atau lebih'
+    TOOSHORT: 'Kata kunci terlalu singkat, setidaknya harus terdiri dari {minimum} karakter atau lebih'
   Permission:
     AdminGroup: Pengelola
     CMS_ACCESS_CATEGORY: 'Akses CMS'
@@ -455,7 +455,7 @@ id:
     AssignedTo: 'dihubungkan ke "{title}"'
     FromGroup: 'diwarisi dari kelompok "{title}"'
     FromRole: 'diwarisi dari peran "{title}"'
-    FromRoleOnGroup: 'diwarisi dari peran "%s" pada kelompok "%s"'
+    FromRoleOnGroup: 'diwarisi dari peran "{roletitle}" pada kelompok "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Hanya untuk pengelola'
     PLURALNAME: Peran
@@ -463,7 +463,7 @@ id:
     Title: Judul
   PermissionRoleCode:
     PLURALNAME: 'Kode Perijinan Peran'
-    PermsError: 'Tidak dapat menghubungkan kode "%s" dengan perijinan khusus (memerlukan akses PENGELOLA)'
+    PermsError: 'Tidak dapat menghubungkan kode "{code}" dengan perijinan khusus (memerlukan akses PENGELOLA)'
     SINGULARNAME: 'Kode Perijinan Peran'
   Permissions:
     PERMISSIONS_CATEGORY: 'Perijinan peran dan akses'

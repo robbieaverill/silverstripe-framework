@@ -162,7 +162,7 @@ lv:
     FULLADMINRIGHTS: 'Pilnas administratora tiesības'
     FULLADMINRIGHTS_HELP: 'Ietver un pārraksta visas pārējās piesaistītās atļaujas'
   PermissionCheckboxSetField:
-    FromRoleOnGroup: 'mantots no lomas "%s" grupā "%s"'
+    FromRoleOnGroup: 'mantots no lomas "{roletitle}" grupā "{grouptitle}"'
   Permissions:
     PERMISSIONS_CATEGORY: 'Lomu un piekļuves atļaujas'
   PhoneNumberField:

@@ -147,7 +147,7 @@ it:
     MAXIMUM: 'La password deve essere lunga almeno {max} caratteri.'
     SHOWONCLICKTITLE: 'Cambia password'
   ContentController:
-    DRAFT_SITE_ACCESS_RESTRICTION: 'Devi loggarti con la tua password per vedere la bozza o il contenuto archiviato. <a href="%s">Premi qui per tornare indietro al sito pubblicato.</a>'
+    DRAFT_SITE_ACCESS_RESTRICTION: 'Devi loggarti con la tua password per vedere la bozza o il contenuto archiviato. <a href="{link}">Premi qui per tornare indietro al sito pubblicato.</a>'
     NOTLOGGEDIN: 'Non autenticato'
   CreditCardField:
     FIRST: primo
@@ -250,7 +250,7 @@ it:
     VALIDATOR: Valiidatore
     VALIDCURRENCY: 'Inserisci una valuta valida'
   FormField:
-    Example: 'es. %s'
+    Example: 'es. {format}'
     NONE: nessuno
   GridAction:
     DELETE_DESCRIPTION: Elimina
@@ -263,7 +263,7 @@ it:
     Find: Trova
     LEVELUP: 'Livello superiore'
     LinkExisting: 'Collega esistente'
-    NewRecord: 'Nuovo %s'
+    NewRecord: 'Nuovo {type}'
     NoItemsFound: 'Nessun elemento trovato'
     PRINTEDAT: 'Stampato alle'
     PRINTEDBY: 'Stampato da'
@@ -279,7 +279,7 @@ it:
     Create: Crea
     Delete: Elimina
     DeletePermissionsFailure: 'Non hai i permessi per eliminare'
-    Deleted: 'Eliminato %s %s'
+    Deleted: 'Eliminato {type} {name}'
     Save: Salva
     Saved: 'Salvato {name} {link}'
   GridFieldEditButton_ss:
@@ -293,7 +293,7 @@ it:
     DefaultGroupTitleContentAuthors: 'Autori di contenuto'
     Description: Descrizione
     GroupReminder: 'Se scegli un gruppo genitore, questo gruppo erediterà tutti i suoi ruoli'
-    HierarchyPermsError: 'Non posso assegnare permessi privilegiati al gruppo genitore "%s" (richiede accesso ADMIN)'
+    HierarchyPermsError: 'Non posso assegnare permessi privilegiati al gruppo genitore "{group}" (richiede accesso ADMIN)'
     Locked: 'Bloccato?'
     NoRoles: 'Nessun ruolo trovato'
     PLURALNAME: Gruppi
@@ -305,10 +305,10 @@ it:
     many_many_Members: Membri
   GroupImportForm:
     Help1: '<p>Importa gruppi in formato <em>CSV</em> (valori separati da virgole). <small><a href="#" class="toggle-advanced">Mostra utilizzo avanzato</a></small></p>'
-    Help2: '<div class="advanced"><h4>Utilizzo avanzato</h4><ul><li>Colonne consentite: <em>%s</em></li><li>Gruppi esistenti sono individuati attraverso la proprietà univoca <em>Code</em> e aggiornati con i nuovi valori dal file importato.</li><li>Possono essere create gerarchie usando la colonna <em>ParentCode</em></li><li>Codici di autorizzazione possono essere assegnati con la colonna <em>PermissionCode</em>. I codici di autorizzazione preesistenti non saranno cancellati.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Utilizzo avanzato</h4><ul><li>Colonne consentite: <em>{allowed}</em></li><li>Gruppi esistenti sono individuati attraverso la proprietà univoca <em>Code</em> e aggiornati con i nuovi valori dal file importato.</li><li>Possono essere create gerarchie usando la colonna <em>ParentCode</em></li><li>Codici di autorizzazione possono essere assegnati con la colonna <em>PermissionCode</em>. I codici di autorizzazione preesistenti non saranno cancellati.</li></ul></div>'
     ResultCreated: 'Creati {count} gruppi'
-    ResultDeleted: 'Eliminati %d gruppi'
-    ResultUpdated: 'Aggiornati %d gruppi'
+    ResultDeleted: 'Eliminati {count} gruppi'
+    ResultUpdated: 'Aggiornati {count} gruppi'
   HTMLEditorField:
     ANCHORSCANNOTACCESSPAGE: 'Non ti è consentito accedere al contenuto della pagina di destinazione.'
     ANCHORSPAGENOTFOUND: 'Pagina di destinazione non trovata.'
@@ -510,9 +510,9 @@ it:
     Toggle: 'Mostra aiuto per la formattazione'
   MemberImportForm:
     Help1: '<p>Importa utenti in <em>formato CSV</em> (valori separati da virgole). <small><a href="#" class="toggle-advanced">Mostra utilizzo avanzato</a></small></p>'
-    Help2: '<div class="advanced"><h4>Utilizzo avanzato</h4><ul><li>Colonne consentite: <em>%s</em></li><li>Utenti esistenti sono individuati attraverso la proprietà univoca <em>Code</em> e aggiornati con i nuovi valori dal file importato.</li><li>Possono essere assegnati gruppi usando la colonna <em>Groups</em>. I gruppi sono identificati dalla proprietà <em>Code</em>, possono essere specificati più gruppi separandoli con la virgola. I gruppi preesistenti non saranno cancellati.</li></ul></div>'
+    Help2: '<div class="advanced"><h4>Utilizzo avanzato</h4><ul><li>Colonne consentite: <em>{allowed}</em></li><li>Utenti esistenti sono individuati attraverso la proprietà univoca <em>Code</em> e aggiornati con i nuovi valori dal file importato.</li><li>Possono essere assegnati gruppi usando la colonna <em>Groups</em>. I gruppi sono identificati dalla proprietà <em>Code</em>, possono essere specificati più gruppi separandoli con la virgola. I gruppi preesistenti non saranno cancellati.</li></ul></div>'
     ResultCreated: 'Creati {count} utenti'
-    ResultDeleted: 'Eliminati %d utenti'
+    ResultDeleted: 'Eliminati {count} utenti'
     ResultNone: 'Nessun cambiamento'
     ResultUpdated: 'Aggiornati {count} utenti'
   MemberPassword:
@@ -533,9 +533,9 @@ it:
     UPDATEDRECORDS: 'Aggiornati {count} record.'
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'Colonne database'
-    IMPORTSPECLINK: 'Mostra specifiche per %s'
+    IMPORTSPECLINK: 'Mostra specifiche per {model}'
     IMPORTSPECRELATIONS: Relazioni
-    IMPORTSPECTITLE: 'Specifiche per %s'
+    IMPORTSPECTITLE: 'Specifiche per {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtra
     IMPORT: Importa
@@ -555,9 +555,9 @@ it:
     Page: Pagina
     View: Visualizza
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Perfavore aumenta la sicurezza della password aggiungendo alcuni dei seguenti caratteri: %s'
+    LOWCHARSTRENGTH: 'Perfavore aumenta la sicurezza della password aggiungendo alcuni dei seguenti caratteri: {chars}'
     PREVPASSWORD: 'Hai già usato questa password in passato, per favore scegline una nuova'
-    TOOSHORT: 'La password è troppo corta, deve essere lunga %s o più caratteri'
+    TOOSHORT: 'La password è troppo corta, deve essere lunga {minimum} o più caratteri'
   Permission:
     AdminGroup: Amministratore
     CMS_ACCESS_CATEGORY: 'Accesso CMS'
@@ -569,7 +569,7 @@ it:
     AssignedTo: 'assegnato a "{title}"'
     FromGroup: 'ereditato dal gruppo "{title}"'
     FromRole: 'ereditato dal ruolo "{title}"'
-    FromRoleOnGroup: 'ereditato dal ruolo "%s" nel gruppo "%s"'
+    FromRoleOnGroup: 'ereditato dal ruolo "{roletitle}" nel gruppo "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Solo l''amministratore può applicare'
     PLURALNAME: Ruoli
@@ -577,7 +577,7 @@ it:
     Title: Titolo
   PermissionRoleCode:
     PLURALNAME: 'Codici di ruolo'
-    PermsError: 'Non posso assegnare permessi privilegiati al codice "%s" (richiede accesso ADMIN)'
+    PermsError: 'Non posso assegnare permessi privilegiati al codice "{code}" (richiede accesso ADMIN)'
     SINGULARNAME: 'Codice Ruolo'
   Permissions:
     PERMISSIONS_CATEGORY: 'Ruoli e permessi d''accesso'
@@ -733,12 +733,12 @@ it:
     has_many_Versions: Versioni
   VersionedGridFieldItemRequest:
     ARCHIVE: Archiviare
-    Archived: '%s %s archiviata'
+    Archived: '{type} {title} archiviata'
     BUTTONARCHIVEDESC: 'Nascondere e mettere in archivio'
     BUTTONPUBLISH: Pubblicare
     BUTTONUNPUBLISH: Nascondere
     BUTTONUNPUBLISHDESC: 'Rimuovere questo record dal sito pubblicato'
     Published: 'Pubblicato {name} {link}'
-    Unpublished: 'Nascosto %s %s'
+    Unpublished: 'Nascosto {type} {title}'
   i18n:
     PLURAL: '{number} {form}'
