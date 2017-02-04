@@ -247,7 +247,7 @@ cs:
     VALIDATOR: Validátor
     VALIDCURRENCY: 'Prosím zadejte platnou měnu'
   FormField:
-    Example: 'např. %s'
+    Example: 'např. {format}'
     NONE: žádný
   GridAction:
     DELETE_DESCRIPTION: Smazat
@@ -260,7 +260,7 @@ cs:
     Find: Hledat
     LEVELUP: 'O úroveň výše'
     LinkExisting: 'Odkaz existující'
-    NewRecord: 'Nový %s'
+    NewRecord: 'Nový {type}'
     NoItemsFound: 'Žádné položky'
     PRINTEDAT: 'Vytištěno v'
     PRINTEDBY: Vytištěno
@@ -290,7 +290,7 @@ cs:
     DefaultGroupTitleContentAuthors: 'Autoři obsahu'
     Description: Popis
     GroupReminder: 'Když vyberete nadřizenou skupinu, tato skupina bude mít všechny její role'
-    HierarchyPermsError: 'Nelze připojit nadřazenou skupinu "%s" s privilegovanými právy (vyžaduje ADMIN přístup)'
+    HierarchyPermsError: 'Nelze připojit nadřazenou skupinu "{group}" s privilegovanými právy (vyžaduje ADMIN přístup)'
     Locked: 'Zamčený?'
     NoRoles: 'Žádné role'
     PLURALNAME: Skupiny
@@ -531,7 +531,7 @@ cs:
     IMPORTSPECFIELDS: 'Sloupce databáze'
     IMPORTSPECLINK: 'Ukázat specifikaci pro %s'
     IMPORTSPECRELATIONS: Relace
-    IMPORTSPECTITLE: 'Specifikace pro %s'
+    IMPORTSPECTITLE: 'Specifikace pro {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtrovat
     IMPORT: Importovat
@@ -551,9 +551,9 @@ cs:
     Page: Stránka
     View: Zobrazit
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Prosím, posilněte heslo přidáním některých z následujících znaků: %s'
+    LOWCHARSTRENGTH: 'Prosím, posilněte heslo přidáním některých z následujících znaků: {chars}'
     PREVPASSWORD: 'Již jste použil toto heslo v minulosti, vyberte nové heslo, prosím'
-    TOOSHORT: 'Heslo je příliš krátké, musí být %s nebo více znaků dlouhé'
+    TOOSHORT: 'Heslo je příliš krátké, musí být {minimum} nebo více znaků dlouhé'
   Permission:
     AdminGroup: Administrátor
     CMS_ACCESS_CATEGORY: 'Přístup CMS'
@@ -565,7 +565,7 @@ cs:
     AssignedTo: 'přiděleno k "{title}"'
     FromGroup: 'zdědeno ze skupiny "{title}"'
     FromRole: 'zdědeno z role "{title}"'
-    FromRoleOnGroup: 'děděno z role "%s" ve skupině "%s"'
+    FromRoleOnGroup: 'děděno z role "{roletitle}" ve skupině "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Pouze administrátor může použít'
     PLURALNAME: Role
@@ -573,7 +573,7 @@ cs:
     Title: Název
   PermissionRoleCode:
     PLURALNAME: 'Kódy role oprávnění'
-    PermsError: 'Nelze připojit kód "%s" s privilegovanými právy (vyžaduje ADMIN přístup)'
+    PermsError: 'Nelze připojit kód "{code}" s privilegovanými právy (vyžaduje ADMIN přístup)'
     SINGULARNAME: 'Kód role oprávnění'
   Permissions:
     PERMISSIONS_CATEGORY: 'Role a přístupová práva'
@@ -728,12 +728,12 @@ cs:
     has_many_Versions: Verze
   VersionedGridFieldItemRequest:
     ARCHIVE: Archív
-    Archived: 'Archivováno %s %s'
+    Archived: 'Archivováno {type} {title}'
     BUTTONARCHIVEDESC: 'Nezveřejnit a odeslat do archívu'
     BUTTONPUBLISH: Zveřejnit
     BUTTONUNPUBLISH: Nezveřejnit
     BUTTONUNPUBLISHDESC: 'Odstranit tento záznam z publikovaných na webu'
     Published: 'Zveřejněno {name} {link}'
-    Unpublished: 'Nezveřejněno %s %s'
+    Unpublished: 'Nezveřejněno {type} {title}'
   i18n:
     PLURAL: '{number} {form}'

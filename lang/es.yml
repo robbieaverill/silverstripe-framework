@@ -209,7 +209,7 @@ es:
     VALIDATOR: Validador
     VALIDCURRENCY: 'Por favor, introduzca una moneda válida.'
   FormField:
-    Example: 'Ejemplo %s'
+    Example: 'Ejemplo {format}'
     NONE: ninguna
   GridAction:
     DELETE_DESCRIPTION: Borrar
@@ -222,7 +222,7 @@ es:
     Find: Buscar
     LEVELUP: 'Subir nivel'
     LinkExisting: 'Enlace Existente'
-    NewRecord: 'Nuevo %s'
+    NewRecord: 'Nuevo {type}'
     NoItemsFound: 'No se encontraron registros'
     PRINTEDAT: 'Impreso en'
     PRINTEDBY: 'Impreso por'
@@ -252,7 +252,7 @@ es:
     DefaultGroupTitleContentAuthors: Editores
     Description: Descripción
     GroupReminder: 'Si Ud elige un grupo padre, este grupo tomará todos sus roles'
-    HierarchyPermsError: 'No se puede asignar permisos privilegiados al grupo "% s"  (requiere acceso de administrador)'
+    HierarchyPermsError: 'No se puede asignar permisos privilegiados al grupo "{group}"  (requiere acceso de administrador)'
     Locked: '¿Bloqueado?'
     NoRoles: 'Sin roles'
     PLURALNAME: Grupos
@@ -441,7 +441,7 @@ es:
     IMPORTSPECFIELDS: 'Columnas de la base de datos'
     IMPORTSPECLINK: 'Mostrar especificación para %s'
     IMPORTSPECRELATIONS: Relaciones
-    IMPORTSPECTITLE: 'Especificación para %s'
+    IMPORTSPECTITLE: 'Especificación para {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtrar
     IMPORT: Importar
@@ -459,7 +459,7 @@ es:
     Page: Página
     View: Vista
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Necesitas aumentar la complejidad de tu contraseña agregando los siguientes caracteres: %s'
+    LOWCHARSTRENGTH: 'Necesitas aumentar la complejidad de tu contraseña agregando los siguientes caracteres: {chars}'
     PREVPASSWORD: 'Ya habías utilizado esa contraseña en el pasado, por favor usa uno nuevo'
     TOOSHORT: 'Tu contraseña es muy corta'
   Permission:
@@ -473,7 +473,7 @@ es:
     AssignedTo: 'asignado a "{title}"'
     FromGroup: 'heredado desde el grupo "{title}"'
     FromRole: 'heredado desde la regla "{title}"'
-    FromRoleOnGroup: 'heredado desde la regla "%s" del grupo "%s"'
+    FromRoleOnGroup: 'heredado desde la regla "{roletitle}" del grupo "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Sólo el administrador puede aplicar'
     PLURALNAME: Reglas
@@ -481,7 +481,7 @@ es:
     Title: Título
   PermissionRoleCode:
     PLURALNAME: 'Códigos de permiso'
-    PermsError: 'No se puede asignar permisos privilegiados al código "% s"  (requiere acceso de administrador)'
+    PermsError: 'No se puede asignar permisos privilegiados al código "{code}"  (requiere acceso de administrador)'
     SINGULARNAME: 'Códigos de las regla de permisos'
   Permissions:
     PERMISSIONS_CATEGORY: 'Reglas y permisos de acceso'

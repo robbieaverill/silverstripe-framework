@@ -176,7 +176,7 @@ mi:
     VALIDATOR: Pūwhakamana
     VALIDCURRENCY: 'Tāurua he moni tika'
   FormField:
-    Example: 'hei tauira %s'
+    Example: 'hei tauira {format}'
     NONE: Kore
   GridAction:
     DELETE_DESCRIPTION: Muku
@@ -189,7 +189,7 @@ mi:
     Find: Rapu
     LEVELUP: 'Whakaawhiwhi ki runga'
     LinkExisting: 'Hono Tīari'
-    NewRecord: '%s hōu'
+    NewRecord: '{type} hōu'
     NoItemsFound: 'Kāore i kitea he tūemi'
     PRINTEDAT: 'I tāngia i'
     PRINTEDBY: 'I tāngia e'
@@ -394,7 +394,7 @@ mi:
     IMPORTSPECFIELDS: 'Ngā tīwae pātengi raraunga'
     IMPORTSPECLINK: 'Whakaatu Whakapūtātanga mō %s'
     IMPORTSPECRELATIONS: 'Ngā Pānga'
-    IMPORTSPECTITLE: 'Whakapūtātanga mō %s'
+    IMPORTSPECTITLE: 'Whakapūtātanga mō {model}'
   ModelAdmin_Tools_ss:
     FILTER: Tātari
     IMPORT: Kawemai
@@ -412,9 +412,9 @@ mi:
     Page: Whārangi
     View: Tiro
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Whakakahatia tō kupuhipa mā te tāpiri i ētahi o ēnei pūāhua: %s'
+    LOWCHARSTRENGTH: 'Whakakahatia tō kupuhipa mā te tāpiri i ētahi o ēnei pūāhua: {chars}'
     PREVPASSWORD: 'Kua whakamahi kētia tēnā kupuhipa i mua, kōwhiria he kupuhipa hou'
-    TOOSHORT: 'He poto rawa te kupuhipa, me %s pūāhua neke atu te roa'
+    TOOSHORT: 'He poto rawa te kupuhipa, me {minimum} pūāhua neke atu te roa'
   Permission:
     AdminGroup: Kaiwhakahaere
     CMS_ACCESS_CATEGORY: 'Uru CMS'
@@ -426,7 +426,7 @@ mi:
     AssignedTo: 'kua tautapatia ki  "{title}"'
     FromGroup: 'I tukuna iho i te rōpū "{title}"'
     FromRole: 'I tukuna iho i te tūnga "{title}"'
-    FromRoleOnGroup: 'i tukuna iho i "%s" i te rōpū "%s"'
+    FromRoleOnGroup: 'i tukuna iho i "{roletitle}" i te rōpū "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Ka taea anake te tono e ngā kaiwhakahaere'
     PLURALNAME: 'Ngā Tūnga'

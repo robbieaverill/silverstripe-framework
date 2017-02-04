@@ -187,7 +187,7 @@ es_AR:
     CMS_ACCESS_CATEGORY: 'Acceso al CMS'
     FULLADMINRIGHTS: 'Privilegios administrativos completos'
   PermissionCheckboxSetField:
-    FromRoleOnGroup: 'heredado desde el rol "%s" en el grupo "%s"'
+    FromRoleOnGroup: 'heredado desde el rol "{roletitle}" en el grupo "{grouptitle}"'
   Permissions:
     PERMISSIONS_CATEGORY: 'Roles y permisos de acceso'
   PhoneNumberField:

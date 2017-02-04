@@ -86,7 +86,7 @@ pt:
     Filter: Filtrar
     Find: Procurar
     LinkExisting: 'Link existente'
-    NewRecord: 'Novo %s'
+    NewRecord: 'Novo {type}'
     NoItemsFound: 'Não foram encontrados elementos'
     PRINTEDAT: 'Impresso em'
     PRINTEDBY: 'Impresso por'
@@ -190,7 +190,7 @@ pt:
     AdminGroup: Administrador
     FULLADMINRIGHTS: 'Direitos de Administrador'
   PermissionCheckboxSetField:
-    FromRoleOnGroup: 'herdada da regra "%s" no grupo "%s"'
+    FromRoleOnGroup: 'herdada da regra "{roletitle}" no grupo "{grouptitle}"'
   PermissionRole:
     Title: Título
   Permissions:

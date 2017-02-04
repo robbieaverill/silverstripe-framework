@@ -174,7 +174,7 @@ ja:
     VALIDATOR: 検証
     VALIDCURRENCY: '有効な通貨を入力してください'
   FormField:
-    Example: '例 %s'
+    Example: '例 {format}'
     NONE: 何もありません
   GridAction:
     DELETE_DESCRIPTION: 削除
@@ -187,7 +187,7 @@ ja:
     Find: 探す
     LEVELUP: レベルアップ
     LinkExisting: 既存のリンク
-    NewRecord: 新しい%s
+    NewRecord: 新しい{type}
     NoItemsFound: '項目が見つかりませんでした'
     PRINTEDAT: で印刷
     PRINTEDBY: によって印刷
@@ -392,7 +392,7 @@ ja:
     IMPORTSPECFIELDS: 'データベースカラム'
     IMPORTSPECLINK: '%s の仕様を表示する'
     IMPORTSPECRELATIONS: 関連
-    IMPORTSPECTITLE: '%s の仕様'
+    IMPORTSPECTITLE: '{model} の仕様'
   ModelAdmin_Tools_ss:
     FILTER: フィルタ
     IMPORT: 取り込み
@@ -410,7 +410,7 @@ ja:
     Page: ページ
     View: 閲覧
   PasswordValidator:
-    LOWCHARSTRENGTH: '次の文字のいくつかを追加してパスワードを強化してください: %s'
+    LOWCHARSTRENGTH: '次の文字のいくつかを追加してパスワードを強化してください: {chars}'
     PREVPASSWORD: 'このパスワードは過去に使用されています、新しいパスワードを選択してください'
     TOOSHORT: パスワードが短すぎます、%文字以上でなければなりません
   Permission:
@@ -424,7 +424,7 @@ ja:
     AssignedTo: '"{title}" に割り当てられた'
     FromGroup: 'グループ"{title}"から継承'
     FromRole: '役割"{title}"から継承'
-    FromRoleOnGroup: 'グループ "%s" のロール "%s"から継承'
+    FromRoleOnGroup: 'グループ "{roletitle}" のロール "{grouptitle}"から継承'
   PermissionRole:
     OnlyAdminCanApply: '管理者のみ適用可能'
     PLURALNAME: 役割

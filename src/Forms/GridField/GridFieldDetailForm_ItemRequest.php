@@ -597,7 +597,7 @@ class GridFieldDetailForm_ItemRequest extends RequestHandler
             )));
         } else {
             $items->push(new ArrayData(array(
-                'Title' => sprintf(_t('GridField.NewRecord', 'New %s'), $this->record->i18n_singular_name()),
+                'Title' => _t('GridField.NewRecord', 'New {type}', ['type' => $this->record->i18n_singular_name()]),
                 'Link' => false
             )));
         }

@@ -247,7 +247,7 @@ ru:
     VALIDATOR: Валидатор
     VALIDCURRENCY: 'Пожалуйста, укажите валюту правильно'
   FormField:
-    Example: 'например, %s'
+    Example: 'например, {format}'
     NONE: 'не выбрано'
   GridAction:
     DELETE_DESCRIPTION: Удалить
@@ -260,7 +260,7 @@ ru:
     Find: Найти
     LEVELUP: 'Уровень выше'
     LinkExisting: Связать
-    NewRecord: 'Новый(-ая) %s'
+    NewRecord: 'Новый(-ая) {type}'
     NoItemsFound: 'Элементов не найдено'
     PRINTEDAT: 'Когда распечатано:'
     PRINTEDBY: 'Кем распечатано:'
@@ -290,7 +290,7 @@ ru:
     DefaultGroupTitleContentAuthors: 'Авторы содержимого'
     Description: Описание
     GroupReminder: 'При назначении группы верхнего уровня все роли будут переняты из нее'
-    HierarchyPermsError: 'У Вас недостаточно прав для назначения родительской группы "%s" (необходимы права администратора)'
+    HierarchyPermsError: 'У Вас недостаточно прав для назначения родительской группы "{group}" (необходимы права администратора)'
     Locked: 'Блокировано?'
     NoRoles: 'Ролей не найдено'
     PLURALNAME: Группы
@@ -531,7 +531,7 @@ ru:
     IMPORTSPECFIELDS: 'Колонки таблицы базы данных'
     IMPORTSPECLINK: 'Показать спецификацию для %s'
     IMPORTSPECRELATIONS: Отношения
-    IMPORTSPECTITLE: 'Спецификация для %s'
+    IMPORTSPECTITLE: 'Спецификация для {model}'
   ModelAdmin_Tools_ss:
     FILTER: Фильтр
     IMPORT: Импорт
@@ -551,9 +551,9 @@ ru:
     Page: Страница
     View: Просмотр
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Пожалуйста, увеличьте сложность пароля, добавив один из следующих символов: %s'
+    LOWCHARSTRENGTH: 'Пожалуйста, увеличьте сложность пароля, добавив один из следующих символов: {chars}'
     PREVPASSWORD: 'Вы уже использовали этот пароль прежде. Пожалуйста, выберите новый пароль.'
-    TOOSHORT: 'Слишком короткий пароль, минимальная длина - %s символов'
+    TOOSHORT: 'Слишком короткий пароль, минимальная длина - {minimum} символов'
   Permission:
     AdminGroup: Администратор
     CMS_ACCESS_CATEGORY: 'Доступ к CMS'
@@ -565,7 +565,7 @@ ru:
     AssignedTo: 'присвоено "{title}"'
     FromGroup: 'перенято от группы "{title}"'
     FromRole: 'перенято из роли "{title}"'
-    FromRoleOnGroup: 'перенято из роли "%s" для группы "%s"'
+    FromRoleOnGroup: 'перенято из роли "{roletitle}" для группы "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Может применяться только администратором'
     PLURALNAME: 'Роли'
@@ -573,7 +573,7 @@ ru:
     Title: Название
   PermissionRoleCode:
     PLURALNAME: 'Код роли доступа'
-    PermsError: 'У Вас недостаточно прав для назначения родительской группы "%s" (необходимы права администратора)'
+    PermsError: 'У Вас недостаточно прав для назначения родительской группы "{code}" (необходимы права администратора)'
     SINGULARNAME: 'Код роли доступа'
   Permissions:
     PERMISSIONS_CATEGORY: 'Роли и права доступа'
@@ -728,12 +728,12 @@ ru:
     has_many_Versions: Версии
   VersionedGridFieldItemRequest:
     ARCHIVE: 'Архив'
-    Archived: 'Зархивировано %s %s'
+    Archived: 'Зархивировано {type} {title}'
     BUTTONARCHIVEDESC: 'Отменить публикацию и отправить в архив'
     BUTTONPUBLISH: Опубликовать
     BUTTONUNPUBLISH: 'Отмена публикации'
     BUTTONUNPUBLISHDESC: 'Удалить эту страницу с опубликованного сайта'
     Published: 'Опубликована {name} {link}'
-    Unpublished: 'Публикация отменена  %s %s'
+    Unpublished: 'Публикация отменена  {type} {title}'
   i18n:
     PLURAL: '{number} {form}'

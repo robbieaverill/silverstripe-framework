@@ -258,7 +258,7 @@ en:
     VALIDATOR: Validator
     VALIDCURRENCY: 'Please enter a valid currency'
   FormField:
-    Example: 'e.g. %s'
+    Example: 'e.g. {format}'
     NONE: none
   GridAction:
     DELETE_DESCRIPTION: Delete
@@ -271,7 +271,7 @@ en:
     Find: Find
     LEVELUP: 'Level up'
     LinkExisting: 'Link Existing'
-    NewRecord: 'New %s'
+    NewRecord: 'New {type}'
     NoItemsFound: 'No items found'
     PRINTEDAT: 'Printed at'
     PRINTEDBY: 'Printed by'
@@ -301,7 +301,7 @@ en:
     DefaultGroupTitleContentAuthors: 'Content Authors'
     Description: Description
     GroupReminder: 'If you choose a parent group, this group will take all it''s roles'
-    HierarchyPermsError: 'Can''t assign parent group "%s" with privileged permissions (requires ADMIN access)'
+    HierarchyPermsError: 'Can''t assign parent group "{group}" with privileged permissions (requires ADMIN access)'
     Locked: 'Locked?'
     NoRoles: 'No roles found'
     PLURALNAME: Groups
@@ -556,7 +556,7 @@ en:
     IMPORTSPECFIELDS: 'Database columns'
     IMPORTSPECLINK: 'Show Specification for %s'
     IMPORTSPECRELATIONS: Relations
-    IMPORTSPECTITLE: 'Specification for %s'
+    IMPORTSPECTITLE: 'Specification for {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filter
     IMPORT: Import
@@ -576,9 +576,9 @@ en:
     Page: Page
     View: View
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Please increase password strength by adding some of the following characters: %s'
+    LOWCHARSTRENGTH: 'Please increase password strength by adding some of the following characters: {chars}'
     PREVPASSWORD: 'You''ve already used that password in the past, please choose a new password'
-    TOOSHORT: 'Password is too short, it must be %s or more characters long'
+    TOOSHORT: 'Password is too short, it must be {minimum} or more characters long'
   Permission:
     AdminGroup: Administrator
     CMS_ACCESS_CATEGORY: 'CMS Access'
@@ -590,7 +590,7 @@ en:
     AssignedTo: 'assigned to "{title}"'
     FromGroup: 'inherited from group "{title}"'
     FromRole: 'inherited from role "{title}"'
-    FromRoleOnGroup: 'inherited from role "%s" on group "%s"'
+    FromRoleOnGroup: 'inherited from role "{roletitle}" on group "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Only admin can apply'
     PLURALNAME: Roles
@@ -598,7 +598,7 @@ en:
     Title: Title
   PermissionRoleCode:
     PLURALNAME: 'Permission Role Codes'
-    PermsError: 'Can''t assign code "%s" with privileged permissions (requires ADMIN access)'
+    PermsError: 'Can''t assign code "{code}" with privileged permissions (requires ADMIN access)'
     SINGULARNAME: 'Permission Role Code'
   Permissions:
     PERMISSIONS_CATEGORY: 'Roles and access permissions'
@@ -799,12 +799,12 @@ en:
     has_many_Versions: Versions
   VersionedGridFieldItemRequest:
     ARCHIVE: Archive
-    Archived: 'Archived %s %s'
+    Archived: 'Archived {type} {title}'
     BUTTONARCHIVEDESC: 'Unpublish and send to archive'
     BUTTONPUBLISH: Publish
     BUTTONUNPUBLISH: Unpublish
     BUTTONUNPUBLISHDESC: 'Remove this record from the published site'
     Published: 'Published {name} {link}'
-    Unpublished: 'Unpublished %s %s'
+    Unpublished: 'Unpublished {type} {title}'
   i18n:
     PLURAL: '{number} {form}'

@@ -176,7 +176,7 @@ nb:
     VALIDATOR: Validator
     VALIDCURRENCY: 'Vennligst skriv inn gyldig valuta'
   FormField:
-    Example: 'F.eks. %s'
+    Example: 'F.eks. {format}'
     NONE: ingen
   GridAction:
     DELETE_DESCRIPTION: Slett
@@ -189,7 +189,7 @@ nb:
     Find: Finn
     LEVELUP: 'Opp ett nivå'
     LinkExisting: 'Knytt til eksisterende'
-    NewRecord: 'Ny %s'
+    NewRecord: 'Ny {type}'
     NoItemsFound: 'Ingen elementer ble funnet'
     PRINTEDAT: 'Skrevet ut ved'
     PRINTEDBY: 'Skrevet ut av'
@@ -219,7 +219,7 @@ nb:
     DefaultGroupTitleContentAuthors: Innholdsforfattere
     Description: Beskrivelse
     GroupReminder: 'Hvis du velger en overordnet gruppe, vil denne gruppen arve alle rollene'
-    HierarchyPermsError: 'Kan ikke angi overordnet gruppe "%s" med administratorrettigheter (krever ADMIN-tilgang)'
+    HierarchyPermsError: 'Kan ikke angi overordnet gruppe "{group}" med administratorrettigheter (krever ADMIN-tilgang)'
     Locked: 'Låst?'
     NoRoles: 'Ingen roller funnet'
     PLURALNAME: Grupper
@@ -395,7 +395,7 @@ nb:
     IMPORTSPECFIELDS: Databasekolonner
     IMPORTSPECLINK: 'Vis spesifikasjon for %s'
     IMPORTSPECRELATIONS: Relasjoner
-    IMPORTSPECTITLE: 'Spesifikasjon for %s'
+    IMPORTSPECTITLE: 'Spesifikasjon for {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtrer
     IMPORT: Importer
@@ -413,9 +413,9 @@ nb:
     Page: Side
     View: Viser
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Vennligst øk passordstyrken ved å legge til noen av følgende tegn: %s'
+    LOWCHARSTRENGTH: 'Vennligst øk passordstyrken ved å legge til noen av følgende tegn: {chars}'
     PREVPASSWORD: 'Du har brukt passordet tidligere, vennligst velg et nytt passord'
-    TOOSHORT: 'Passordet er for kort, det må være %s eller flere tegn langt'
+    TOOSHORT: 'Passordet er for kort, det må være {minimum} eller flere tegn langt'
   Permission:
     AdminGroup: Administratorer
     CMS_ACCESS_CATEGORY: 'Tilgang til publiseringssystem'
@@ -427,14 +427,14 @@ nb:
     AssignedTo: 'tilordnet "{title}"'
     FromGroup: 'Arvet fra gruppe "{title}"'
     FromRole: 'arvet fra rolle "{title}"'
-    FromRoleOnGroup: 'arvet fra rollen "%s" i gruppen "%s"'
+    FromRoleOnGroup: 'arvet fra rollen "{roletitle}" i gruppen "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Bare administratorer kan søke'
     PLURALNAME: Roller
     SINGULARNAME: Rolle
     Title: Tittel
   PermissionRoleCode:
-    PermsError: 'Kan ikke angi kode "%s" med administratorrettigheter (krever ADMIN-tilgang)'
+    PermsError: 'Kan ikke angi kode "{code}" med administratorrettigheter (krever ADMIN-tilgang)'
     SINGULARNAME: Tillatelseskode
   Permissions:
     PERMISSIONS_CATEGORY: 'Rolle- og tilgangstillatelser'

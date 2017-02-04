@@ -141,7 +141,7 @@ af:
     Find: Vind
     LEVELUP: 'Op een vlak'
     LinkExisting: 'Koppel bestaande'
-    NewRecord: 'Nuwe %s'
+    NewRecord: 'Nuwe {type}'
     NoItemsFound: 'Geen items gevind nie'
     PRINTEDAT: 'Gedruk te'
     PRINTEDBY: 'Gedruk deur'
@@ -338,7 +338,7 @@ af:
     AssignedTo: 'toegeken aan "{title}"'
     FromGroup: 'geërf van groep "{title}"'
     FromRole: 'geërf van rol"{title}"'
-    FromRoleOnGroup: 'oorgeërf van rol "%s" op groep "%s"'
+    FromRoleOnGroup: 'oorgeërf van rol "{roletitle}" op groep "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Slegs administrateur daarvoor aansoek doen'
     PLURALNAME: Rolle

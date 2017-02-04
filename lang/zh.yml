@@ -199,7 +199,7 @@ zh:
     VALIDATOR: 验证器
     VALIDCURRENCY: '请输入一个有效的货币'
   FormField:
-    Example: '例如 %s'
+    Example: '例如 {format}'
     NONE: '无'
   GridAction:
     DELETE_DESCRIPTION: '删除'
@@ -212,7 +212,7 @@ zh:
     Find: 查找
     LEVELUP: 等级提升
     LinkExisting: 链接已存在
-    NewRecord: '新 %s'
+    NewRecord: '新 {type}'
     NoItemsFound: 没有找到任何项目
     PRINTEDAT: 印刷地
     PRINTEDBY: 印刷人
@@ -242,7 +242,7 @@ zh:
     DefaultGroupTitleContentAuthors: '内容作者'
     Description: 描述
     GroupReminder: '如果您选择了某父组，该组别将会承担起所有功能角色'
-    HierarchyPermsError: '无法为父组 "%s" 分配特权权限（要求具备 ADMIN 访问）'
+    HierarchyPermsError: '无法为父组 "{group}" 分配特权权限（要求具备 ADMIN 访问）'
     Locked: 锁定？
     NoRoles: 没有找到角色
     PLURALNAME: 群组
@@ -425,7 +425,7 @@ zh:
     IMPORTSPECFIELDS: '数据库栏目'
     IMPORTSPECLINK: '展示 %s 的详细信息'
     IMPORTSPECRELATIONS: '关系'
-    IMPORTSPECTITLE: '%s 的详细信息'
+    IMPORTSPECTITLE: '{model} 的详细信息'
   ModelAdmin_Tools_ss:
     FILTER: 过滤
     IMPORT: '导入'
@@ -443,9 +443,9 @@ zh:
     Page: 页面
     View: 查看
   PasswordValidator:
-    LOWCHARSTRENGTH: '请添加下列部分字符以提升密码强度：%s'
+    LOWCHARSTRENGTH: '请添加下列部分字符以提升密码强度：{chars}'
     PREVPASSWORD: '您已经使用过这个密码，请选用新的密码'
-    TOOSHORT: '密码长度过短，必须为 %s 个字符或更长'
+    TOOSHORT: '密码长度过短，必须为 {minimum} 个字符或更长'
   Permission:
     AdminGroup: 管理员
     CMS_ACCESS_CATEGORY: 'CMS 访问'
@@ -457,7 +457,7 @@ zh:
     AssignedTo: '已分配至 "{title}"'
     FromGroup: '从小组 "{title}"继承'
     FromRole: '从角色 "{title}"继承'
-    FromRoleOnGroup: '从 "%s" 小组的 "%s" 角色继承'
+    FromRoleOnGroup: '从 "{roletitle}" 小组的 "{grouptitle}" 角色继承'
   PermissionRole:
     OnlyAdminCanApply: 只有管理员可以应用
     PLURALNAME: 角色
@@ -465,7 +465,7 @@ zh:
     Title: '标题'
   PermissionRoleCode:
     PLURALNAME: '权限角色代码'
-    PermsError: '无法为代码 "%s"分配特权权限（要求具备 ADMIN 访问）'
+    PermsError: '无法为代码 "{code}"分配特权权限（要求具备 ADMIN 访问）'
     SINGULARNAME: '权限角色代码'
   Permissions:
     PERMISSIONS_CATEGORY: 角色及访问权限

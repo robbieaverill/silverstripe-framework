@@ -250,7 +250,7 @@ eo:
     VALIDATOR: Validigilo
     VALIDCURRENCY: 'Bonvole enigu validan kurzon'
   FormField:
-    Example: 'ekz. %s'
+    Example: 'ekz. {format}'
     NONE: neniu
   GridAction:
     DELETE_DESCRIPTION: Forigi
@@ -263,7 +263,7 @@ eo:
     Find: Serĉi
     LEVELUP: Samniveligi
     LinkExisting: 'Ligi ekzistantajn'
-    NewRecord: 'Novaj %s'
+    NewRecord: 'Novaj {type}'
     NoItemsFound: 'Neniu elemento troviĝis'
     PRINTEDAT: 'Presita ĉe'
     PRINTEDBY: 'Presita de'
@@ -293,7 +293,7 @@ eo:
     DefaultGroupTitleContentAuthors: Enhavaŭtoroj
     Description: Priskribo
     GroupReminder: 'Se vi elektas patran grupon, ĉi tiu grupo prenos ĉiujn ĝiajn rolojn'
-    HierarchyPermsError: 'Ne povas agordi patran grupon "%s" kun privilegiaj permesoj (bezonas ADMIN-aliron)'
+    HierarchyPermsError: 'Ne povas agordi patran grupon "{group}" kun privilegiaj permesoj (bezonas ADMIN-aliron)'
     Locked: 'Ŝlosita?'
     NoRoles: 'Ne trovis rolon'
     PLURALNAME: Grupoj
@@ -535,7 +535,7 @@ eo:
     IMPORTSPECFIELDS: 'Datenbazaj kolumnoj'
     IMPORTSPECLINK: 'Vidigi agordaron por %s'
     IMPORTSPECRELATIONS: Rilatoj
-    IMPORTSPECTITLE: 'Agordaro por %s'
+    IMPORTSPECTITLE: 'Agordaro por {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtri
     IMPORT: Importi
@@ -555,9 +555,9 @@ eo:
     Page: Paĝo
     View: Vido
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Bonvole plifortigu la pasvortan aldonante la jenajn signojn: %s'
+    LOWCHARSTRENGTH: 'Bonvole plifortigu la pasvortan aldonante la jenajn signojn: {chars}'
     PREVPASSWORD: 'Vi jam uzis tiun pasvorton pasintece, do bonvole elektu novan pasvorton'
-    TOOSHORT: 'Pasvorto estas tro mallonga; ĝi devas esti almenaŭ %s signojn longa'
+    TOOSHORT: 'Pasvorto estas tro mallonga; ĝi devas esti almenaŭ {minimum} signojn longa'
   Permission:
     AdminGroup: Administranto
     CMS_ACCESS_CATEGORY: CMS-aliro
@@ -569,7 +569,7 @@ eo:
     AssignedTo: 'agordita al "{title}"'
     FromGroup: 'heredita el grupo "{title}"'
     FromRole: 'heredita el rolo "{title}"'
-    FromRoleOnGroup: 'heredita el rolo "%s" en grupo "%s"'
+    FromRoleOnGroup: 'heredita el rolo "{roletitle}" en grupo "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Nur administranto povas apliki'
     PLURALNAME: Roloj
@@ -577,7 +577,7 @@ eo:
     Title: Titolo
   PermissionRoleCode:
     PLURALNAME: 'Permesrolaj kodoj'
-    PermsError: 'Ne povas agordi kodon "%s" kun privilegiaj permesoj (bezonas ADMIN-aliron)'
+    PermsError: 'Ne povas agordi kodon "{code}" kun privilegiaj permesoj (bezonas ADMIN-aliron)'
     SINGULARNAME: 'Permesrola kodo'
   Permissions:
     PERMISSIONS_CATEGORY: 'Roloj kaj aliraj permesoj'
@@ -733,12 +733,12 @@ eo:
     has_many_Versions: Versioj
   VersionedGridFieldItemRequest:
     ARCHIVE: Arkivo
-    Archived: 'Enarkivigis %s %s'
+    Archived: 'Enarkivigis {type} {title}'
     BUTTONARCHIVEDESC: 'Malpublikigi kaj sendi al arkivo'
     BUTTONPUBLISH: Publikigi
     BUTTONUNPUBLISH: Malpublikigi
     BUTTONUNPUBLISHDESC: 'Forigi ĉi tiun paĝon de la publikigita retejo'
     Published: 'Publikigita {name} {link}'
-    Unpublished: 'Malpublikigita %s %s'
+    Unpublished: 'Malpublikigita {type} {title}'
   i18n:
     PLURAL: '{number} {form}'

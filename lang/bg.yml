@@ -179,7 +179,7 @@ bg:
     Find: Търси
     LEVELUP: 'Ниво нагоре'
     LinkExisting: 'Свържи към съществуващ'
-    NewRecord: 'Нов %s'
+    NewRecord: 'Нов {type}'
     NoItemsFound: 'Няма намерени елементи'
     PRINTEDAT: 'Отпечатано на'
     PRINTEDBY: 'Отпечатано от'
@@ -358,7 +358,7 @@ bg:
     AssignedTo: 'приписана на "{title}"'
     FromGroup: 'унаследена от група "{title}"'
     FromRole: 'унаследена от роля "{title}"'
-    FromRoleOnGroup: 'унаследено от роля "%s" на група "%s"'
+    FromRoleOnGroup: 'унаследено от роля "{roletitle}" на група "{grouptitle}"'
   Permissions:
     PERMISSIONS_CATEGORY: 'Роли и разрешения за достъп'
   PhoneNumberField:

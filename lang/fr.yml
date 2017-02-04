@@ -179,7 +179,7 @@ fr:
     VALIDATOR: Validateur
     VALIDCURRENCY: 'Saisissez une monnaie valide'
   FormField:
-    Example: 'par exemple %s'
+    Example: 'par exemple {format}'
     NONE: aucun
   GridAction:
     DELETE_DESCRIPTION: Supprime
@@ -192,7 +192,7 @@ fr:
     Find: Trouver
     LEVELUP: 'Monter d’un niveau'
     LinkExisting: 'Lien existant'
-    NewRecord: 'Nouveau %s'
+    NewRecord: 'Nouveau {type}'
     NoItemsFound: 'Aucun élément n’a été trouvé.'
     PRINTEDAT: 'Imprimé le'
     PRINTEDBY: 'Imprimé par'
@@ -398,7 +398,7 @@ fr:
     IMPORTSPECFIELDS: 'Colonnes de la base de données'
     IMPORTSPECLINK: 'Afficher la spécification de %s'
     IMPORTSPECRELATIONS: Relations
-    IMPORTSPECTITLE: 'Spécification de %s'
+    IMPORTSPECTITLE: 'Spécification de {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtrer
     IMPORT: Importer
@@ -416,9 +416,9 @@ fr:
     Page: Page
     View: Afficher
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Veuillez augmenter la force de votre mot de passe en ajoutant certains caractères suivants : %s'
+    LOWCHARSTRENGTH: 'Veuillez augmenter la force de votre mot de passe en ajoutant certains caractères suivants : {chars}'
     PREVPASSWORD: 'Vous avez déjà utilisé ce mot de passe par le passé, veuillez en choisir un autre'
-    TOOSHORT: 'Le mot de passe est trop court, il doit contenir au moins %s caractères'
+    TOOSHORT: 'Le mot de passe est trop court, il doit contenir au moins {minimum} caractères'
   Permission:
     AdminGroup: Administrateur
     CMS_ACCESS_CATEGORY: 'Accès au CMS'
@@ -430,7 +430,7 @@ fr:
     AssignedTo: 'assignée au groupe « {title} »'
     FromGroup: "hérité du groupe «\_{title}\_»"
     FromRole: "héritée du rôle «\_{title}\_»"
-    FromRoleOnGroup: "hérité du rôle «\_%s\_» du groupe «\_%s\_»"
+    FromRoleOnGroup: "hérité du rôle «\_{roletitle}\_» du groupe «\_{grouptitle}\_»"
   PermissionRole:
     OnlyAdminCanApply: 'Limité aux administrateurs'
     PLURALNAME: Rôles

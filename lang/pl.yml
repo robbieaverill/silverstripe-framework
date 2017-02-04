@@ -189,7 +189,7 @@ pl:
     Find: Wyszukaj
     LEVELUP: 'W górę'
     LinkExisting: 'Linkuj istniejący'
-    NewRecord: 'Nowy %s'
+    NewRecord: 'Nowy {type}'
     NoItemsFound: 'Nie znaleziono elementów'
     PRINTEDAT: 'Wydrukowane na'
     PRINTEDBY: 'Wydrukowane przez'
@@ -219,7 +219,7 @@ pl:
     DefaultGroupTitleContentAuthors: 'Autor treści'
     Description: Opis
     GroupReminder: 'Jeśli wybierzesz nadrzędną grupę, obecna grupa otrzyma wszystkie jej role'
-    HierarchyPermsError: 'Nie można przyporządkować uprzywilejowanej grupy "%s" (wymagane uprawnienie ADMIN)'
+    HierarchyPermsError: 'Nie można przyporządkować uprzywilejowanej grupy "{group}" (wymagane uprawnienie ADMIN)'
     Locked: 'Zablokowana?'
     NoRoles: 'Nie znaleziono ról'
     PLURALNAME: Grupy
@@ -395,7 +395,7 @@ pl:
     IMPORTSPECFIELDS: 'Kolumny bazy danych'
     IMPORTSPECLINK: 'Pokaż specyfikację %s'
     IMPORTSPECRELATIONS: Relacje
-    IMPORTSPECTITLE: 'Specyfikacja %s'
+    IMPORTSPECTITLE: 'Specyfikacja {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtr
     IMPORT: Import
@@ -413,9 +413,9 @@ pl:
     Page: Strona
     View: Widok
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Proszę zwiększyć siłę hasła, dodając niektóre z następujących znaków: % s'
+    LOWCHARSTRENGTH: 'Proszę zwiększyć siłę hasła, dodając niektóre z następujących znaków: {chars}'
     PREVPASSWORD: 'Użyłeś już tego hasła wcześniej, proszę wybrać nowe'
-    TOOSHORT: 'Hasło jest za krótkie, proszę podać %s znaków lub więcej'
+    TOOSHORT: 'Hasło jest za krótkie, proszę podać {minimum} znaków lub więcej'
   Permission:
     AdminGroup: Administrator
     CMS_ACCESS_CATEGORY: 'Dostęp do CMSa'
@@ -427,14 +427,14 @@ pl:
     AssignedTo: 'przypisany do "{title}"'
     FromGroup: 'odziedziczone z grupy "{title}"'
     FromRole: 'odziedziczone z roli "{title}"'
-    FromRoleOnGroup: 'odziedziczone z roli "%s" w grupie "%s"'
+    FromRoleOnGroup: 'odziedziczone z roli "{roletitle}" w grupie "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Tylko administrator może to zastosować'
     PLURALNAME: Role
     SINGULARNAME: Rola
     Title: Tytuł
   PermissionRoleCode:
-    PermsError: 'Nie można przyporządkować uprzywilejowanego uprawnienia "%s" (wymagane uprawnienie ADMIN)'
+    PermsError: 'Nie można przyporządkować uprzywilejowanego uprawnienia "{code}" (wymagane uprawnienie ADMIN)'
     SINGULARNAME: 'Kod roli uprawnienia'
   Permissions:
     PERMISSIONS_CATEGORY: 'Role i uprawnienia dostępu'

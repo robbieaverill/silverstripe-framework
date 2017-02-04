@@ -181,7 +181,7 @@ et_EE:
     FilterBy: Filtreerimisalus
     Find: Otsi
     LinkExisting: 'Lingi olemasolev'
-    NewRecord: 'Uus %s'
+    NewRecord: 'Uus {type}'
     NoItemsFound: 'Üksusi ei leitud'
     PRINTEDAT: 'Printimiskoht:'
     PRINTEDBY: Printis
@@ -373,7 +373,7 @@ et_EE:
     IMPORTSPECFIELDS: 'Andmebaasi tulbad'
     IMPORTSPECLINK: 'Kuva üksuse %s spetsifikatsioonid'
     IMPORTSPECRELATIONS: Seosed
-    IMPORTSPECTITLE: 'Üksuse %s spetsifikatsioonid'
+    IMPORTSPECTITLE: 'Üksuse {model} spetsifikatsioonid'
   ModelAdmin_Tools_ss:
     FILTER: Filtreeri
     IMPORT: Impordi
@@ -400,7 +400,7 @@ et_EE:
     AssignedTo: 'määratud grupile "{title}"'
     FromGroup: 'päritud grupilt "{title}"'
     FromRole: 'päritud rollilt "{title}"'
-    FromRoleOnGroup: 'päritud rollist "%s" grupis "%s"'
+    FromRoleOnGroup: 'päritud rollist "{roletitle}" grupis "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Ainult administraator saab rakendada'
     PLURALNAME: Rollid

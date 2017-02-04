@@ -209,7 +209,7 @@ lt:
     VALIDATOR: Tikrintojas
     VALIDCURRENCY: 'Prašome suvesti teisingą valiutą'
   FormField:
-    Example: 'pvz. %s'
+    Example: 'pvz. {format}'
     NONE: nėra
   GridAction:
     DELETE_DESCRIPTION: Ištrinti
@@ -222,7 +222,7 @@ lt:
     Find: Rasti
     LEVELUP: Aukštyn
     LinkExisting: 'Pasirinkti esamą'
-    NewRecord: 'Naujas %s'
+    NewRecord: 'Naujas {type}'
     NoItemsFound: 'Įrašų nerasta'
     PRINTEDAT: Atspausdinta
     PRINTEDBY: Atspausdino
@@ -252,7 +252,7 @@ lt:
     DefaultGroupTitleContentAuthors: 'Turinio autoriai'
     Description: Aprašymas
     GroupReminder: 'Jeigu pasirinksite tėvinę grupę, ši grupė perims visas jos roles'
-    HierarchyPermsError: 'Nepavyko priskirti tėvinės grupės "%s" su priskirtais leidimais (būtina ADMIN prieeiga)'
+    HierarchyPermsError: 'Nepavyko priskirti tėvinės grupės "{group}" su priskirtais leidimais (būtina ADMIN prieeiga)'
     Locked: 'Užrakinta?'
     NoRoles: 'Rolių nerasta'
     PLURALNAME: Grupės
@@ -441,7 +441,7 @@ lt:
     IMPORTSPECFIELDS: 'Duomenų bazės stulpeliai'
     IMPORTSPECLINK: 'Rodyti %s aprašymą'
     IMPORTSPECRELATIONS: 'Sąryšiai'
-    IMPORTSPECTITLE: '%s aprašymas'
+    IMPORTSPECTITLE: '{model} aprašymas'
   ModelAdmin_Tools_ss:
     FILTER: Filtras
     IMPORT: Importuoti
@@ -459,9 +459,9 @@ lt:
     Page: Puslapis
     View: Rodoma
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Padarykite slaptažodį sudėtingesnį, panaudodami bent kelis simbolius iš šio sąrašo: %s'
+    LOWCHARSTRENGTH: 'Padarykite slaptažodį sudėtingesnį, panaudodami bent kelis simbolius iš šio sąrašo: {chars}'
     PREVPASSWORD: 'Jūs jau naudojote šį slaptažodį anksčiau, prašome sukurti naują'
-    TOOSHORT: 'Slaptažodis yra per trumpas, jis turi būti sudarytas iš %s arba didesnio skaičiaus simbolių'
+    TOOSHORT: 'Slaptažodis yra per trumpas, jis turi būti sudarytas iš {minimum} arba didesnio skaičiaus simbolių'
   Permission:
     AdminGroup: Administratorius
     CMS_ACCESS_CATEGORY: 'TVS Prieiga'
@@ -473,7 +473,7 @@ lt:
     AssignedTo: 'priskirta "{title}"'
     FromGroup: 'paveldėta iš grupės "{title}"'
     FromRole: 'paveldėta iš rolės "{title}"'
-    FromRoleOnGroup: 'paveldėta iš rolės "%s" grupėje "%s"'
+    FromRoleOnGroup: 'paveldėta iš rolės "{roletitle}" grupėje "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Gali priskirti tik administratorius'
     PLURALNAME: Rolės
@@ -481,7 +481,7 @@ lt:
     Title: Pavadinimas
   PermissionRoleCode:
     PLURALNAME: 'Leidimų rolių kodai'
-    PermsError: 'Nepavyko priskirto kodo "%s" su priskirtais leidimais (būtina ADMIN prieiga)'
+    PermsError: 'Nepavyko priskirto kodo "{code}" su priskirtais leidimais (būtina ADMIN prieiga)'
     SINGULARNAME: 'Leidimų rolių kodai'
   Permissions:
     PERMISSIONS_CATEGORY: 'Rolės ir priėjimo leidimai'

@@ -36,7 +36,7 @@ ast:
   NullableField:
     IsNullLabel: 'Ye nulu'
   PermissionCheckboxSetField:
-    FromRoleOnGroup: 'heredáu del rol "%s" nel grupu "%s"'
+    FromRoleOnGroup: 'heredáu del rol "{roletitle}" nel grupu "{grouptitle}"'
   Security:
     ALREADYLOGGEDIN: 'Nun tienes accesu a esta páxina. Si tienes otra cuenta que pueda entrar nesta páxina, puedes volver conectate.'
   Versioned:

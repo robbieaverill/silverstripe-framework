@@ -250,7 +250,7 @@ it:
     VALIDATOR: Valiidatore
     VALIDCURRENCY: 'Inserisci una valuta valida'
   FormField:
-    Example: 'es. %s'
+    Example: 'es. {format}'
     NONE: nessuno
   GridAction:
     DELETE_DESCRIPTION: Elimina
@@ -263,7 +263,7 @@ it:
     Find: Trova
     LEVELUP: 'Livello superiore'
     LinkExisting: 'Collega esistente'
-    NewRecord: 'Nuovo %s'
+    NewRecord: 'Nuovo {type}'
     NoItemsFound: 'Nessun elemento trovato'
     PRINTEDAT: 'Stampato alle'
     PRINTEDBY: 'Stampato da'
@@ -293,7 +293,7 @@ it:
     DefaultGroupTitleContentAuthors: 'Autori di contenuto'
     Description: Descrizione
     GroupReminder: 'Se scegli un gruppo genitore, questo gruppo erediterà tutti i suoi ruoli'
-    HierarchyPermsError: 'Non posso assegnare permessi privilegiati al gruppo genitore "%s" (richiede accesso ADMIN)'
+    HierarchyPermsError: 'Non posso assegnare permessi privilegiati al gruppo genitore "{group}" (richiede accesso ADMIN)'
     Locked: 'Bloccato?'
     NoRoles: 'Nessun ruolo trovato'
     PLURALNAME: Gruppi
@@ -535,7 +535,7 @@ it:
     IMPORTSPECFIELDS: 'Colonne database'
     IMPORTSPECLINK: 'Mostra specifiche per %s'
     IMPORTSPECRELATIONS: Relazioni
-    IMPORTSPECTITLE: 'Specifiche per %s'
+    IMPORTSPECTITLE: 'Specifiche per {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtra
     IMPORT: Importa
@@ -555,9 +555,9 @@ it:
     Page: Pagina
     View: Visualizza
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Perfavore aumenta la sicurezza della password aggiungendo alcuni dei seguenti caratteri: %s'
+    LOWCHARSTRENGTH: 'Perfavore aumenta la sicurezza della password aggiungendo alcuni dei seguenti caratteri: {chars}'
     PREVPASSWORD: 'Hai già usato questa password in passato, per favore scegline una nuova'
-    TOOSHORT: 'La password è troppo corta, deve essere lunga %s o più caratteri'
+    TOOSHORT: 'La password è troppo corta, deve essere lunga {minimum} o più caratteri'
   Permission:
     AdminGroup: Amministratore
     CMS_ACCESS_CATEGORY: 'Accesso CMS'
@@ -569,7 +569,7 @@ it:
     AssignedTo: 'assegnato a "{title}"'
     FromGroup: 'ereditato dal gruppo "{title}"'
     FromRole: 'ereditato dal ruolo "{title}"'
-    FromRoleOnGroup: 'ereditato dal ruolo "%s" nel gruppo "%s"'
+    FromRoleOnGroup: 'ereditato dal ruolo "{roletitle}" nel gruppo "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Solo l''amministratore può applicare'
     PLURALNAME: Ruoli
@@ -577,7 +577,7 @@ it:
     Title: Titolo
   PermissionRoleCode:
     PLURALNAME: 'Codici di ruolo'
-    PermsError: 'Non posso assegnare permessi privilegiati al codice "%s" (richiede accesso ADMIN)'
+    PermsError: 'Non posso assegnare permessi privilegiati al codice "{code}" (richiede accesso ADMIN)'
     SINGULARNAME: 'Codice Ruolo'
   Permissions:
     PERMISSIONS_CATEGORY: 'Ruoli e permessi d''accesso'
@@ -733,12 +733,12 @@ it:
     has_many_Versions: Versioni
   VersionedGridFieldItemRequest:
     ARCHIVE: Archiviare
-    Archived: '%s %s archiviata'
+    Archived: '{type} {title} archiviata'
     BUTTONARCHIVEDESC: 'Nascondere e mettere in archivio'
     BUTTONPUBLISH: Pubblicare
     BUTTONUNPUBLISH: Nascondere
     BUTTONUNPUBLISHDESC: 'Rimuovere questo record dal sito pubblicato'
     Published: 'Pubblicato {name} {link}'
-    Unpublished: 'Nascosto %s %s'
+    Unpublished: 'Nascosto {type} {title}'
   i18n:
     PLURAL: '{number} {form}'

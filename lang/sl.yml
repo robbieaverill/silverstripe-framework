@@ -172,7 +172,7 @@ sl:
     VALIDATOR: Preverjanje
     VALIDCURRENCY: 'Prosim, vnesite pravo valuto.'
   FormField:
-    Example: 'npr. %s'
+    Example: 'npr. {format}'
     NONE: brez
   GridAction:
     DELETE_DESCRIPTION: Izbriši
@@ -184,7 +184,7 @@ sl:
     FilterBy: 'Filtriraj po'
     Find: Poišči
     LinkExisting: 'Poveži na'
-    NewRecord: 'Novih %s'
+    NewRecord: 'Novih {type}'
     NoItemsFound: 'Ni rezultatov'
     PRINTEDAT: 'Tiskano pri'
     PRINTEDBY: Natisnil
@@ -379,7 +379,7 @@ sl:
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'Stolpci podatkovne baze'
     IMPORTSPECLINK: 'Pokaži specifikacije za %s'
-    IMPORTSPECTITLE: 'Specifikacije za %s'
+    IMPORTSPECTITLE: 'Specifikacije za {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtriraj
     IMPORT: Uvozi
@@ -405,7 +405,7 @@ sl:
     SINGULARNAME: Dovoljenje
   PermissionCheckboxSetField:
     FromGroup: 'Privzeto iz skupine "{title}"'
-    FromRoleOnGroup: 'podedovano iz vloge "%s" na skupino "%s"'
+    FromRoleOnGroup: 'podedovano iz vloge "{roletitle}" na skupino "{grouptitle}"'
   PermissionRole:
     PLURALNAME: Vloge
     SINGULARNAME: Vloga

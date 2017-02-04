@@ -229,7 +229,7 @@ de:
     VALIDATOR: Prüfer
     VALIDCURRENCY: 'Bitte geben Sie einen korrekten Betrag ein'
   FormField:
-    Example: 'z.B. %s'
+    Example: 'z.B. {format}'
     NONE: keine
   GridAction:
     DELETE_DESCRIPTION: Löschen
@@ -242,7 +242,7 @@ de:
     Find: Suchen
     LEVELUP: 'Eine Ebene hoch'
     LinkExisting: 'Bestehenden Datensatz verknüpfen'
-    NewRecord: 'Neue(r) %s'
+    NewRecord: 'Neue(r) {type}'
     NoItemsFound: 'Keine Elemente gefunden'
     PRINTEDAT: 'Gedruckt am'
     PRINTEDBY: 'Gedruckt von'
@@ -272,7 +272,7 @@ de:
     DefaultGroupTitleContentAuthors: Inhaltsautoren
     Description: Beschreibung
     GroupReminder: 'Diese Gruppe übernimmt automatisch die Rollen der Elterngruppe'
-    HierarchyPermsError: 'Kann Berechtigungen der Eltern-Gruppe "%s" nicht hinzufügen (erfordert Administratorrechte)'
+    HierarchyPermsError: 'Kann Berechtigungen der Eltern-Gruppe "{group}" nicht hinzufügen (erfordert Administratorrechte)'
     Locked: 'Gesperrt?'
     NoRoles: 'Keine Rollen gefunden'
     PLURALNAME: Gruppen
@@ -506,7 +506,7 @@ de:
     IMPORTSPECFIELDS: Datenbankspalten
     IMPORTSPECLINK: 'Beschreibung von %s anzeigen'
     IMPORTSPECRELATIONS: Relationen
-    IMPORTSPECTITLE: 'Beschreibung von %s'
+    IMPORTSPECTITLE: 'Beschreibung von {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filter
     IMPORT: Importieren
@@ -524,9 +524,9 @@ de:
     Page: Seite
     View: Anzeigen
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Bitte erhöhen Sie die Sicherheit des Passworts, indem Sie auch einige der folgenden Zeichen verwenden: %s'
+    LOWCHARSTRENGTH: 'Bitte erhöhen Sie die Sicherheit des Passworts, indem Sie auch einige der folgenden Zeichen verwenden: {chars}'
     PREVPASSWORD: 'Sie haben dieses Passwort schon einmal verwendet. Bitte wählen Sie ein neues Passwort'
-    TOOSHORT: 'Das Passwort ist zu kurz, es muss mindestens %s Zeichen lang sein'
+    TOOSHORT: 'Das Passwort ist zu kurz, es muss mindestens {minimum} Zeichen lang sein'
   Permission:
     AdminGroup: Administrator
     CMS_ACCESS_CATEGORY: 'CMS Zugriff'
@@ -538,7 +538,7 @@ de:
     AssignedTo: 'Zugewiesen an "{title}"'
     FromGroup: 'abgeleited von Gruppe "{title}"'
     FromRole: 'abgeleited von Rolle "{title}"'
-    FromRoleOnGroup: 'geerbt von Rolle "%s" für die Gruppe "%s"'
+    FromRoleOnGroup: 'geerbt von Rolle "{roletitle}" für die Gruppe "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Nur Adminstratoren können beitreten'
     PLURALNAME: Rollen
@@ -546,7 +546,7 @@ de:
     Title: Titel
   PermissionRoleCode:
     PLURALNAME: Berechtigungsrollencodes
-    PermsError: 'Kann Berechtigungen dem Code "%s" nicht hinzufügen (erfordert Administratorrechte)'
+    PermsError: 'Kann Berechtigungen dem Code "{code}" nicht hinzufügen (erfordert Administratorrechte)'
     SINGULARNAME: Berechtigungsrollencode
   Permissions:
     PERMISSIONS_CATEGORY: 'Rollen und Zugriffsberechtigungen'
@@ -687,7 +687,7 @@ de:
     has_many_Versions: Versionen
   VersionedGridFieldItemRequest:
     ARCHIVE: Archiv
-    Archived: '%s %s archiviert'
+    Archived: '{type} {title} archiviert'
     BUTTONARCHIVEDESC: 'Veröffentlichung zurücknehmen und in das Archiv verschieben'
     BUTTONPUBLISH: Veröffentlichen
     BUTTONUNPUBLISH: 'Veröffentlichung zurücknehmen'

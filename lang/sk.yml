@@ -247,7 +247,7 @@ sk:
     VALIDATOR: Validácia
     VALIDCURRENCY: 'Prosím zadajte platnú menu'
   FormField:
-    Example: 'napr. %s'
+    Example: 'napr. {format}'
     NONE: žiadne
   GridAction:
     DELETE_DESCRIPTION: Zmazať
@@ -260,7 +260,7 @@ sk:
     Find: Vyhľadať
     LEVELUP: 'Úroveň vyššie'
     LinkExisting: 'Prepojenie existujúcich'
-    NewRecord: 'Nový %s'
+    NewRecord: 'Nový {type}'
     NoItemsFound: 'Žiadne položky'
     PRINTEDAT: 'Vytlačené v'
     PRINTEDBY: Vytlačené
@@ -290,7 +290,7 @@ sk:
     DefaultGroupTitleContentAuthors: 'Autori obsahu'
     Description: Popis
     GroupReminder: 'Ak vyberiete nadriadenú skupinu, bude táto skupina mať všetky úlohy'
-    HierarchyPermsError: 'Nie je možné pripojiť nadriadenú skupinu "%s" s privilegovanými právami (vyžaduje ADMIN prístup)'
+    HierarchyPermsError: 'Nie je možné pripojiť nadriadenú skupinu "{group}" s privilegovanými právami (vyžaduje ADMIN prístup)'
     Locked: 'Zamknuté?'
     NoRoles: 'Nenašli sa úlohy'
     PLURALNAME: Skupiny
@@ -531,7 +531,7 @@ sk:
     IMPORTSPECFIELDS: 'Stĺpce databázy'
     IMPORTSPECLINK: 'Zobraziť špecifikáciu pre %s'
     IMPORTSPECRELATIONS: Relácie
-    IMPORTSPECTITLE: 'Špecifikácia pre %s'
+    IMPORTSPECTITLE: 'Špecifikácia pre {model}'
   ModelAdmin_Tools_ss:
     FILTER: Filtrovať
     IMPORT: Importovať
@@ -551,9 +551,9 @@ sk:
     Page: Stránka
     View: Zobraziť
   PasswordValidator:
-    LOWCHARSTRENGTH: 'Prosím posilnite heslo pridaním z týchto niektorých znakov: %s'
+    LOWCHARSTRENGTH: 'Prosím posilnite heslo pridaním z týchto niektorých znakov: {chars}'
     PREVPASSWORD: 'Už ste použili toto heslo v minulosti, vyberte nové hoslo, prosím'
-    TOOSHORT: 'Heslo je príliš krátke, musí byť %s alebo viacej znakov dlhé'
+    TOOSHORT: 'Heslo je príliš krátke, musí byť {minimum} alebo viacej znakov dlhé'
   Permission:
     AdminGroup: Administrátor
     CMS_ACCESS_CATEGORY: 'Prístup do CMS'
@@ -565,7 +565,7 @@ sk:
     AssignedTo: 'pripojené k "{title}"'
     FromGroup: 'zdedené zo skupiny "{title}"'
     FromRole: 'zdedené z úlohy "{title}"'
-    FromRoleOnGroup: 'zdedené z úlohy "%s" v skupine "%s"'
+    FromRoleOnGroup: 'zdedené z úlohy "{roletitle}" v skupine "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'Iba administrátor môže použiť'
     PLURALNAME: Úlohy
@@ -573,7 +573,7 @@ sk:
     Title: Názov
   PermissionRoleCode:
     PLURALNAME: 'Kódy právomocí úloh'
-    PermsError: 'Nie je možné pripojiť kód "%s" s privilegovanými právami (vyžaduje ADMIN prístup)'
+    PermsError: 'Nie je možné pripojiť kód "{code}" s privilegovanými právami (vyžaduje ADMIN prístup)'
     SINGULARNAME: 'Kód právomocí úloh'
   Permissions:
     PERMISSIONS_CATEGORY: 'Úlohy a prístupové práva'
@@ -728,12 +728,12 @@ sk:
     has_many_Versions: verzie
   VersionedGridFieldItemRequest:
     ARCHIVE: Archív
-    Archived: 'Archivované %s %s'
+    Archived: 'Archivované {type} {title}'
     BUTTONARCHIVEDESC: 'Nezverejniť a odoslať do archívu'
     BUTTONPUBLISH: Zverejniť
     BUTTONUNPUBLISH: Nezverejniť
     BUTTONUNPUBLISHDESC: 'Odstrániť tento záznam z publikovaného webu'
     Published: 'Zverejnené {name} {link}'
-    Unpublished: 'Nezverejné %s %s'
+    Unpublished: 'Nezverejné {type} {title}'
   i18n:
     PLURAL: '{number} {form}'

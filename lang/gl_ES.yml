@@ -98,7 +98,7 @@ gl_ES:
     Filter: Filtro
     Find: Atopar
     LinkExisting: 'Ligazón existente'
-    NewRecord: 'Novo %s'
+    NewRecord: 'Novo {type}'
     NoItemsFound: 'Ningún elemento atopado'
     PRINTEDAT: 'Impreso ás'
     PRINTEDBY: 'Impreso por'
@@ -235,7 +235,7 @@ gl_ES:
     FULLADMINRIGHTS: 'Todos os dereitos administrativos'
     FULLADMINRIGHTS_HELP: 'Implica e anula todos os outros permisos asinados.'
   PermissionCheckboxSetField:
-    FromRoleOnGroup: 'herdado do role "%s" sobre o grupo "%s"'
+    FromRoleOnGroup: 'herdado do role "{roletitle}" sobre o grupo "{grouptitle}"'
   Permissions:
     PERMISSIONS_CATEGORY: 'Roles e permisos de acceso'
   PhoneNumberField:

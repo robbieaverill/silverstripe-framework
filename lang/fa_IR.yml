@@ -243,7 +243,7 @@ fa_IR:
     VALIDATOR: اعتبارسنج
     VALIDCURRENCY: 'لطفاً یک واحد پول معتبر وارد نمایید'
   FormField:
-    Example: 'به‌طور مثال %s'
+    Example: 'به‌طور مثال {format}'
     NONE: 'هیچ‌کدام'
   GridAction:
     DELETE_DESCRIPTION: حذف
@@ -256,7 +256,7 @@ fa_IR:
     Find: بگرد
     LEVELUP: 'سطح بالایی'
     LinkExisting: 'لینک موجود'
-    NewRecord: '%s جدید'
+    NewRecord: '{type} جدید'
     NoItemsFound: 'هیچ آیتمی یافت نشد'
     PRINTEDAT: 'پرینت‌شده در'
     PRINTEDBY: 'پرینت‌شده توسط'
@@ -286,7 +286,7 @@ fa_IR:
     DefaultGroupTitleContentAuthors: 'نویسندگان مطالب'
     Description: توضحیات
     GroupReminder: 'اگر یک گروه مادر را برگزینید،‌ این گروه تمامی وظایف آن را می‌پذیرد'
-    HierarchyPermsError: 'با دسترسی‌های داده‌شده نمی‌توان گروه مادر "%s" را تخصیص داد (نیازمند دسترسی مدید ارشد)'
+    HierarchyPermsError: 'با دسترسی‌های داده‌شده نمی‌توان گروه مادر "{group}" را تخصیص داد (نیازمند دسترسی مدید ارشد)'
     Locked: قفل‌شده؟
     NoRoles: 'هیچ وظیفه‌ای پیدا نشد'
     PLURALNAME: گروه‌ها
@@ -487,7 +487,7 @@ fa_IR:
   ModelAdmin_ImportSpec_ss:
     IMPORTSPECFIELDS: 'ستون‌های پایگاه داده'
     IMPORTSPECLINK: 'نمایش مشخصات برای %s'
-    IMPORTSPECTITLE: 'مشخصات برای %s'
+    IMPORTSPECTITLE: 'مشخصات برای {model}'
   ModelAdmin_Tools_ss:
     FILTER: پالایش
     IMPORT: 'وارد کردن'
@@ -503,7 +503,7 @@ fa_IR:
     Page: صفحه
     View: 'نمایش'
   PasswordValidator:
-    TOOSHORT: 'گذرواژه بسیار کوتاه است، باید %s کاراکتر یا بیشتر باشد'
+    TOOSHORT: 'گذرواژه بسیار کوتاه است، باید {minimum} کاراکتر یا بیشتر باشد'
   Permission:
     AdminGroup: 'مدیر کل'
     CMS_ACCESS_CATEGORY: 'دسترسی CMS'

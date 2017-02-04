@@ -174,7 +174,7 @@ ar:
     VALIDATOR: 'المحقق'
     VALIDCURRENCY: 'يرجى إدخال عملة صحيحة'
   FormField:
-    Example: 'على سبيل المثال %s.'
+    Example: 'على سبيل المثال {format}.'
     NONE: لايوجد
   GridAction:
     DELETE_DESCRIPTION: حذف
@@ -187,7 +187,7 @@ ar:
     Find: ابحث
     LEVELUP: 'الصعود لمستوي أعلي'
     LinkExisting: 'الرابط موجود'
-    NewRecord: 'جديد %s'
+    NewRecord: 'جديد {type}'
     NoItemsFound: 'لا يوجد عناصر'
     PRINTEDAT: 'تم الطباعة في'
     PRINTEDBY: 'تم الطباعة بواسطة'
@@ -217,7 +217,7 @@ ar:
     DefaultGroupTitleContentAuthors: 'مؤلفي المحتوى'
     Description: الوصف
     GroupReminder: 'إذا اخترت مجموعة رئيسية، فإن هذه المجموعة سوف تتخذ جميع أدوارها'
-    HierarchyPermsError: 'لا يمكن تعيين المجموعة الرئيسية "s%" مع سماحيات مميزة (يتطلب دخول عن طريق المشرف)'
+    HierarchyPermsError: 'لا يمكن تعيين المجموعة الرئيسية "{group}" مع سماحيات مميزة (يتطلب دخول عن طريق المشرف)'
     Locked: 'مغلق ؟'
     NoRoles: 'لا يوجد أدوار'
     PLURALNAME: 'مجموعات'
@@ -393,7 +393,7 @@ ar:
     IMPORTSPECFIELDS: 'أعمدة قاعدة البيانات'
     IMPORTSPECLINK: 'عرض مواصفات لـ%s'
     IMPORTSPECRELATIONS: علاقات
-    IMPORTSPECTITLE: 'مواصفات لـ%s'
+    IMPORTSPECTITLE: 'مواصفات لـ{model}'
   ModelAdmin_Tools_ss:
     FILTER: 'مرشح'
     IMPORT: استيراد
@@ -411,9 +411,9 @@ ar:
     Page: صفحة
     View: عرض
   PasswordValidator:
-    LOWCHARSTRENGTH: 'يرجى زيادة قوة كلمة المرور بإضافة البعض من الأحرف التالية: %s'
+    LOWCHARSTRENGTH: 'يرجى زيادة قوة كلمة المرور بإضافة البعض من الأحرف التالية: {chars}'
     PREVPASSWORD: 'لقد استخدمت كلمة المرور هذه في الماضي، يرجى اختيار كلمة مرور جديدة'
-    TOOSHORT: 'إنّ كلمة السر قصيرة جدا، يجب أن تحتوي على %s أو أكثر من الحروف'
+    TOOSHORT: 'إنّ كلمة السر قصيرة جدا، يجب أن تحتوي على {minimum} أو أكثر من الحروف'
   Permission:
     AdminGroup: الإدارة
     CMS_ACCESS_CATEGORY: 'الوصل لنظام إدارة المحتوى'
@@ -425,14 +425,14 @@ ar:
     AssignedTo: 'تم تعيينها إلى "{عنوان}"'
     FromGroup: 'موروثة من المجموعة "{عنوان}"'
     FromRole: 'موروثة من دور "{عنوان}"'
-    FromRoleOnGroup: 'توريث من القاعدة "%s"  على المجموعة "%s"'
+    FromRoleOnGroup: 'توريث من القاعدة "{roletitle}"  على المجموعة "{grouptitle}"'
   PermissionRole:
     OnlyAdminCanApply: 'المدير فقط هو الذي يمكنه تطبيق'
     PLURALNAME: أدوار
     SINGULARNAME: دور
     Title: عنوان
   PermissionRoleCode:
-    PermsError: 'لا يمكن تعيين كود "s%" مع سماحيات مميزة (يتطلب دخول اعن طريق المشرف)'
+    PermsError: 'لا يمكن تعيين كود "{code}" مع سماحيات مميزة (يتطلب دخول اعن طريق المشرف)'
     SINGULARNAME: 'رمز دور الأذن'
   Permissions:
     PERMISSIONS_CATEGORY: 'تصاريح القاعدة والوصول'

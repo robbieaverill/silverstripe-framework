@@ -125,7 +125,7 @@ th:
     FilterBy: กรองข้อมูลจาก
     Find: ค้นหา
     LinkExisting: ลิงก์ที่มีอยู่
-    NewRecord: 'ใหม่ %s'
+    NewRecord: 'ใหม่ {type}'
     NoItemsFound: ไม่พบรายการที่ต้องการ
     PRINTEDAT: ถูกสั่งพิมพ์ที่
     PRINTEDBY: พิมพ์โดย

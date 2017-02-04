@@ -185,7 +185,7 @@ uk:
   Permission:
     SINGULARNAME: 'Право доступу'
   PermissionCheckboxSetField:
-    FromRoleOnGroup: 'Успадкований з ролі "%s" на групу "%s"'
+    FromRoleOnGroup: 'Успадкований з ролі "{roletitle}" на групу "{grouptitle}"'
   PermissionRole:
     PLURALNAME: 'Ролі'
     SINGULARNAME: 'Роль'
