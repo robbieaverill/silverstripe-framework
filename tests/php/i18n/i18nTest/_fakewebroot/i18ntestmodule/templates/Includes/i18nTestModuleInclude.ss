@@ -1,4 +1,4 @@
 <% _t("i18nTestModule.WITHNAMESPACE", 'Include Entity with Namespace') %>
 <% _t("NONAMESPACE", 'Include Entity without Namespace') %>
-<% sprintf(_t('i18nTestModuleInclude.ss.SPRINTFINCLUDENAMESPACE','My include replacement: %s'),$TestProperty) %>
-<% sprintf(_t('SPRINTFINCLUDENONAMESPACE','My include replacement no namespace: %s'),$TestProperty) %>
+<%t i18nTestModuleInclude.ss.PLACEHOLDERINCLUDENAMESPACE "My include replacement: {replacement}" replacement=$TestProperty %>
+<%t PLACEHOLDERINCLUDENONAMESPACE "My include replacement no namespace: {replacement}" replacement=$TestProperty %>

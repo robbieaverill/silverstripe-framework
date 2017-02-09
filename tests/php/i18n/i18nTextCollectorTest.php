@@ -428,27 +428,27 @@ PHP;
             'Layout Template no namespace',
             $matches['RandomNamespace.LAYOUTTEMPLATENONAMESPACE']
         );
-        $this->assertArrayHasKey('RandomNamespace.SPRINTFNONAMESPACE', $matches);
+        $this->assertArrayHasKey('RandomNamespace.PLACEHOLDERNONAMESPACE', $matches);
         $this->assertEquals(
-            'My replacement no namespace: %s',
-            $matches['RandomNamespace.SPRINTFNONAMESPACE']
+            'My replacement no namespace: {replacement}',
+            $matches['RandomNamespace.PLACEHOLDERNONAMESPACE']
         );
         $this->assertArrayHasKey('i18nTestModule.LAYOUTTEMPLATE', $matches);
         $this->assertEquals(
             'Layout Template',
             $matches['i18nTestModule.LAYOUTTEMPLATE']
         );
-        $this->assertArrayHasKey('i18nTestModule.SPRINTFNAMESPACE', $matches);
+        $this->assertArrayHasKey('i18nTestModule.PLACEHOLDERNAMESPACE', $matches);
         $this->assertEquals(
-            'My replacement: %s',
-            $matches['i18nTestModule.SPRINTFNAMESPACE']
+            'My replacement: {replacement}',
+            $matches['i18nTestModule.PLACEHOLDERNAMESPACE']
         );
 
         // Includes should not automatically inject translations into parent templates
         $this->assertArrayNotHasKey('i18nTestModule.WITHNAMESPACE', $matches);
         $this->assertArrayNotHasKey('i18nTestModuleInclude.ss.NONAMESPACE', $matches);
-        $this->assertArrayNotHasKey('i18nTestModuleInclude.ss.SPRINTFINCLUDENAMESPACE', $matches);
-        $this->assertArrayNotHasKey('i18nTestModuleInclude.ss.SPRINTFINCLUDENONAMESPACE', $matches);
+        $this->assertArrayNotHasKey('i18nTestModuleInclude.ss.PLACEHOLDERINCLUDENAMESPACE', $matches);
+        $this->assertArrayNotHasKey('i18nTestModuleInclude.ss.PLACEHOLDERINCLUDENONAMESPACE', $matches);
     }
 
     public function testCollectFromThemesTemplates()
@@ -465,9 +465,9 @@ PHP;
         $this->assertEquals(
             [
                 'i18nTestTheme1.LAYOUTTEMPLATE' => 'Theme1 Layout Template',
-                'i18nTestTheme1.SPRINTFNAMESPACE' => 'Theme1 My replacement: %s',
+                'i18nTestTheme1.PLACEHOLDERNAMESPACE' => 'Theme1 My replacement: {replacement}',
                 'i18nTestTheme1.ss.LAYOUTTEMPLATENONAMESPACE' => 'Theme1 Layout Template no namespace',
-                'i18nTestTheme1.ss.SPRINTFNONAMESPACE' => 'Theme1 My replacement no namespace: %s',
+                'i18nTestTheme1.ss.PLACEHOLDERNONAMESPACE' => 'Theme1 My replacement no namespace: {replacement}',
             ],
             $layoutMatches
         );
@@ -480,10 +480,10 @@ PHP;
         // all entities from i18nTestTheme1Include.ss
         $this->assertEquals(
             [
-                'i18nTestTheme1Include.SPRINTFINCLUDENAMESPACE' => 'Theme1 My include replacement: %s',
+                'i18nTestTheme1Include.PLACEHOLDERINCLUDENAMESPACE' => 'Theme1 My include replacement: {replacement}',
                 'i18nTestTheme1Include.WITHNAMESPACE' => 'Theme1 Include Entity with Namespace',
                 'i18nTestTheme1Include.ss.NONAMESPACE' => 'Theme1 Include Entity without Namespace',
-                'i18nTestTheme1Include.ss.SPRINTFINCLUDENONAMESPACE' => 'Theme1 My include replacement no namespace: %s'
+                'i18nTestTheme1Include.ss.PLACEHOLDERINCLUDENONAMESPACE' => 'Theme1 My include replacement no namespace: {replacement}'
             ],
             $includeMatches
         );
@@ -602,7 +602,7 @@ PHP;
             $theme1LangFileContent
         );
         $this->assertContains(
-            "    SPRINTFNAMESPACE: 'Theme1 My replacement: %s'\n",
+            "    PLACEHOLDERNAMESPACE: 'Theme1 My replacement: {replacement}'\n",
             $theme1LangFileContent
         );
         $this->assertContains(
@@ -610,12 +610,12 @@ PHP;
             $theme1LangFileContent
         );
         $this->assertContains(
-            "    SPRINTFNONAMESPACE: 'Theme1 My replacement no namespace: %s'\n",
+            "    PLACEHOLDERNONAMESPACE: 'Theme1 My replacement no namespace: {replacement}'\n",
             $theme1LangFileContent
         );
 
         $this->assertContains(
-            "    SPRINTFINCLUDENAMESPACE: 'Theme1 My include replacement: %s'\n",
+            "    PLACEHOLDERINCLUDENAMESPACE: 'Theme1 My include replacement: {replacement}'\n",
             $theme1LangFileContent
         );
         $this->assertContains(
@@ -627,7 +627,7 @@ PHP;
             $theme1LangFileContent
         );
         $this->assertContains(
-            "    SPRINTFINCLUDENONAMESPACE: 'Theme1 My include replacement no namespace: %s'\n",
+            "    PLACEHOLDERINCLUDENONAMESPACE: 'Theme1 My include replacement no namespace: {replacement}'\n",
             $theme1LangFileContent
         );
 

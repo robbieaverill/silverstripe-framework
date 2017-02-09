@@ -1,7 +1,7 @@
 en:
   NONAMESPACE: Include Entity without Namespace
-  SPRINTFNONAMESPACE: My replacement no namespace: %s
-  SPRINTFINCLUDENONAMESPACE: My include replacement no namespace: %s
+  PLACEHOLDERNONAMESPACE: My replacement no namespace: {replacement}
+  PLACEHOLDERINCLUDENONAMESPACE: My include replacement no namespace: {replacement}
   LAYOUTTEMPLATENONAMESPACE: Layout Template no namespace
   i18nTestModule:
     # Comment for entity
@@ -10,6 +10,6 @@ en:
     MAINTEMPLATE: Main Template
     WITHNAMESPACE: Include Entity with Namespace
     LAYOUTTEMPLATE: Layout Template
-    SPRINTFNAMESPACE: My replacement: %s
+    PLACEHOLDERNAMESPACE: My replacement: {replacement}
   i18nTestModuleInclude.ss:
-    SPRINTFINCLUDENAMESPACE: My include replacement: %s
+    PLACEHOLDERINCLUDENAMESPACE: My include replacement: {replacement}

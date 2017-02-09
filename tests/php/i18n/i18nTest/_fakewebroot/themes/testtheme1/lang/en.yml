@@ -1,11 +1,11 @@
 en:
   i18nTestTheme1:
     LAYOUTTEMPLATE: Theme1 Layout Template
-    SPRINTFNAMESPACE: Theme1 My replacement: %s
+    PLACEHOLDERNAMESPACE: Theme1 My replacement: {replacement}
   i18nTestTheme1Include:
     WITHNAMESPACE: Theme1 Include Entity with Namespace
-    SPRINTFINCLUDENAMESPACE: Theme1 My include replacement: %s
+    PLACEHOLDERINCLUDENAMESPACE: Theme1 My include replacement: {replacement}
   NONAMESPACE: Theme1 Include Entity without Namespace
-  SPRINTFINCLUDENONAMESPACE: Theme1 My include replacement no namespace: %s
+  PLACEHOLDERINCLUDENONAMESPACE: Theme1 My include replacement no namespace: {replacement}
   LAYOUTTEMPLATENONAMESPACE: Theme1 Layout Template no namespace
-  SPRINTFNONAMESPACE: Theme1 My replacement no namespace: %s
+  PLACEHOLDERNONAMESPACE: Theme1 My replacement no namespace: {replacement}
