@@ -77,7 +77,7 @@ before_script:
 
 script:
   - if [[ $PHPUNIT_TEST ]]; then vendor/bin/phpunit --testsuite $PHPUNIT_TEST; fi
-  - if [[ $PHPUNIT_COVERAGE_TEST ]]; then phpdbg -qrr vendor/bin/phpunit --testsuite $PHPUNIT_COVERAGE_TEST --coverage-clover=coverage.xml; fi
+  - if [[ $PHPUNIT_COVERAGE_TEST ]]; then phpdbg -qrr vendor/bin/phpunit --filter testCurrentAbsoluteURLHandlesSlashes --testsuite $PHPUNIT_COVERAGE_TEST --coverage-clover=coverage.xml; fi
   - if [[ $BEHAT_TEST == framework ]]; then vendor/bin/behat @framework; fi
   - if [[ $BEHAT_TEST == cms ]]; then vendor/bin/behat @cms; fi
   - if [[ $PHPCS_TEST ]]; then composer run-script lint; fi

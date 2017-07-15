@@ -97,18 +97,34 @@ class ParameterConfirmationTokenTest extends SapphireTest
      *
      * There should always be exactly one slash between each part in the result, and any trailing slash
      * should be preserved.
+     *
+     * @param string $url
+     * @dataProvider currentUrlProvider
      */
-    public function testCurrentAbsoluteURLHandlesSlashes()
+    public function testCurrentAbsoluteURLHandlesSlashes($url)
     {
         $token = new ParameterConfirmationTokenTest_Token(
             'parameterconfirmationtokentest_parameter',
             $this->request
         );
 
-        foreach (array('', '/', 'bar', 'bar/', '/bar', '/bar/') as $url) {
-            $this->request->setUrl($url);
-            $expected = rtrim(Controller::join_links(BASE_URL, '/', $url), '/') ?: '/';
-            $this->assertEquals($expected, $token->currentURL(), "Invalid redirect for request url $url");
-        }
+        $this->request->setUrl($url);
+        $expected = rtrim(Controller::join_links(BASE_URL, '/', $url), '/') ?: '/';
+        $this->assertEquals($expected, $token->currentURL(), "Invalid redirect for request url $url");
+    }
+
+    /**
+     * @return array[]
+     */
+    public function currentUrlProvider()
+    {
+        return [
+            [''],
+            ['/'],
+            ['bar'],
+            ['bar/'],
+            ['/bar'],
+            ['/bar/'],
+        ];
     }
 }
