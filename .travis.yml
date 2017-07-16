@@ -67,7 +67,7 @@ before_script:
   - if [[ $PHPUNIT_TEST == cms ]] || [[ $BEHAT_TEST == cms ]]; then php ./cms/tests/bootstrap/mysite.php; fi
 
 # Start behat services
-  - if [[ $BEHAT_TEST ]]; then echo 'SS_BASE_URL=http://localhost:8080/' >> .env; fi
+  - if [[ $BEHAT_TEST ]] || [[ $PHPUNIT_COVERAGE_TEST ]]; then echo 'SS_BASE_URL=http://localhost:8080/' >> .env; fi
   - if [[ $BEHAT_TEST ]]; then mkdir artifacts; fi
   - if [[ $BEHAT_TEST ]]; then cp composer.lock artifacts/; fi
   - if [[ $BEHAT_TEST ]]; then sh -e /etc/init.d/xvfb start; sleep 3; fi
