@@ -79,10 +79,17 @@ if (!defined('BASE_URL')) {
         // Determine the base URL by comparing SCRIPT_NAME to SCRIPT_FILENAME and getting common elements
         // This tends not to work on CLI
         $path = realpath($_SERVER['SCRIPT_FILENAME']);
+        var_dump(1);
+        var_dump($path);
+        var_dump(BASE_PATH);
         if (substr($path, 0, strlen(BASE_PATH)) == BASE_PATH) {
             $urlSegmentToRemove = substr($path, strlen(BASE_PATH));
+            var_dump(2);
+            var_dump($_SERVER['SCRIPT_NAME']);
             if (substr($_SERVER['SCRIPT_NAME'], -strlen($urlSegmentToRemove)) == $urlSegmentToRemove) {
                 $baseURL = substr($_SERVER['SCRIPT_NAME'], 0, -strlen($urlSegmentToRemove));
+                var_dump(3);
+                var_dump($baseURL);
                 // Normalise slashes to '/' and rtrim('/')
                 return rtrim(str_replace('\\', '/', $baseURL), '/');
             }
@@ -91,6 +98,8 @@ if (!defined('BASE_URL')) {
         // Fall back to SS_BASE_URL
         $base = getenv('SS_BASE_URL');
         if ($base) {
+            var_dump(4);
+            var_dump($base);
             // Strip relative path from SS_BASE_URL
             return rtrim(parse_url($base, PHP_URL_PATH), '/');
         }
