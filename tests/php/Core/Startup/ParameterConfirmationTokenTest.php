@@ -110,6 +110,8 @@ class ParameterConfirmationTokenTest extends SapphireTest
 
         $this->request->setUrl($url);
         $expected = rtrim(Controller::join_links(BASE_URL, '/', $url), '/') ?: '/';
+        var_dump($expected);
+        var_dump($token->currentURL());
         $this->assertEquals($expected, $token->currentURL(), "Invalid redirect for request url $url");
     }
 

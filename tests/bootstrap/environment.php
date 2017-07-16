@@ -36,3 +36,6 @@ if (!getenv('SS_DATABASE_CLASS') && !getenv('SS_DATABASE_USERNAME')) {
     $loader->setEnvironmentVariable('SS_DATABASE_SERVER', '127.0.0.1');
     $loader->setEnvironmentVariable('SS_DATABASE_CHOOSE_NAME', true);
 }
+
+// Set a mocked base URL
+$loader->setEnvironmentVariable('SS_BASE_URL', '');
