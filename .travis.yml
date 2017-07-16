@@ -25,7 +25,7 @@ matrix:
       env:
         - DB=PGSQL
         - PHPUNIT_TEST=framework
-    - php: 7.1.7
+    - php: 7.1
       env:
         - DB=MYSQL
         - PDO=1
