@@ -23,3 +23,7 @@ if (!file_exists(BASE_PATH . '/assets')) {
 if (empty($_SERVER['HTTP_HOST'])) {
     $_SERVER['HTTP_HOST'] = 'localhost';
 }
+
+if (!defined('BASE_URL')) {
+    define('BASE_URL', '');
+}
