@@ -531,7 +531,7 @@ class CoreKernel implements Kernel
         // Register error log file
         $errorLog = getenv('SS_ERROR_LOG');
         if ($errorLog) {
-            $logger = Injector::inst()->get(LoggerInterface::class);
+            $logger = Injector::inst()->get(LoggerInterface::class . '.core');
             if ($logger instanceof Logger) {
                 $logger->pushHandler(new StreamHandler($this->basePath . '/' . $errorLog, Logger::WARNING));
             } else {

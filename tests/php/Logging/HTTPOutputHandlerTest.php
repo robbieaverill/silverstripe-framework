@@ -13,7 +13,7 @@ use SilverStripe\Logging\HTTPOutputHandler;
 
 class HTTPOutputHandlerTest extends SapphireTest
 {
-    public function setUp()
+    protected function setUp()
     {
         parent::setUp();
         if (!Director::is_cli()) {
@@ -48,7 +48,7 @@ class HTTPOutputHandlerTest extends SapphireTest
     public function testDevConfig()
     {
         /** @var HTTPOutputHandler $handler */
-        $handler = Injector::inst()->get(HandlerInterface::class);
+        $handler = Injector::inst()->get(HandlerInterface::class . '.core');
         $this->assertInstanceOf(HTTPOutputHandler::class, $handler);
 
         // Test only default formatter is set, but CLI specific formatter is left out

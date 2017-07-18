@@ -344,7 +344,7 @@ EOT
         $body = $this->getBody();
         if ($this->isError() && empty($body)) {
             /** @var HandlerInterface $handler */
-            $handler = Injector::inst()->get(HandlerInterface::class);
+            $handler = Injector::inst()->get(HandlerInterface::class . '.core');
             $formatter = $handler->getFormatter();
             echo $formatter->format(array(
                 'code' => $this->statusCode

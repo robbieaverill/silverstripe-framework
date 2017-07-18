@@ -10,14 +10,33 @@ SilverStripe\Core\Injector\Injector:
   SilverStripe\Logging\ErrorHandler:
     class: SilverStripe\Logging\MonologErrorHandler
     properties:
-      Logger: %$Psr\Log\LoggerInterface
-  Psr\Log\LoggerInterface:
+      Logger: %$Psr\Log\LoggerInterface.core
+
+  # The core logger is used by SilverStripe to handle system errors
+  Psr\Log\LoggerInterface.core:
     type: singleton
     class: Monolog\Logger
     constructor:
       - "error-log"
     calls:
+      pushDisplayErrorHandler: [ pushHandler, [ %$Monolog\Handler\HandlerInterface.core ] ]
+
+  # The system logger can be used by modules and user code to log information in the background
+  Psr\Log\LoggerInterface:
+    type: singleton
+    class: Monolog\Logger
+    constructor:
+      - "system-log"
+    calls:
       pushDisplayErrorHandler: [ pushHandler, [ %$Monolog\Handler\HandlerInterface ] ]
+
+  # Dev handler outputs detailed information including notices. Overload the handler class with
+  # your own configuration to enabled logging, e.g. to a file. By default, nothing is handled.
+  Monolog\Handler\HandlerInterface:
+    class: Monolog\Handler\NullHandler
+    constructor:
+      - "debug"
+
 ---
 Name: loggingformatters
 ---
@@ -31,6 +50,7 @@ SilverStripe\Core\Injector\Injector:
     properties:
       Title: "There has been an error"
       Body: "The website server has not been able to respond to your request"
+
 ---
 Name: dev-logging
 Only:
@@ -38,12 +58,13 @@ Only:
 ---
 # Dev handler outputs detailed information including notices
 SilverStripe\Core\Injector\Injector:
-  Monolog\Handler\HandlerInterface:
+  Monolog\Handler\HandlerInterface.core:
     class: SilverStripe\Logging\HTTPOutputHandler
     constructor:
       - "notice"
     properties:
       DefaultFormatter: %$Monolog\Formatter\FormatterInterface.detailed
+
 ---
 Name: live-logging
 Except:
@@ -52,7 +73,7 @@ Except:
 # Live handler outputs user-friendly error details, and ignores notices
 # CLI errors still show full details
 SilverStripe\Core\Injector\Injector:
-  Monolog\Handler\HandlerInterface:
+  Monolog\Handler\HandlerInterface.core:
     class: SilverStripe\Logging\HTTPOutputHandler
     constructor:
       - "error"
