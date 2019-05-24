@@ -5,6 +5,7 @@ namespace SilverStripe\Forms;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\ORM\DataObjectInterface;
 use SilverStripe\Security\Authenticator;
+use SilverStripe\Security\Member;
 use SilverStripe\Security\Security;
 use SilverStripe\View\HTML;
 
@@ -119,6 +120,9 @@ class ConfirmedPasswordField extends FormField
      */
     protected $hiddenField = null;
 
+    protected $schemaComponent = 'ConfirmedPasswordField';
+
+
     /**
      * @param string $name
      * @param string $title
@@ -162,7 +166,7 @@ class ConfirmedPasswordField extends FormField
             $child->setAttribute('autocomplete', 'off');
         }
 
-        $this->showOnClick = $showOnClick;
+        $this->setShowOnClick($showOnClick);
 
         parent::__construct($name, $title);
         $this->setValue($value);
@@ -194,8 +198,9 @@ class ConfirmedPasswordField extends FormField
             $field->setDisabled($this->isDisabled());
             $field->setReadonly($this->isReadonly());
 
-            if (count($this->attributes)) {
-                foreach ($this->attributes as $name => $value) {
+            $attributes = $this->getAttributes();
+            if (count($attributes)) {
+                foreach ($attributes as $name => $value) {
                     $field->setAttribute($name, $value);
                 }
             }
@@ -203,19 +208,10 @@ class ConfirmedPasswordField extends FormField
             $fieldContent .= $field->FieldHolder();
         }
 
-        if (!$this->showOnClick) {
+        if (!$this->getShowOnClick()) {
             return $fieldContent;
         }
-
-        if ($this->getShowOnClickTitle()) {
-            $title = $this->getShowOnClickTitle();
-        } else {
-            $title = _t(
-                __CLASS__ . '.SHOWONCLICKTITLE',
-                'Change Password',
-                'Label of the link which triggers display of the "change password" formfields'
-            );
-        }
+        $title = $this->getShowOnClickTitle();
 
         // Check if the field should be visible up front
         $visible = $this->hiddenField->Value();
@@ -280,7 +276,29 @@ class ConfirmedPasswordField extends FormField
      */
     public function getShowOnClickTitle()
     {
-        return $this->showOnClickTitle;
+        return $this->showOnClickTitle ?: _t(
+            __CLASS__ . '.SHOWONCLICKTITLE',
+            'Change Password',
+            'Label of the link which triggers display of the "change password" formfields'
+        );
+    }
+
+    /**
+     * @return bool
+     */
+    public function getShowOnClick()
+    {
+        return $this->showOnClick;
+    }
+
+    /**
+     * @param bool $showOnClick
+     * @return $this
+     */
+    public function setShowOnClick($showOnClick = true)
+    {
+        $this->showOnClick = (bool) $showOnClick;
+        return $this;
     }
 
     /**
@@ -349,7 +367,7 @@ class ConfirmedPasswordField extends FormField
                 ? $value['_CurrentPassword']
                 : null;
 
-            if ($this->showOnClick && isset($value['_PasswordFieldVisible'])) {
+            if ($this->getShowOnClick() && isset($value['_PasswordFieldVisible'])) {
                 $this->getChildren()->fieldByName($this->getName() . '[_PasswordFieldVisible]')
                     ->setValue($value['_PasswordFieldVisible']);
             }
@@ -398,8 +416,9 @@ class ConfirmedPasswordField extends FormField
      */
     public function isSaveable()
     {
-        return !$this->showOnClick
-            || ($this->showOnClick && $this->hiddenField && $this->hiddenField->Value());
+        $showOnClick = $this->getShowOnClick();
+        return !$showOnClick
+            || ($showOnClick && $this->hiddenField && $this->hiddenField->Value());
     }
 
     /**
@@ -691,5 +710,29 @@ class ConfirmedPasswordField extends FormField
     public function getRequireStrongPassword()
     {
         return $this->requireStrongPassword;
+    }
+
+    public function getAttributes()
+    {
+        return array_merge_recursive(parent::getAttributes(), [
+            'schema' => $this->getSchemaData(),
+            'state' => $this->getSchemaState(),
+        ]);
+    }
+
+    public function getSchemaDataDefaults()
+    {
+        $passwordValidator = Member::password_validator();
+
+        return array_merge_recursive(parent::getSchemaDataDefaults(), [
+            'data' => [
+                'showOnClick' => $this->getShowOnClick(),
+                'showOnClickTitle' => $this->getShowOnClickTitle(),
+                'minLength' => $this->getMinLength(),
+                'maxLength' => $this->getMaxLength(),
+                'tests' => $passwordValidator->getTests(),
+                'minTestScore' => (int) $passwordValidator->getMinTestScore(),
+            ],
+        ]);
     }
 }
