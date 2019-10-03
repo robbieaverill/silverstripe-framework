@@ -286,7 +286,7 @@ trait CustomMethods
                 $methodInfo = self::$extra_methods[$class][$method];
 
                 if (isset($methodInfo['property']) && $methodInfo['property'] === $property
-                    && isset($methodInfo['index']) && $methodInfo['index'] === $index
+                    && (!$index || ($index && isset($methodInfo['index']) && $methodInfo['index'] === $index))
                 ) {
                     unset(self::$extra_methods[$class][$method]);
                 }
